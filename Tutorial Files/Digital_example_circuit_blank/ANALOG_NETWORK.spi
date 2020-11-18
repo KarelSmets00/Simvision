@@ -1,0 +1,13 @@
+simulator lang = spice
+.SUBCKT ANALOG_NETWORK in_analog out_analog
+.option post=1
+
+* Supply voltages should be defined in the toplevel analog subckt and can be propagated from this subckt to other subckts if necessary.
+VVDD VDD VSS 3.3
+VVSS VSS 0 0.0
+
+.connect in_analog out_analog
+
+.ENDS
+
+simulator lang = spectre

@@ -1,0 +1,21 @@
+* "pspice" description for "PenOEAGLE", "SmallSignalDiode", "pspice" 
+*
+* Ports:
+*    1: anode
+*    2: kathode
+***********************************************************************************************
+
+.SUBCKT SmallSignalDiode 1 2
+D1  1 2 DI_BAV5004LP
+.MODEL DI_BAV5004LP D
++ IS = 10n
++ N = 2.15
++ BV = 400
++ IBV = 1.00u
++ RS = 0.6
++ CJO = 0.90p
++ VJ = 55m
++ M = 28m
++ FC = 0.5
++ TT = 50n
+.ENDS SmallSignalDiode

@@ -1,0 +1,7 @@
+simulator lang = spice
+.SUBCKT ANALOG_NETWORK 
+.option post=1
+
+.ENDS
+
+simulator lang = spectre

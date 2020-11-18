@@ -1,0 +1,1 @@
+s1(16Sep2020:16:22:46):  xrun ./amsSim.scs -spectre_args "+ms ++aps=liberal" -f verilogFiles.f -access +rwc -64bit -gui 
