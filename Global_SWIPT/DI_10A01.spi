@@ -1,0 +1,7 @@
+* "pspice" description for "PenOEAGLE", "RectifierDiode", "pspice"
+*[10A01]
+*********************************************************************************************************************
+*SRC=10A01;DI_10A01;Diodes;Si;  50.0V  10.0A  3.00us   Diodes Inc. 10A Rectifier
+.MODEL DI_10A01 D  ( IS=844n RS=2.06m BV=50.0 IBV=10.0u
++ CJO=277p  M=0.333 N=2.06 TT=4.32u )
+.ENDS RectifierDiode
