@@ -36,8 +36,15 @@ amsd{
 // DC simulation statement (required to find initial condition at startup of transient)
 DCsim dc
 
+// Parameter set statement. The parameter freq will change over time
+paramSet1 paramset {
+	time	freq
+	0u	50k
+	2000u	25k
+}
+
 // Tran simulation statement. Simulation will end when stop time is reached (so this should be longer than the required time to run the entire digital simulation or not if you only want to simulate a small part)
-Transim tran stop=4000u
+Transim tran stop=4000u paramset=paramSet1
 
 // Save internal voltages and currents
 opt1 options save=allpub

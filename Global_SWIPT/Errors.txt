@@ -1,0 +1,99 @@
+xrun: *E,SPCERR: The program encountered one or more errors while processing the input SPICE file(s) in the AMSD flow. For details, see the following messages.
+
+amsspice: *Error: (././ina180a1.spi,103): Unexpected character `{' in netlist. Cannot run the simulation because of syntax error. Correct the error and rerun the simulation.
+  
+amsspice: *Error: (././ina180a1.spi,103): 37: Unexpected closing parenthesis. Expected end of file or end of line. Cannot run the simulation because of syntax error. Correct the error and rerun the simulation.
+  
+amsspice: *Error: (././ina180a1.spi,104): Unexpected character `{' in netlist. Cannot run the simulation because of syntax error. Correct the error and rerun the simulation.
+  
+amsspice: *Error: (././ina180a1.spi,104): 30: Unexpected closing parenthesis. Expected end of file or end of line. Cannot run the simulation because of syntax error. Correct the error and rerun the simulation.
+  
+amsspice: *Error: (././ina180a1.spi,105): Model `DVN', the expected number of value followed by `/1E11]' is 1, but found 0.
+  
+amsspice: *Error: (././ina180a1.spi,148): Unexpected character `{' in netlist. Cannot run the simulation because of syntax error. Correct the error and rerun the simulation.
+  
+amsspice: *Error: (././ina180a1.spi,148): 28: Unexpected closing parenthesis. Expected end of file or end of line. Cannot run the simulation because of syntax error. Correct the error and rerun the simulation.
+  
+amsspice: *Warning: (././ina180a1.spi,162): Found an unquoted ambiguous expression that contains the `*' character. Therefore, the part of the expression after `-' will be treated as a comment.
+amsspice: *Warning: (././ina180a1.spi,163): Found an unquoted ambiguous expression that contains the `*' character. Therefore, the part of the expression after `+' will be treated as a comment.
+amsspice: *Warning: (././ina180a1.spi,164): Found an unquoted ambiguous expression that contains the `*' character. Therefore, the part of the expression after `+' will be treated as a comment.
+amsspice: *Warning: (././ina180a1.spi,165): Found an unquoted ambiguous expression that contains the `*' character. Therefore, the part of the expression after `+' will be treated as a comment.
+amsspice: *Warning: (././ina180a1.spi,167): Found an unquoted ambiguous expression that contains the `*' character. Therefore, the part of the expression after `+' will be treated as a comment. 
+amsspice: *Warning: (././ina180a1.spi,168): Found an unquoted ambiguous expression that contains the `*' character. Therefore, the part of the expression after `-' will be treated as a comment.
+ 
+amsspice: *Error: (././ina180a1.spi,180): Unexpected character `{' in netlist. Cannot run the simulation because of syntax error. Correct the error and rerun the simulation.
+  
+amsspice: *Error: (././ina180a1.spi,180): 41: Unexpected closing parenthesis. Expected end of file or end of line. Cannot run the simulation because of syntax error. Correct the error and rerun the simulation.  
+
+amsspice: *Error: (././ina180a1.spi,181): Unexpected character `{' in netlist. Cannot run the simulation because of syntax error. Correct the error and rerun the simulation.  
+
+amsspice: *Error: (././ina180a1.spi,181): 36: Unexpected closing parenthesis. Expected end of file or end of line. Cannot run the simulation because of syntax error. Correct the error and rerun the simulation.  
+
+amsspice: *Error: (././ina180a1.spi,182): Unexpected character `{' in netlist. Cannot run the simulation because of syntax error. Correct the error and rerun the simulation.  
+
+amsspice: *Error: (././ina180a1.spi,182): 36: Unexpected closing parenthesis. Expected end of file or end of line. Cannot run the simulation because of syntax error. Correct the error and rerun the simulation.  
+
+
+amsspice: *Warning: (././ina180a1.spi,200): Found an unquoted ambiguous expression that contains the `*' character. Therefore, the part of the expression after `GNDF' will be treated as a comment. 
+amsspice: *Warning: (././ina180a1.spi,202): Found an unquoted ambiguous expression that contains the `*' character. Therefore, the part of the expression after `NVCCTEST' will be treated as a comment. 
+amsspice: *Warning: (././ina180a1.spi,203): Found an unquoted ambiguous expression that contains the `*' character. Therefore, the part of the expression after `N1SGN' will be treated as a comment. 
+amsspice: *Warning: (././ina180a1.spi,224): Found an unquoted ambiguous expression that contains the `*' character. Therefore, the part of the expression after `GNDF' will be treated as a comment. 
+amsspice: *Warning: (././ina180a1.spi,226): Found an unquoted ambiguous expression that contains the `*' character. Therefore, the part of the expression after `NVCCTEST' will be treated as a comment. 
+amsspice: *Warning: (././ina180a1.spi,227): Found an unquoted ambiguous expression that contains the `*' character. Therefore, the part of the expression after `N1SGN' will be treated as a comment. 
+amsspice: *Warning: (././ina180a1.spi,237): Found an unquoted ambiguous expression that contains the `*' character. Therefore, the part of the expression after `VSENSE' will be treated as a comment. 
+
+
+amsspice: *Error: (././ina180a1.spi,249): Unexpected character `{' in netlist. Cannot run the simulation because of syntax error. Correct the error and rerun the simulation.  
+
+amsspice: *Error: (././ina180a1.spi,249): 41: Unexpected closing parenthesis. Expected end of file or end of line. Cannot run the simulation because of syntax error. Correct the error and rerun the simulation.  
+
+amsspice: *Error: (././ina180a1.spi,250): Unexpected character `{' in netlist. Cannot run the simulation because of syntax error. Correct the error and rerun the simulation.  
+
+amsspice: *Error: (././ina180a1.spi,250): 36: Unexpected closing parenthesis. Expected end of file or end of line. Cannot run the simulation because of syntax error. Correct the error and rerun the simulation.  
+
+
+
+amsspice: *Warning: (././ina180a1.spi,275): Found an unquoted ambiguous expression that contains the `*' character. Therefore, the part of the expression after `NVCCMAX' will be treated as a comment. 
+
+
+
+amsspice: *Error: (././ina180a1.spi,294): Unexpected character `{' in netlist. Cannot run the simulation because of syntax error. Correct the error and rerun the simulation.  
+
+amsspice: *Error: (././ina180a1.spi,294): 20: Unexpected closing parenthesis. Expected end of file or end of line. Cannot run the simulation because of syntax error. Correct the error and rerun the simulation.  
+
+
+amsspice: *Warning: (././ina180a1.spi,330): Found an unquoted ambiguous expression that contains the `*' character. Therefore, the part of the expression after `GNDF' will be treated as a comment. 
+
+
+amsspice: *Error: (././ina180a1.spi,344): Unexpected character `{' in netlist. Cannot run the simulation because of syntax error. Correct the error and rerun the simulation.  
+
+amsspice: *Error: (././ina180a1.spi,344): 33: Unexpected closing parenthesis. Expected end of file or end of line. Cannot run the simulation because of syntax error. Correct the error and rerun the simulation.  
+
+amsspice: *Error: (././ina180a1.spi,345): Unexpected character `{' in netlist. Cannot run the simulation because of syntax error. Correct the error and rerun the simulation.  
+
+amsspice: *Error: (././ina180a1.spi,345): 34: Unexpected closing parenthesis. Expected end of file or end of line. Cannot run the simulation because of syntax error. Correct the error and rerun the simulation. 
+ 
+amsspice: *Error: (././ina180a1.spi,346): Unexpected character `{' in netlist. Cannot run the simulation because of syntax error. Correct the error and rerun the simulation.  
+
+amsspice: *Error: (././ina180a1.spi,346): 34: Unexpected closing parenthesis. Expected end of file or end of line. Cannot run the simulation because of syntax error. Correct the error and rerun the simulation.  
+
+amsspice: *Error: (././ina180a1.spi,347): Unexpected character `{' in netlist. Cannot run the simulation because of syntax error. Correct the error and rerun the simulation.  
+
+amsspice: *Error: (././ina180a1.spi,347): 33: Unexpected closing parenthesis. Expected end of file or end of line. Cannot run the simulation because of syntax error. Correct the error and rerun the simulation.  
+
+amsspice: *Error: (././ina180a1.spi,348): Unexpected character `{' in netlist. Cannot run the simulation because of syntax error. Correct the error and rerun the simulation.  
+
+amsspice: *Error: (././ina180a1.spi,348): 29: Unexpected closing parenthesis. Expected end of file or end of line. Cannot run the simulation because of syntax error. Correct the error and rerun the simulation.  
+
+amsspice: *Error: (././ina180a1.spi,349): Unexpected character `{' in netlist. Cannot run the simulation because of syntax error. Correct the error and rerun the simulation.  
+
+amsspice: *Error: (././ina180a1.spi,349): 32: Unexpected closing parenthesis. Expected end of file or end of line. Cannot run the simulation because of syntax error. Correct the error and rerun the simulation. 
+ 
+
+amsspice: *Warning: (././ina180a1.spi,350): Found an unquoted ambiguous expression that contains the `*' character. Therefore, the part of the expression after `GNDF' will be treated as a comment. 
+amsspice: *Warning: (././ina180a1.spi,351): Found an unquoted ambiguous expression that contains the `*' character. Therefore, the part of the expression after `GNDF' will be treated as a comment. 
+amsspice: *Warning: (././LM2575_TRANS.spi,126): Found an unquoted ambiguous expression that contains the `*' character. Therefore, the part of the expression after `OSC_RAMP' will be treated as a comment. 
+
+
+TOOL:	xrun(64)	19.03-s013: Exiting on Nov 21, 2020 at 16:18:48 CET  (total: 00:00:00)
+

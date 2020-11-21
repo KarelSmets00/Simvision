@@ -4,7 +4,6 @@
 **   2: ground
 **   3: output
 
-
 .SUBCKT LM7812  1    2    3
 QT6          23  10  2   Q_NPN 0.1
 QT7          5   4   10  Q_NPN 0.1

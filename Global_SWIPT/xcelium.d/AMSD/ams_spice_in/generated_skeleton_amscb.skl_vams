@@ -8,6 +8,8 @@
 module  ANALOG_NETWORK( );
 `define _vspsk_ANALOG_NETWORK
 `_vspsk_ANALOG_NETWORK
+parameter  real Rled = 28.8 ;
+parameter  real Rcirc = 15 ;
 analog begin
 end
 endmodule

@@ -37,6 +37,8 @@
 * 2. Slew Rate is less than the value in the data sheet for the A3 and A4 devices.
 *****************************************************************************
 *$
+simulator lang = pspice
+
 .SUBCKT INA180A1 INP INN VCC GND OUT
 E_E2         N609752 0 GND 0 -1
 X_U40         VCC GND INPUT_VCLAMP INPUT_ZOUT VIMON EN GNDF

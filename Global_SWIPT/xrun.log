@@ -1,0 +1,120 @@
+xrun(64): 19.03-s013: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	19.03-s013: Started on Nov 21, 2020 at 16:37:39 CET
+xrun
+	./amsSim.scs
+	-spectre_args "+ms ++aps=liberal"
+	-f verilogFiles.f
+		./Testbench.v
+	-access +rwc
+	-64bit
+	-gui
+Recompiling... reason: unable to stat '/.//users/micas/jvanassc/Vakantie Job Bram Veraverbeke 2020/swiptmixedsignalsim/Simvision_mixed_signal/Documentation/Analog_example_circuit_blank/Testbench.v'.
+xrun: *N,SPCNTC: The program encountered one or more notices while processing the input SPICE file(s) in the AMSD flow. For details, see the following messages.
+amsspice: *Notice (amsSim.scs,29): For the 'portmap' statement, assuming
+	  'autobus=yes' as the default type in the AMSD control block flow.
+amsspice: *Notice: Using external port-bind file: 'analog_network.pb'
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		toplevel
+	Discipline resolution Pass...
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 2       2
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.toplevel:v
+	Starting analog simulation engine...
+AMSD: Using spectre solver with arguments: -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal.
+
+Spectre (R) Circuit Simulator
+Version 18.1.0.394.isr8 64bit -- 11 Jun 2019
+Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: r0761743   Host: vierre64-tmp3.esat.kuleuven.be   HostID: 570AAE14   PID: 18245
+Memory  available: 548.3397 MB  physical: 63.1554 GB
+Linux   : CentOS Linux release 7.9.2009 (Core)
+CPU Type: Intel Xeon Processor (Skylake)
+All processors running at 2194.8 MHz
+        Socket: Processors
+        0:       0,  1
+        1:       2,  3
+        2:       4,  5
+        3:       6,  7
+        4:       8,  9
+        5:      10, 11
+        6:      12, 13
+        7:      14, 15
+        8:      16, 17
+        
+System load averages (1min, 5min, 15min) : 21.8 %, 21.6 %, 21.3 %
+HPC is enabled
+
+
+Analog Kernel using -ANALOGCONTROL  ./amsSim.scs.
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_SWIPT/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used: `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_SWIPT/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_SWIPT/ANALOG_NETWORK.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_SWIPT/OPA2344.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_SWIPT/LM7812.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_SWIPT/DI_10A01.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_SWIPT/DI_BAV5004LP.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_SWIPT/IR2110.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_SWIPT/ST_BAT48.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_SWIPT/ina180a1.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_SWIPT/LM2575_TRANS.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_SWIPT/1N5819.spi
+Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 233.745 ms, elapsed = 818.449 ms.
+Time accumulated: CPU = 592.781 ms, elapsed = 818.454 ms.
+Peak resident memory used = 88.6 Mbytes.
+
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /esat/micas-data/software/Cadence/xcelium_19.03/tools/xcelium/files/xmsimrc
+xcelium> run
+
+Error found by spectre in `h_bridge', in `worklib__ANALOG_NETWORK__spice_skeleton__0x10000001', during circuit read-in.
+    ERROR (SFE-23): "./ANALOG_NETWORK.spi" 49: The instance `XU2' is referencing an undefined model or subcircuit, `irfs_sl7440pbf'. Either include the file containing the definition of `irfs_sl7440pbf', or define `irfs_sl7440pbf' before running the simulation.
+    ERROR (SFE-23): "./ANALOG_NETWORK.spi" 50: The instance `XU3' is referencing an undefined model or subcircuit, `irfs_sl7440pbf'. Either include the file containing the definition of `irfs_sl7440pbf', or define `irfs_sl7440pbf' before running the simulation.
+    ERROR (SFE-23): "./ANALOG_NETWORK.spi" 51: The instance `XU4' is referencing an undefined model or subcircuit, `irfs_sl7440pbf'. Either include the file containing the definition of `irfs_sl7440pbf', or define `irfs_sl7440pbf' before running the simulation.
+    ERROR (SFE-23): "./ANALOG_NETWORK.spi" 52: The instance `XU5' is referencing an undefined model or subcircuit, `irfs_sl7440pbf'. Either include the file containing the definition of `irfs_sl7440pbf', or define `irfs_sl7440pbf' before running the simulation.
+Fatal error found by spectre in `link_optimized', in `worklib__ANALOG_NETWORK__spice_skeleton__0x10000001', during circuit read-in.
+    FATAL (SFE-1972): Parse error before token `[' in expression `[L1]'. If `[L1]' is a spice expression, quotes are required for the expression.
+
+Time for Elaboration: CPU = 885.358 ms, elapsed = 52.9286 s.
+Time accumulated: CPU = 1.47831 s, elapsed = 53.7472 s.
+Peak resident memory used = 114 Mbytes.
+
+
+Aggregate audit (4:38:44 PM, Sat Nov 21, 2020):
+Time used: CPU = 1.48 s, elapsed = 53.7 s, util. = 2.75%.
+Time spent in licensing: elapsed = 15.4 ms.
+Peak memory used = 114 Mbytes.
+Simulation started at: 4:37:50 PM, Sat Nov 21, 2020, ended at: 4:38:44 PM, Sat Nov 21, 2020, with elapsed time (wall clock): 53.7 s.
+spectre completes with 5 errors, 0 warnings, and 1 notice.
+spectre terminated prematurely due to fatal error.
+xmsim: *E,RNALER: Simulation terminated due to analog error.
+Memory Usage - Current physical: 113.7M, Current virtual: 796.2M
+CPU Usage - 0.6s system + 0.6s user = 1.2s total (2.1% cpu)
+xcelium> 

@@ -1,12 +1,24 @@
-* Global_SWIPT.asc
-R§LED_WALL +12V 0 {Rled}
-C2 +12V 0 0.1µ
-C3 Vdc 0 4.7µ
-R§Circ 5Vrx 0 {Rcirc}
+simulator lang = spice
+
+.SUBCKT ANALOG_NETWORK 
+.option post=1
+
+.param Rled=28.8
+.param Rcirc=15
+
+.include OPA2344.spi
+.include LM7812.spi
+.include DI_10A01.spi
+
+
+RLED_WALL +12V 0 {Rled}
+C2 +12V 0 0.1u
+C3 Vdc 0 4.7u
+RCirc 5Vrx 0 {Rcirc}
 XU2 Vdc 0 +12V LM7812
 XX1 N005 N008 N006 0 full_bridge_rect
-R§Nano 5Vrx 0 250
-R§LCD 5Vrx 0 125
+RNano 5Vrx 0 250
+RLCD 5Vrx 0 125
 XX2 5Vtx 0 N003 N007 0 Vbatt N013 N004 N011 N009 N012 h_bridge
 XU3 N015 Ref 5Vtx 0 Ref OPA2344
 R3 5Vtx N015 20k
@@ -20,19 +32,19 @@ XX8 N003 N007 N009 N012 pwm_sourcev2 params: D=0.5,P=0.0127m,Von=5
 XX3 N010 N011 Ref 0 5Vtx +Iac -Iac current_sensorv3
 XX9 Vdc 5Vrx 0 dc_supply5v0
 D1 N006 Vdc DI_10A01
-C1 Vdc 0 100µ
+C1 Vdc 0 100u
 XX11 5Vrx 0 N006 Freq\ Freq freq_detect
 
-* block symbol definitions
-.subckt full_bridge_rect ACL ACN V+ V-
+
+.SUBCKT full_bridge_rect ACL ACN V+ V-
 D1 ACN V+ DI_10A01
 D2 ACL V+ DI_10A01
 D3 V- ACN DI_10A01
 D4 V- ACL DI_10A01
 .include DI_10A01.spi
-.ends full_bridge_rect
+.ENDS
 
-.subckt h_bridge Vlog SD G1 G2 LGND Vcc COMM ACL ACN G3 G4
+.SUBCKT h_bridge Vlog SD G1 G2 LGND Vcc COMM ACL ACN G3 G4
 XU1 Vlog G1 SD G3 LGND N001 N003 ACL Vcc COMM N005 IR2110
 XU2 Vcc N001 ACL irfs_sl7440pbf
 XU3 ACL N005 COMM irfs_sl7440pbf
@@ -49,9 +61,9 @@ C5 Vlog LGND 10n
 C6 Vlog LGND 10n
 .include DI_BAV5004LP.spi
 .include IR2110.spi
-.ends h_bridge
+.ENDS
 
-.subckt dc_voltage ADC Vin COMM Vdd INmax Agnd
+.SUBCKT dc_voltage ADC Vin COMM Vdd INmax Agnd
 R1 Vin N001 200k
 R2 N001 COMM 10k
 R3 N003 N002 100
@@ -59,34 +71,34 @@ XU1 N001 N002 Vdd COMM N002 OPA2344
 D1 N004 INmax BAT48
 D2 Agnd N004 BAT48
 R4 ADC N003 100
-.include OPA2344.LIB
-.include ST_SIGNAL_SCHOTTKY_V6.LIB
-.ends dc_voltage
+.include OPA2344.spi
+.include ST_BAT48.spi
+.ENDS
 
-.subckt dc_current LOAD COMM ADC Vdd INmax Agnd
+.SUBCKT dc_current LOAD COMM ADC Vdd INmax Agnd
 Rshunt LOAD COMM 10m
 XU1 LOAD COMM Vdd COMM N001 INA180A1
 R1 N002 N001 100
 D1 N002 INmax BAT48
 D2 Agnd N002 BAT48
 R2 ADC N002 100
-.include ina180a1.lib
-.include ST_SIGNAL_SCHOTTKY_V6.LIB
-.ends dc_current
+.include ina180a1.spi
+.include ST_BAT48.spi
+.ENDS
 
-.subckt dc_supply5v0 Vin 5V0 COMM
+.SUBCKT dc_supply5v0 Vin 5V0 COMM
 XU1 Vin N001 COMM N002 COMM COMM COMM COMM COMM COMM COMM COMM COMM COMM COMM COMM LM2575_TRANS
-C1 Vin COMM 100µ
-L1 N001 5V0 330µ
-C2 5V0 COMM 330µ
+C1 Vin COMM 100u
+L1 N001 5V0 330u
+C2 5V0 COMM 330u
 R1 5V0 N002 31k
 R2 N002 COMM 10k
 D1 COMM N001 D1n5819
 .include LM2575_TRANS.spi
-.include 1N5819.LIB
-.ends dc_supply5v0
+.include 1N5819.spi
+.ENDS
 
-.subckt link_optimized IN1 IN2 OUT1 OUT2
+.SUBCKT link_optimized IN1 IN2 OUT1 OUT2
 L1 N007 IN2 {L1}
 L2 N008 N002 {L2}
 L3 N006 N009 {L3}
@@ -112,9 +124,9 @@ K24 L2 L4 {k24}
 .param L1=3.6751e-05 L2=0.00063979 L3=0.00063979 L4=3.6751e-05
 .param R1=0.15326 R2=0.75095 R3=0.75095 R4=0.15326
 .param C1=2.757e-07 C2=1.5837e-08 C3=1.5837e-08 C4=2.757e-07
-.ends link_optimized
+.ENDS
 
-.subckt pwm_sourcev2 G1 G2 G3 G4
+.SUBCKT pwm_sourcev2 G1 G2 G3 G4
 V1 G1 0 PULSE(0 {Von} 0 0 0 {P*D} {P*2})
 V2 G2 0 PULSE(0 {Von} {P} 0 0 {P*D} {P*2})
 E1 G3 N001 G1 0 -1
@@ -124,9 +136,9 @@ V4 N002 0 {Von}
 .param P=0.01m
 .param D=0.5
 .param Von=3.3
-.ends pwm_sourcev2
+.ENDS
 
-.subckt current_sensorv3 Cin Cout INmax Agnd Vcc ADC+ ADC-
+.SUBCKT current_sensorv3 Cin Cout INmax Agnd Vcc ADC+ ADC-
 F1 N002 N001 V1 {1/Rm}
 R1 N001 Vcm 1Meg
 R2 Vcm N002 1Meg
@@ -141,35 +153,17 @@ D2 ADC- INmax BAT48
 D3 Agnd ADC+ BAT48
 D4 Agnd ADC- BAT48
 .param Rm=100
-.include ST_SIGNAL_SCHOTTKY_V6.LIB
-.ends current_sensorv3
+.include ST_BAT48.spi
+.ENDS
 
-.subckt freq_detect Vcc COMM In+ Out\ Out
+.SUBCKT freq_detect Vcc COMM In+ Out\ Out
 R1 In+ N001 10k
 R2 N001 COMM 1k
 XU1 N001 COMM Vcc COMM Out\ LMV7219
 XU2 Out Out\ Out\ Vcc COMM SN74HC00
-.ends freq_detect
+.ENDS
 
-* Voltage and current \nsensor to be added
-* Demodulation circuit to\nbe added here
-* Modulator to be \ninserted here
 
-.model D D
-* Simulation details
-.tran 0 0.60m 0
+.ENDS
 
-.param Rled=28.8
-.param Rcirc=15
-
-.include OPA2344.LIB
-.include LM7812.spi
-.include DI_10A01.spi
-
-* OPM: de ripple op de spanning komt uit de rectifier
-* Don't forget the rectifier block contains NO capacitor !!
-* .meas Pin AVG -V(N001,N002)*I(V1)
-* .step param Rcirc 5 125 20
-
-.backanno
-.end
+simulator lang = spectre

@@ -5,8 +5,8 @@ Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwi
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: r0761743   Host: vierre64-tmp3.esat.kuleuven.be   HostID: 570AAE14   PID: 383
-Memory  available: 9.5527 GB  physical: 63.1554 GB
+User: r0761743   Host: vierre64-tmp3.esat.kuleuven.be   HostID: 570AAE14   PID: 32466
+Memory  available: 542.0236 MB  physical: 63.1554 GB
 Linux   : CentOS Linux release 7.9.2009 (Core)
 CPU Type: Intel Xeon Processor (Skylake)
 All processors running at 2194.8 MHz
@@ -21,10 +21,10 @@ All processors running at 2194.8 MHz
         7:      14, 15
         8:      16, 17
         
-System load averages (1min, 5min, 15min) : 15.5 %, 14.9 %, 14.0 %
+System load averages (1min, 5min, 15min) : 14.3 %, 17.2 %, 16.9 %
 
 
-Simulating `./xcelium.d/AMSD/ams_spice_in/./.amsspice_pre.ckt' on vierre64-tmp3.esat.kuleuven.be at 10:23:18 PM, Wed Nov 18, 2020 (process id: 383).
+Simulating `./xcelium.d/AMSD/ams_spice_in/./.amsspice_pre.ckt' on vierre64-tmp3.esat.kuleuven.be at 3:43:55 PM, Sat Nov 21, 2020 (process id: 32466).
 Current working directory: /users/students/r0761743/Eagle/Simvision/Tutorial Files/Analog_example_circuit_blank_copy
 Environment variable:
     SPECTRE_DEFAULTS=
@@ -33,7 +33,7 @@ Command line:
         -noraw -va,amsspice_pre -ahdllibdir  \
         xcelium.d/AMSD/ams_spice_in/ahdlSimDB =log  \
         ./xcelium.d/AMSD/ams_spice_in/./.amsspice_pre.ckt.log -token  \
-        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080FE71B870359768D3A13CC50411B6749FEA2FE10B0F887DC39431F37A3ED44FD9EB2FB063238B7DC3BD10E17135D560C2EA25BB6365CF2688BD6C8E0850FB3080A83DEEB8537F10B0AE3CAB3F64C82187BF2AAD6166CF62D5FF7EF04860FB2A83A83DED3C50FB10B0A83DED3C50FB10B0F7887DF8C03F4F0500004272
+        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080FE71B870359768D3A13CC50411B6749FEA2FE10B0F887DC39431F37A3ED44FD9EB2FB063238B7DC3BD10E17135D560C2BD28B76669CA7185B968880F50FB3080A83DEEB8537F10B0AE3CAB3F64C82187BF2AAD6166CF62D5FF7FF54865FB2A82A83DED3C50FB10B0A83DED3C50FB10B0F784CA9577524F0900004240
 
 Loading /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
 Loading /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
@@ -45,7 +45,8 @@ Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spect
 Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
 Reading file:  /users/students/r0761743/Eagle/Simvision/Tutorial Files/Analog_example_circuit_blank_copy/amsSim.scs
 Reading file:  /users/students/r0761743/Eagle/Simvision/Tutorial Files/Analog_example_circuit_blank_copy/ANALOG_NETWORK.spi
-Time for NDB Parsing: CPU = 87.188 ms, elapsed = 160.864 ms.
-Time accumulated: CPU = 137.046 ms, elapsed = 160.872 ms.
-Peak resident memory used = 48.4 Mbytes.
+Reading file:  /users/students/r0761743/Eagle/Simvision/Tutorial Files/Analog_example_circuit_blank_copy/SmallSignalDiode.spi
+Time for NDB Parsing: CPU = 72.891 ms, elapsed = 122.334 ms.
+Time accumulated: CPU = 123.903 ms, elapsed = 122.342 ms.
+Peak resident memory used = 48.9 Mbytes.
 

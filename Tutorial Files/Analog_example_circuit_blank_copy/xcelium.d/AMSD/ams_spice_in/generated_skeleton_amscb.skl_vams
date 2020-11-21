@@ -8,6 +8,7 @@
 module  ANALOG_NETWORK( );
 `define _vspsk_ANALOG_NETWORK
 `_vspsk_ANALOG_NETWORK
+parameter  real freq = 50000 ;
 analog begin
 end
 endmodule

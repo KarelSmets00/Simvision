@@ -1,12 +1,19 @@
 simulator lang = spice
+
+.param freq = 50k
+
 .SUBCKT ANALOG_NETWORK 
 .option post=1
 
-VSS vss 0 0
-Vpulse n1 vss PULSE(0 1 500u 5n 5n 500u 1000u)
+.include "SmallSignalDiode.spi"
 
-R1 n1 n2 1k
-C1 n2 vss 70n
+VSS vss 0 0
+Vpulse n1 vss SIN(0 12 freq)
+
+D1 n1 n2 SmallSignalDiode
+R1 n2 vss 100
+
+Vfreq param_freq vss freq
 
 .ENDS
 
