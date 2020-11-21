@@ -1,0 +1,78 @@
+* C:\Users\Karel\Documents\Eagle\swipt\Documents\Spice\H_Bridge_testbench.asc
+XX1 3v3 0 N001 N004 0 12v 0 N002 N006 N005 N008 h_bridge
+V1 3v3 0 3.3
+V2 12v 0 12 Rser=0
+Rload N003 N007 13
+XX3 N002 N006 N003 N007 link_optimized
+XX2 N001 N004 N005 N008 pwm_sourcev2 params: D=0.5, P=0.0127m
+
+* block symbol definitions
+.subckt h_bridge Vlog SD G1 G2 LGND Vcc COMM ACL ACN G3 G4
+XU1 Vlog G1 SD G3 LGND N001 N003 ACL Vcc COMM N005 IR2110
+XU2 Vcc N001 ACL irfs_sl7440pbf
+XU3 ACL N005 COMM irfs_sl7440pbf
+XU4 Vcc N002 ACN irfs_sl7440pbf
+XU5 ACN N006 COMM irfs_sl7440pbf
+XU6 Vlog G2 SD G4 LGND N002 N004 ACN Vcc COMM N006 IR2110
+C1 N003 ACL 500n
+D5 Vcc N003 DI_BAV5004LP
+C2 COMM Vcc 10n
+C3 N004 ACN 500n
+D6 Vcc N004 DI_BAV5004LP
+C4 Vcc COMM 10n
+C5 Vlog LGND 10n
+C6 Vlog LGND 10n
+.include 1N914.spi
+.include 1N5408.spi
+.include DI_BAV5004LP.spi
+.ends h_bridge
+
+.subckt link_optimized IN1 IN2 OUT1 OUT2
+L1 N007 IN2 {L1}
+L2 N008 N002 {L2}
+L3 N006 N009 {L3}
+L4 OUT2 N004 {L4}
+C1 N005 N008 {C2}
+C2 N003 N009 {C3}
+R1 N005 N002 {R2}
+R2 N006 N003 {R3}
+C3 OUT1 OUT2 {C4}
+C4 N001 IN1 {C1}
+R3 N001 N007 {R1}
+R4 OUT1 N004 {R4}
+R6 N002 N001 1G
+R7 N003 N005 1G
+R8 N004 N006 1G
+K12 L1 L2 {k12}
+K23 L2 L3 {k23}
+K34 L3 L4 {k34}
+K14 L1 L4 {k14}
+K13 L1 L3 {k13}
+K24 L2 L4 {k24}
+.param k12=0.62499 k23=0.10311 k34=0.62499 k13=0.081644 k14=0.064839 k24=0.081644
+.param L1=3.6751e-05 L2=0.00063979 L3=0.00063979 L4=3.6751e-05
+.param R1=0.15326 R2=0.75095 R3=0.75095 R4=0.15326
+.param C1=2.757e-07 C2=1.5837e-08 C3=1.5837e-08 C4=2.757e-07
+.ends link_optimized
+
+.subckt pwm_sourcev2 G1 G2 G3 G4
+V1 G1 0 PULSE(0 {Von} 0 0 0 {P*D} {P*2})
+V2 G2 0 PULSE(0 {Von} {P} 0 0 {P*D} {P*2})
+E1 G3 N001 G1 0 -1
+E2 G4 N002 G2 0 -1
+V3 N001 0 {Von}
+V4 N002 0 {Von}
+.param P=0.01m
+.param D=0.5
+.param Von=3.3
+.ends pwm_sourcev2
+
+.model D D
+.lib C:\Users\Karel\Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 0.30m
+* Simulate in alternate mode\nusing default Trtol\nUse gear integration
+.lib C:\Users\Karel\Documents\Eagle\swipt\Documents\Spice\IR2110.spi
+.lib C:\Users\Karel\Documents\Eagle\swipt\Documents\Spice\mosfets\irfs_sl7440pbf.spi
+.backanno
+.end
+

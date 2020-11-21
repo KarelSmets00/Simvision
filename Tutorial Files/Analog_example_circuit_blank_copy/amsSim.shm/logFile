@@ -1,0 +1,25 @@
+HEADER
+"PSFversion" "1.00"
+"Log Generator" "drlLog rev. 1.0"
+"Log Time Stamp" "Wed Nov 18 22:25:13 2020"
+"simulator" "AMS"
+"signalNameType" "verilog"
+TYPE
+"analysisInst" STRUCT(
+"analysisType" STRING *
+"dataFile" STRING *
+"format" STRING *
+"parent" STRING *
+"sweepVariable" ARRAY ( * ) STRING *
+"description" STRING *
+)
+VALUE
+"Transim-tran" "analysisInst" (
+"tran"
+"amsSim.trn"
+"SST2"
+""
+("time")
+"Transient Analysis"
+)
+END

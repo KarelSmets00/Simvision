@@ -1,0 +1,13 @@
+simulator lang = spice
+.SUBCKT ANALOG_NETWORK 
+.option post=1
+
+VSS vss 0 0
+Vpulse n1 vss PULSE(0 1 500u 5n 5n 500u 1000u)
+
+R1 n1 n2 1k
+C1 n2 vss 70n
+
+.ENDS
+
+simulator lang = spectre
