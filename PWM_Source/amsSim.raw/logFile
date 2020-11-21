@@ -1,0 +1,24 @@
+HEADER
+"PSFversion" "1.00"
+"Log Generator" "drlLog rev. 1.0"
+"Log Time Stamp" "Sat Nov 21 18:22:38 2020"
+"simulator" "ams"
+"version" "18.1.0.394.isr8"
+"date" "6:22:38 PM, Sat Nov 21, 2020"
+"design" "(no title)"
+"signalNameType" "spectre"
+"simMode" "Mixed-signal"
+"measdgt" 0
+"ingold" 2
+"sst2usecolon" 0
+TYPE
+"analysisInst" STRUCT(
+"analysisType" STRING *
+"dataFile" STRING *
+"format" STRING *
+"parent" STRING *
+"sweepVariable" ARRAY ( * ) STRING *
+"description" STRING *
+)
+VALUE
+END

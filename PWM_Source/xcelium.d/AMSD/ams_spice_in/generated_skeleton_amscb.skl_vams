@@ -1,0 +1,16 @@
+// 
+`define VAMS_ELEC_DIS_ONLY 1
+`include "disciplines.vams"
+`include "constants.vams"
+`include "./xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams.attri"
+
+`SPICE1
+module  ANALOG_NETWORK( );
+`define _vspsk_ANALOG_NETWORK
+`_vspsk_ANALOG_NETWORK
+parameter  real P = 1.27e-05 ;
+parameter  real D = 0.5 ;
+parameter  real Von = 5 ;
+analog begin
+end
+endmodule

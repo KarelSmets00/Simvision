@@ -10,6 +10,8 @@
 * Pspice Models are provided "AS IS, WITH NO WARRANTY OF ANY KIND" 
 *////////////////////////////////////////////////////////////////////
 *LMV7219 7nsec 2.7 to 5V Comparator with Rail-to-Rail Output
+simulator lang = pspice
+
 * PINOUT ORDER   +IN -IN VCC VSS OUT
 .SUBCKT LMV7219   22  6   1   2  18
 R1 1 3 10.0E6
@@ -103,4 +105,4 @@ RD2 41 0 1.0E18
 + VTO=-1.0 IS=1.0E-14 FC=0.5 MJ=0.5 MJSW=0.5 PB=0.8
 + PHI=0.6 TOX=1.0E-7 UO=600.0 TPG=1 AF=1
 .ENDS
-
+

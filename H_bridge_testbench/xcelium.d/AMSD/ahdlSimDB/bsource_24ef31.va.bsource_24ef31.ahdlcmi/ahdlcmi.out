@@ -1,0 +1,104 @@
+ahdlcmicompile: Compiling ahdlcmi in xcelium.d/AMSD/ahdlSimDB/bsource_24ef31.va.bsource_24ef31.ahdlcmi/Linux-64/ for Linux-64 with optimize using gcc on Sat Nov 21 20:32:39 CET 2020 [5.0]
+ahdlcmicompile: Generating makefile
+PATH:  /esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/usr/lib64/qt-3.3/bin:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/freeware/bin/gnu-tools:/freeware/bin:/software/bin:/esat/micas-data/software/Cadence/xcelium_19.03/bin:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin:/esat/micas-data/software/Cadence/xcelium_19.03/tools/cdsgcc/gcc/bin:/esat/micas-data/software/Cadence/spectre_19.10/bin
+LD_LIBRARY_PATH:  /esat/micas-data/software/Cadence/xcelium_19.03/tools/lib/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/lib/64bit/SuSE:/esat/micas-data/software/Cadence/xcelium_19.03/tools/lib/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/lib/64bit/SuSE:/esat/micas-data/software/Cadence/xcelium_19.03/tools/lib/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/lib/64bit/SuSE:/esat/micas-data/software/Cadence/xcelium_19.03/tools/lib/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/lib/64bit/SuSE:/esat/micas-data/software/Cadence/xcelium_19.03/tools/lib/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/lib/64bit/SuSE:/esat/micas-data/software/Cadence/xcelium_19.03/tools/lib/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/lib/64bit/SuSE
+/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/ahdlcmi/bin/gnumake -j18 -f GNUmakefile
+Cleaning ./obj/optimize/5.0
+rm -f -rf ./obj/optimize/5.0
+Compiling C file bsource_24ef31.c (optimize)
+/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/cdsgcc/gcc/6.3/bin/gcc  -march=k8 -ffast-math  -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/ahdlcmi/include -c bsource_24ef31.c -o obj/optimize/5.0/bsource_24ef31.o || rm -f -f obj/optimize/5.0/bsource_24ef31.o
+<stdin>: In function 'bsource_24ef31_DcFuncDerLoad':
+<stdin>:123:70: warning: passing argument 2 of 'bsource_24ef31_userFn_psp_limit_der_100' from incompatible pointer type [-Wincompatible-pointer-types]
+<stdin>:100:265: note: expected 'struct bsource_24ef31InstData *' but argument is of type 'char *'
+<stdin>:147:68: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [-Wint-conversion]
+In file included from <stdin>:24:0:
+/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2141:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+<stdin>:148:68: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [-Wint-conversion]
+In file included from <stdin>:24:0:
+/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2141:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+<stdin>: In function 'bsource_24ef31_DcFuncLoad':
+<stdin>:171:66: warning: passing argument 2 of 'bsource_24ef31_userFn_psp_limit_000' from incompatible pointer type [-Wincompatible-pointer-types]
+<stdin>:100:52: note: expected 'struct bsource_24ef31InstData *' but argument is of type 'char *'
+<stdin>: In function 'bsource_24ef31_AcLoad':
+<stdin>:217:71: warning: passing argument 2 of 'bsource_24ef31_userFn_psp_limit_der_100' from incompatible pointer type [-Wincompatible-pointer-types]
+<stdin>:100:265: note: expected 'struct bsource_24ef31InstData *' but argument is of type 'char *'
+<stdin>: In function 'bsource_24ef31_TranFuncDerLoad':
+<stdin>:344:71: warning: passing argument 2 of 'bsource_24ef31_userFn_psp_limit_der_100' from incompatible pointer type [-Wincompatible-pointer-types]
+<stdin>:100:265: note: expected 'struct bsource_24ef31InstData *' but argument is of type 'char *'
+<stdin>:381:68: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [-Wint-conversion]
+In file included from <stdin>:24:0:
+/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2141:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+<stdin>:382:68: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [-Wint-conversion]
+In file included from <stdin>:24:0:
+/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2141:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+<stdin>: In function 'bsource_24ef31_TranFuncLoad':
+<stdin>:406:67: warning: passing argument 2 of 'bsource_24ef31_userFn_psp_limit_000' from incompatible pointer type [-Wincompatible-pointer-types]
+<stdin>:100:52: note: expected 'struct bsource_24ef31InstData *' but argument is of type 'char *'
+<stdin>: In function 'bsource_24ef31_OpPointCalc':
+<stdin>:470:71: warning: passing argument 2 of 'bsource_24ef31_userFn_psp_limit_der_100' from incompatible pointer type [-Wincompatible-pointer-types]
+<stdin>:100:265: note: expected 'struct bsource_24ef31InstData *' but argument is of type 'char *'
+<stdin>:497:71: warning: passing argument 2 of 'bsource_24ef31_userFn_psp_limit_der_100' from incompatible pointer type [-Wincompatible-pointer-types]
+<stdin>:100:265: note: expected 'struct bsource_24ef31InstData *' but argument is of type 'char *'
+<stdin>: In function 'bsource_24ef31_pGetInstanceParams':
+<stdin>:1367:1602: warning: implicit declaration of function 'devGetInstKnotStatus' [-Wimplicit-function-declaration]
+<stdin>: In function 'bsource_24ef31_pDC_Load':
+<stdin>:1384:2986: warning: passing argument 1 of 'aslDevFillZeorDiagonalElemet' makes pointer from integer without a cast [-Wint-conversion]
+In file included from <stdin>:24:0:
+/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2685:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern void aslDevFillZeorDiagonalElemet( void *, int, unsigned int, struct ahdlFuncModeParam * );
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<stdin>: In function 'bsource_24ef31_pCompare':
+<stdin>:1423:959: warning: implicit declaration of function 'spReplaceMatrixPointer' [-Wimplicit-function-declaration]
+<stdin>:1423:1525: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+<stdin>:1423:1605: warning: passing argument 1 of 'memcpy' makes pointer from integer without a cast [-Wint-conversion]
+In file included from /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/ahdlcmi/include/ahdlPiCmi.h:5:0,
+                 from /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:83,
+                 from <stdin>:24:
+/usr/include/string.h:42:14: note: expected 'void * restrict' but argument is of type 'long int'
+ extern void *memcpy (void *__restrict __dest, const void *__restrict __src,
+              ^~~~~~
+<stdin>:1423:1640: warning: passing argument 2 of 'memcpy' makes pointer from integer without a cast [-Wint-conversion]
+In file included from /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/ahdlcmi/include/ahdlPiCmi.h:5:0,
+                 from /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:83,
+                 from <stdin>:24:
+/usr/include/string.h:42:14: note: expected 'const void * restrict' but argument is of type 'long int'
+ extern void *memcpy (void *__restrict __dest, const void *__restrict __src,
+              ^~~~~~
+<stdin>:1423:1767: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+<stdin>: In function 'bsource_24ef31_pGetMatrixPointers':
+<stdin>:1429:2415: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+<stdin>: In function 'bsource_24ef31_pAnalTranLoad':
+<stdin>:1456:3937: warning: passing argument 1 of 'aslDevFillZeorDiagonalElemet' makes pointer from integer without a cast [-Wint-conversion]
+In file included from <stdin>:24:0:
+/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2685:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern void aslDevFillZeorDiagonalElemet( void *, int, unsigned int, struct ahdlFuncModeParam * );
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<stdin>: In function 'bsource_24ef31_pSaveRestart':
+<stdin>:1482:1960: warning: implicit declaration of function 'pklAccessDouble' [-Wimplicit-function-declaration]
+<stdin>:1482:2038: warning: passing argument 2 of 'aslDevAvarSR' from incompatible pointer type [-Wincompatible-pointer-types]
+In file included from <stdin>:24:0:
+/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:1218:39: note: expected 'struct ahdlAnalogVar *' but argument is of type 'char *'
+ ASL_FUNC_DECL_START extern PklError_e aslDevAvarSR( int, struct ahdlAnalogVar *, char *, char *, char *, PklJar_t * );
+                                       ^~~~~~~~~~~~
+<stdin>: In function 'bsource_24ef31_pSaveRestartInst':
+<stdin>:1485:1954: warning: passing argument 2 of 'aslDevAvarSR' from incompatible pointer type [-Wincompatible-pointer-types]
+In file included from <stdin>:24:0:
+/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:1218:39: note: expected 'struct ahdlAnalogVar *' but argument is of type 'char *'
+ ASL_FUNC_DECL_START extern PklError_e aslDevAvarSR( int, struct ahdlAnalogVar *, char *, char *, char *, PklJar_t * );
+                                       ^~~~~~~~~~~~
+<stdin>: In function 'ahdlbsource_24ef31DescInstall':
+<stdin>:1511:1866: warning: implicit declaration of function 'descSetDeviceType' [-Wimplicit-function-declaration]
+<stdin>:1511:1994: warning: implicit declaration of function 'descSetSetContrInfoPtr' [-Wimplicit-function-declaration]
+<stdin>:1511:2389: warning: implicit declaration of function 'descSetCopySignals' [-Wimplicit-function-declaration]
+<stdin>:1511:3919: warning: implicit declaration of function 'descSetGetNodeNamesForBranch' [-Wimplicit-function-declaration]
+rm -f -rf bsource_24ef31.c
+/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/cdsgcc/gcc/6.3/bin/gcc -shared -O3 -m64 -fPIC -o obj/optimize/5.0/libahdlcmi_bsource_24ef31.so ./obj/optimize/5.0/bsource_24ef31.o  -Wl,-rpath,/usr/lib -Wl,-rpath,/lib -s 
+rm -f -f ./obj/optimize/5.0/bsource_24ef31.o 

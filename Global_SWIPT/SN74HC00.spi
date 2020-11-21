@@ -32,7 +32,7 @@
 **
 ********************************************************************************
 *                                 SN74HC00
- 
+simulator lang = pspice
  
 .SUBCKT SN74HC00 Y A B VCC AGND
 XU1 Y A B VCC AGND LOGIC_GATE_2PIN_OD_LVC_2i_NAND_PP_CMOS_SN74HC00 

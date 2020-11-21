@@ -1,0 +1,18 @@
+simulator lang = spice
+.SUBCKT ANALOG_NETWORK 
+.option post=1
+
+.param P=0.0127m
+.param D=0.5
+.param Von=5
+
+V1 G1 0 PULSE(0 Von 0 0.1f 0.1f P*D P*2)
+V2 G2 0 PULSE(0 Von P 0.1f 0.1f P*D P*2)
+E1 G3 N001 G1 0 -1
+E2 G4 N002 G2 0 -1
+V3 N001 0 Von
+V4 N002 0 Von
+
+.ENDS
+
+simulator lang = spectre

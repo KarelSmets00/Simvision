@@ -1,5 +1,5 @@
 1605965367 /users/students/r0761743/Eagle/Simvision/Global_SWIPT/amsSim.scs
-1605975129 /users/students/r0761743/Eagle/Simvision/Global_SWIPT/ANALOG_NETWORK.spi
+1605978538 /users/students/r0761743/Eagle/Simvision/Global_SWIPT/ANALOG_NETWORK.spi
 1605965367 /users/students/r0761743/Eagle/Simvision/Global_SWIPT/OPA2344.spi
 1605972880 /users/students/r0761743/Eagle/Simvision/Global_SWIPT/LM7812.spi
 1605971589 /users/students/r0761743/Eagle/Simvision/Global_SWIPT/DI_10A01.spi

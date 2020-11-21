@@ -11,9 +11,9 @@ simulator lang = spice
 .param RR1=0.15326 RR2=0.75095 RR3=0.75095 RR4=0.15326
 .param CC1=2.757e-07 CC2=1.5837e-08 CC3=1.5837e-08 CC4=2.757e-07
 
-.param P=0.01m
+.param P=0.0127m
 .param D=0.5
-.param Von=3.3
+.param Von=5
 
 .param Rm=100
 
@@ -39,12 +39,12 @@ XX5 N013 0 Iadc 5Vtx Ref 0 dc_current
 V2 Vbatt 0 11
 XX6 Vbatt 5Vtx 0 dc_supply5v0
 XX7 N004 N010 N005 N008 link_optimized
-XX8 N003 N007 N009 N012 pwm_sourcev2 params: D=0.5,P=0.0127m,Von=5
+XX8 N003 N007 N009 N012 pwm_sourcev2
 XX3 N010 N011 Ref 0 5Vtx +Iac -Iac current_sensorv3
 XX9 Vdc 5Vrx 0 dc_supply5v0
 D1 N006 Vdc DI_10A01
 C1 Vdc 0 100u
-XX11 5Vrx 0 N006 Freq\ Freq freq_detect
+*XX11 5Vrx 0 N006 Freq\ Freq freq_detect
 
 
 .SUBCKT full_bridge_rect ACL ACN V+ V-
@@ -135,12 +135,12 @@ K24 L2 L4 k24
 .ENDS
 
 .SUBCKT pwm_sourcev2 G1 G2 G3 G4
-V1 G1 0 PULSE(0 {Von} 0 0 0 {P*D} {P*2})
-V2 G2 0 PULSE(0 {Von} {P} 0 0 {P*D} {P*2})
+V1 G1 0 PULSE(0 Von 0 0 0 P*D P*2)
+V2 G2 0 PULSE(0 Von P 0 0 P*D P*2)
 E1 G3 N001 G1 0 -1
 E2 G4 N002 G2 0 -1
-V3 N001 0 {Von}
-V4 N002 0 {Von}
+V3 N001 0 Von
+V4 N002 0 Von
 .ENDS
 
 .SUBCKT current_sensorv3 Cin Cout INmax Agnd Vcc ADC+ ADC-
@@ -160,14 +160,15 @@ D4 Agnd ADC- BAT48
 .include ST_BAT48.spi
 .ENDS
 
-.SUBCKT freq_detect Vcc COMM In+ Out\ Out
-R1 In+ N001 10k
-R2 N001 COMM 1k
-XU1 N001 COMM Vcc COMM Out\ LMV7219
-XU2 Out Out\ Out\ Vcc COMM SN74HC00
-.include LMV7219.spi
-.include SN74HC00.spi
-.ENDS
+*.SUBCKT freq_detect Vcc COMM In+ Out\ Out
+*R1 In+ N001 10k
+*R2 N001 COMM 1k
+*XU1 N001 COMM Vcc COMM Out/ LMV7219
+*XU2 Out Out/ Out/ Vcc COMM SN74HC00
+*.include LMV7219.spi
+*.include SN74HC00.spi
+*.ENDS
+* Problems here with simulating the digital ic in an analog network
 
 
 .ENDS

@@ -1,0 +1,4 @@
+SOFTINCLUDE /esat/micas-data/software/Cadence/xcelium_19.03/tools/inca/files/IEEE_vhdlams/cds.lib
+include ../../../../../../../cds.lib
+define worklib ../worklib
+define vhdlspice_skeletons ../vhdlspice_skeletons
