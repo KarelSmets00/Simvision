@@ -1,0 +1,83 @@
+ahdlcmicompile: Compiling ahdlcmi in xcelium.d/AMSD/ahdlSimDB/bsource_7c0768.va.bsource_7c0768.ahdlcmi/Linux-64/ for Linux-64 with optimize using gcc on Sat Nov 21 17:12:58 CET 2020 [5.0]
+ahdlcmicompile: Generating makefile
+PATH:  /esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin/64bit:/usr/lib64/qt-3.3/bin:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/freeware/bin/gnu-tools:/freeware/bin:/software/bin:/esat/micas-data/software/Cadence/xcelium_19.03/bin:/esat/micas-data/software/Cadence/xcelium_19.03/tools/bin:/esat/micas-data/software/Cadence/xcelium_19.03/tools/cdsgcc/gcc/bin:/esat/micas-data/software/Cadence/spectre_19.10/bin
+LD_LIBRARY_PATH:  /esat/micas-data/software/Cadence/xcelium_19.03/tools/lib/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/lib/64bit/SuSE:/esat/micas-data/software/Cadence/xcelium_19.03/tools/lib/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/lib/64bit/SuSE:/esat/micas-data/software/Cadence/xcelium_19.03/tools/lib/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/lib/64bit/SuSE:/esat/micas-data/software/Cadence/xcelium_19.03/tools/lib/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/lib/64bit/SuSE:/esat/micas-data/software/Cadence/xcelium_19.03/tools/lib/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/lib/64bit/SuSE:/esat/micas-data/software/Cadence/xcelium_19.03/tools/lib/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/lib/64bit/SuSE:/esat/micas-data/software/Cadence/xcelium_19.03/tools/lib/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/lib/64bit/SuSE:/esat/micas-data/software/Cadence/xcelium_19.03/tools/lib/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/lib/64bit/SuSE:/esat/micas-data/software/Cadence/xcelium_19.03/tools/lib/64bit:/esat/micas-data/software/Cadence/xcelium_19.03/tools/lib/64bit/SuSE
+/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/ahdlcmi/bin/gnumake -j18 -f GNUmakefile
+Cleaning ./obj/optimize/5.0
+rm -f -rf ./obj/optimize/5.0
+Compiling C file bsource_7c0768.c (optimize)
+/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/cdsgcc/gcc/6.3/bin/gcc  -march=k8 -ffast-math  -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/ahdlcmi/include -c bsource_7c0768.c -o obj/optimize/5.0/bsource_7c0768.o || rm -f -f obj/optimize/5.0/bsource_7c0768.o
+<stdin>: In function 'bsource_7c0768_DcFuncDerLoad':
+<stdin>:127:70: warning: passing argument 2 of 'bsource_7c0768_userFn_psp_limit_der_100' from incompatible pointer type [-Wincompatible-pointer-types]
+<stdin>:104:265: note: expected 'struct bsource_7c0768InstData *' but argument is of type 'char *'
+<stdin>: In function 'bsource_7c0768_DcFuncLoad':
+<stdin>:184:66: warning: passing argument 2 of 'bsource_7c0768_userFn_psp_limit_000' from incompatible pointer type [-Wincompatible-pointer-types]
+<stdin>:104:52: note: expected 'struct bsource_7c0768InstData *' but argument is of type 'char *'
+<stdin>: In function 'bsource_7c0768_AcLoad':
+<stdin>:237:71: warning: passing argument 2 of 'bsource_7c0768_userFn_psp_limit_der_100' from incompatible pointer type [-Wincompatible-pointer-types]
+<stdin>:104:265: note: expected 'struct bsource_7c0768InstData *' but argument is of type 'char *'
+<stdin>: In function 'bsource_7c0768_TranFuncDerLoad':
+<stdin>:373:71: warning: passing argument 2 of 'bsource_7c0768_userFn_psp_limit_der_100' from incompatible pointer type [-Wincompatible-pointer-types]
+<stdin>:104:265: note: expected 'struct bsource_7c0768InstData *' but argument is of type 'char *'
+<stdin>: In function 'bsource_7c0768_TranFuncLoad':
+<stdin>:466:67: warning: passing argument 2 of 'bsource_7c0768_userFn_psp_limit_000' from incompatible pointer type [-Wincompatible-pointer-types]
+<stdin>:104:52: note: expected 'struct bsource_7c0768InstData *' but argument is of type 'char *'
+<stdin>: In function 'bsource_7c0768_OpPointCalc':
+<stdin>:540:71: warning: passing argument 2 of 'bsource_7c0768_userFn_psp_limit_der_100' from incompatible pointer type [-Wincompatible-pointer-types]
+<stdin>:104:265: note: expected 'struct bsource_7c0768InstData *' but argument is of type 'char *'
+<stdin>:570:71: warning: passing argument 2 of 'bsource_7c0768_userFn_psp_limit_der_100' from incompatible pointer type [-Wincompatible-pointer-types]
+<stdin>:104:265: note: expected 'struct bsource_7c0768InstData *' but argument is of type 'char *'
+<stdin>: In function 'bsource_7c0768_pGetInstanceParams':
+<stdin>:1496:1604: warning: implicit declaration of function 'devGetInstKnotStatus' [-Wimplicit-function-declaration]
+<stdin>: In function 'bsource_7c0768_pDC_Load':
+<stdin>:1513:2986: warning: passing argument 1 of 'aslDevFillZeorDiagonalElemet' makes pointer from integer without a cast [-Wint-conversion]
+In file included from <stdin>:24:0:
+/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2685:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern void aslDevFillZeorDiagonalElemet( void *, int, unsigned int, struct ahdlFuncModeParam * );
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<stdin>: In function 'bsource_7c0768_pCompare':
+<stdin>:1552:1205: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+<stdin>:1552:1285: warning: passing argument 1 of 'memcpy' makes pointer from integer without a cast [-Wint-conversion]
+In file included from /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/ahdlcmi/include/ahdlPiCmi.h:5:0,
+                 from /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:83,
+                 from <stdin>:24:
+/usr/include/string.h:42:14: note: expected 'void * restrict' but argument is of type 'long int'
+ extern void *memcpy (void *__restrict __dest, const void *__restrict __src,
+              ^~~~~~
+<stdin>:1552:1320: warning: passing argument 2 of 'memcpy' makes pointer from integer without a cast [-Wint-conversion]
+In file included from /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/ahdlcmi/include/ahdlPiCmi.h:5:0,
+                 from /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:83,
+                 from <stdin>:24:
+/usr/include/string.h:42:14: note: expected 'const void * restrict' but argument is of type 'long int'
+ extern void *memcpy (void *__restrict __dest, const void *__restrict __src,
+              ^~~~~~
+<stdin>:1552:1447: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+<stdin>: In function 'bsource_7c0768_pGetMatrixPointers':
+<stdin>:1558:2416: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+<stdin>: In function 'bsource_7c0768_pAnalTranLoad':
+<stdin>:1585:3937: warning: passing argument 1 of 'aslDevFillZeorDiagonalElemet' makes pointer from integer without a cast [-Wint-conversion]
+In file included from <stdin>:24:0:
+/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2685:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern void aslDevFillZeorDiagonalElemet( void *, int, unsigned int, struct ahdlFuncModeParam * );
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<stdin>: In function 'bsource_7c0768_pSaveRestart':
+<stdin>:1611:1961: warning: implicit declaration of function 'pklAccessDouble' [-Wimplicit-function-declaration]
+<stdin>:1611:2039: warning: passing argument 2 of 'aslDevAvarSR' from incompatible pointer type [-Wincompatible-pointer-types]
+In file included from <stdin>:24:0:
+/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:1218:39: note: expected 'struct ahdlAnalogVar *' but argument is of type 'char *'
+ ASL_FUNC_DECL_START extern PklError_e aslDevAvarSR( int, struct ahdlAnalogVar *, char *, char *, char *, PklJar_t * );
+                                       ^~~~~~~~~~~~
+<stdin>: In function 'bsource_7c0768_pSaveRestartInst':
+<stdin>:1614:1955: warning: passing argument 2 of 'aslDevAvarSR' from incompatible pointer type [-Wincompatible-pointer-types]
+In file included from <stdin>:24:0:
+/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:1218:39: note: expected 'struct ahdlAnalogVar *' but argument is of type 'char *'
+ ASL_FUNC_DECL_START extern PklError_e aslDevAvarSR( int, struct ahdlAnalogVar *, char *, char *, char *, PklJar_t * );
+                                       ^~~~~~~~~~~~
+<stdin>: In function 'ahdlbsource_7c0768DescInstall':
+<stdin>:1646:1867: warning: implicit declaration of function 'descSetDeviceType' [-Wimplicit-function-declaration]
+<stdin>:1646:1995: warning: implicit declaration of function 'descSetSetContrInfoPtr' [-Wimplicit-function-declaration]
+<stdin>:1646:2390: warning: implicit declaration of function 'descSetCopySignals' [-Wimplicit-function-declaration]
+<stdin>:1646:3920: warning: implicit declaration of function 'descSetGetNodeNamesForBranch' [-Wimplicit-function-declaration]
+rm -f -rf bsource_7c0768.c
+/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/cdsgcc/gcc/6.3/bin/gcc -shared -O3 -m64 -fPIC -o obj/optimize/5.0/libahdlcmi_bsource_7c0768.so ./obj/optimize/5.0/bsource_7c0768.o  -Wl,-rpath,/usr/lib -Wl,-rpath,/lib -s 
+rm -f -f ./obj/optimize/5.0/bsource_7c0768.o 

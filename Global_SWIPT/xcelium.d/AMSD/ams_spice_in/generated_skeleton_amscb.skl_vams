@@ -10,6 +10,28 @@ module  ANALOG_NETWORK( );
 `_vspsk_ANALOG_NETWORK
 parameter  real Rled = 28.8 ;
 parameter  real Rcirc = 15 ;
+parameter  real k12 = 0.62499 ;
+parameter  real k23 = 0.10311 ;
+parameter  real k34 = 0.62499 ;
+parameter  real k13 = 0.081644 ;
+parameter  real k14 = 0.064839 ;
+parameter  real k24 = 0.081644 ;
+parameter  real LL1 = 3.6751e-05 ;
+parameter  real LL2 = 0.00063979 ;
+parameter  real LL3 = 0.00063979 ;
+parameter  real LL4 = 3.6751e-05 ;
+parameter  real R1 = 0.15326 ;
+parameter  real R2 = 0.75095 ;
+parameter  real R3 = 0.75095 ;
+parameter  real R4 = 0.15326 ;
+parameter  real C1 = 2.757e-07 ;
+parameter  real C2 = 1.5837e-08 ;
+parameter  real C3 = 1.5837e-08 ;
+parameter  real C4 = 2.757e-07 ;
+parameter  real P = 1e-05 ;
+parameter  real D = 0.5 ;
+parameter  real Von = 3.3 ;
+parameter  real Rm = 100 ;
 analog begin
 end
 endmodule

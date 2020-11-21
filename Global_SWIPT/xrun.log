@@ -1,5 +1,5 @@
 xrun(64): 19.03-s013: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	19.03-s013: Started on Nov 21, 2020 at 16:37:39 CET
+TOOL:	xrun(64)	19.03-s013: Started on Nov 21, 2020 at 17:12:15 CET
 xrun
 	./amsSim.scs
 	-spectre_args "+ms ++aps=liberal"
@@ -8,6 +8,7 @@ xrun
 	-access +rwc
 	-64bit
 	-gui
+	-s
 Recompiling... reason: unable to stat '/.//users/micas/jvanassc/Vakantie Job Bram Veraverbeke 2020/swiptmixedsignalsim/Simvision_mixed_signal/Documentation/Analog_example_circuit_blank/Testbench.v'.
 xrun: *N,SPCNTC: The program encountered one or more notices while processing the input SPICE file(s) in the AMSD flow. For details, see the following messages.
 amsspice: *Notice (amsSim.scs,29): For the 'portmap' statement, assuming
@@ -35,8 +36,8 @@ Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwi
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: r0761743   Host: vierre64-tmp3.esat.kuleuven.be   HostID: 570AAE14   PID: 18245
-Memory  available: 548.3397 MB  physical: 63.1554 GB
+User: r0761743   Host: vierre64-tmp3.esat.kuleuven.be   HostID: 570AAE14   PID: 31228
+Memory  available: 4.1656 GB  physical: 63.1554 GB
 Linux   : CentOS Linux release 7.9.2009 (Core)
 CPU Type: Intel Xeon Processor (Skylake)
 All processors running at 2194.8 MHz
@@ -51,7 +52,7 @@ All processors running at 2194.8 MHz
         7:      14, 15
         8:      16, 17
         
-System load averages (1min, 5min, 15min) : 21.8 %, 21.6 %, 21.3 %
+System load averages (1min, 5min, 15min) : 23.9 %, 25.3 %, 24.7 %
 HPC is enabled
 
 
@@ -74,6 +75,7 @@ Reading file:  /users/students/r0761743/Eagle/Simvision/Global_SWIPT/LM7812.spi
 Reading file:  /users/students/r0761743/Eagle/Simvision/Global_SWIPT/DI_10A01.spi
 Reading file:  /users/students/r0761743/Eagle/Simvision/Global_SWIPT/DI_BAV5004LP.spi
 Reading file:  /users/students/r0761743/Eagle/Simvision/Global_SWIPT/IR2110.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_SWIPT/irfs_sl7440pbf.spi
 Reading file:  /users/students/r0761743/Eagle/Simvision/Global_SWIPT/ST_BAT48.spi
 Reading file:  /users/students/r0761743/Eagle/Simvision/Global_SWIPT/ina180a1.spi
 Reading file:  /users/students/r0761743/Eagle/Simvision/Global_SWIPT/LM2575_TRANS.spi
@@ -83,38 +85,352 @@ Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spect
 
 
 Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
-Time for NDB Parsing: CPU = 233.745 ms, elapsed = 818.449 ms.
-Time accumulated: CPU = 592.781 ms, elapsed = 818.454 ms.
-Peak resident memory used = 88.6 Mbytes.
+Time for NDB Parsing: CPU = 178.356 ms, elapsed = 316.063 ms.
+Time accumulated: CPU = 441.868 ms, elapsed = 316.068 ms.
+Peak resident memory used = 89 Mbytes.
 
-
--------------------------------------
-Relinquished control to SimVision...
 xcelium> 
 xcelium> source /esat/micas-data/software/Cadence/xcelium_19.03/tools/xcelium/files/xmsimrc
+xcelium> 
+-------------------------------------
+Relinquished control to SimVision...
+# Restoring simulation environment...
+xcelium> input -quiet .reinvoke.sim
+xcelium> file delete .reinvoke.sim
 xcelium> run
 
-Error found by spectre in `h_bridge', in `worklib__ANALOG_NETWORK__spice_skeleton__0x10000001', during circuit read-in.
-    ERROR (SFE-23): "./ANALOG_NETWORK.spi" 49: The instance `XU2' is referencing an undefined model or subcircuit, `irfs_sl7440pbf'. Either include the file containing the definition of `irfs_sl7440pbf', or define `irfs_sl7440pbf' before running the simulation.
-    ERROR (SFE-23): "./ANALOG_NETWORK.spi" 50: The instance `XU3' is referencing an undefined model or subcircuit, `irfs_sl7440pbf'. Either include the file containing the definition of `irfs_sl7440pbf', or define `irfs_sl7440pbf' before running the simulation.
-    ERROR (SFE-23): "./ANALOG_NETWORK.spi" 51: The instance `XU4' is referencing an undefined model or subcircuit, `irfs_sl7440pbf'. Either include the file containing the definition of `irfs_sl7440pbf', or define `irfs_sl7440pbf' before running the simulation.
-    ERROR (SFE-23): "./ANALOG_NETWORK.spi" 52: The instance `XU5' is referencing an undefined model or subcircuit, `irfs_sl7440pbf'. Either include the file containing the definition of `irfs_sl7440pbf', or define `irfs_sl7440pbf' before running the simulation.
-Fatal error found by spectre in `link_optimized', in `worklib__ANALOG_NETWORK__spice_skeleton__0x10000001', during circuit read-in.
-    FATAL (SFE-1972): Parse error before token `[' in expression `[L1]'. If `[L1]' is a spice expression, quotes are required for the expression.
+Error found by spectre in `worklib__ANALOG_NETWORK__spice_skeleton__0x10000001', during circuit read-in.
+    ERROR (SFE-23): "./ANALOG_NETWORK.spi" 45: The instance `XX8' is referencing an undefined model or subcircuit, `params:'. Either include the file containing the definition of `params:', or define `params:' before running the simulation.
+Error found by spectre in `freq_detect', in `worklib__ANALOG_NETWORK__spice_skeleton__0x10000001', during circuit read-in.
+    ERROR (SFE-23): "./ANALOG_NETWORK.spi" 169: The instance `XU1' is referencing an undefined model or subcircuit, `Out LMV7219'. Either include the file containing the definition of `Out LMV7219', or define `Out LMV7219' before running the simulation.
+    ERROR (SFE-23): "./ANALOG_NETWORK.spi" 170: The instance `XU2' is referencing an undefined model or subcircuit, `SN74HC00'. Either include the file containing the definition of `SN74HC00', or define `SN74HC00' before running the simulation.
 
-Time for Elaboration: CPU = 885.358 ms, elapsed = 52.9286 s.
-Time accumulated: CPU = 1.47831 s, elapsed = 53.7472 s.
-Peak resident memory used = 114 Mbytes.
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/ahdl/constants.vams
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SFE-30): "./ANALOG_NETWORK.spi" 4: Parameter `post', specified for primitive `options', has been ignored because it is an invalid instance parameter. Specify a valid instance parameter and rerun the simulation. Type `spectre -h options' to get more information on valid instance parameters.
+
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+
+Warning from spectre during AHDL read-in.
+    WARNING (VACOMP-2409): "Internal (bsource)", line 484: A variable `val_if_0' in compact module `bsource_33457b' has not been assigned a value, and therefore, it has been processed as a hidden state variable. This may slow down the simulation. Assign a value to the variable before using it, or set the 'CDS_AHDL_IGNORE_HIDDEN_STATE' environment variable to YES to process all hidden state variables as non-hidden state variables for all Verilog-A modules. Alternatively, specify the (* ignore_hidden_state="all" *) attribute to process the hidden state variables as non-hidden state variables in the module.
+
+Compiling ahdlcmi module library for bsource_33457b.
+Finished compilation in 2.93 s (elapsed) for bsource_33457b.
+Installed compiled interface for bsource_33457b.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_c2f010.
+Finished compilation in 1.16 s (elapsed) for bsource_c2f010.
+Installed compiled interface for bsource_c2f010.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_cf8dca.
+Finished compilation in 1.13 s (elapsed) for bsource_cf8dca.
+Installed compiled interface for bsource_cf8dca.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_79758d.
+Finished compilation in 1.12 s (elapsed) for bsource_79758d.
+Installed compiled interface for bsource_79758d.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_1477d0.
+Finished compilation in 1.16 s (elapsed) for bsource_1477d0.
+Installed compiled interface for bsource_1477d0.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_757ee0.
+Finished compilation in 1.14 s (elapsed) for bsource_757ee0.
+Installed compiled interface for bsource_757ee0.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_7a0313.
+Finished compilation in 1.05 s (elapsed) for bsource_7a0313.
+Installed compiled interface for bsource_7a0313.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_a478ed.
+Finished compilation in 1.28 s (elapsed) for bsource_a478ed.
+Installed compiled interface for bsource_a478ed.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_b55d8c.
+Finished compilation in 1.16 s (elapsed) for bsource_b55d8c.
+Installed compiled interface for bsource_b55d8c.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_d8ebd4.
+Finished compilation in 1.11 s (elapsed) for bsource_d8ebd4.
+Installed compiled interface for bsource_d8ebd4.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_6af0da.
+Finished compilation in 1.11 s (elapsed) for bsource_6af0da.
+Installed compiled interface for bsource_6af0da.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_5e6e7d.
+Finished compilation in 1.13 s (elapsed) for bsource_5e6e7d.
+Installed compiled interface for bsource_5e6e7d.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_ddf904.
+Finished compilation in 1.11 s (elapsed) for bsource_ddf904.
+Installed compiled interface for bsource_ddf904.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_95ac49.
+Finished compilation in 1.2 s (elapsed) for bsource_95ac49.
+Installed compiled interface for bsource_95ac49.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_aafb85.
+Finished compilation in 1.21 s (elapsed) for bsource_aafb85.
+Installed compiled interface for bsource_aafb85.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_58d47b.
+Finished compilation in 1.14 s (elapsed) for bsource_58d47b.
+Installed compiled interface for bsource_58d47b.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_37ac07.
+Finished compilation in 1.06 s (elapsed) for bsource_37ac07.
+Installed compiled interface for bsource_37ac07.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_54bf5d.
+Finished compilation in 1.12 s (elapsed) for bsource_54bf5d.
+Installed compiled interface for bsource_54bf5d.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_2ad175.
+Finished compilation in 1.12 s (elapsed) for bsource_2ad175.
+Installed compiled interface for bsource_2ad175.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_307fb9.
+Finished compilation in 1.19 s (elapsed) for bsource_307fb9.
+Installed compiled interface for bsource_307fb9.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_a958ed.
+Finished compilation in 1.15 s (elapsed) for bsource_a958ed.
+Installed compiled interface for bsource_a958ed.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_356da1.
+Finished compilation in 1.19 s (elapsed) for bsource_356da1.
+Installed compiled interface for bsource_356da1.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_27a05f.
+Finished compilation in 1.11 s (elapsed) for bsource_27a05f.
+Installed compiled interface for bsource_27a05f.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_731a5a.
+Finished compilation in 1.12 s (elapsed) for bsource_731a5a.
+Installed compiled interface for bsource_731a5a.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_b315ff.
+Finished compilation in 1.14 s (elapsed) for bsource_b315ff.
+Installed compiled interface for bsource_b315ff.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_985c35.
+Finished compilation in 1.13 s (elapsed) for bsource_985c35.
+Installed compiled interface for bsource_985c35.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_44accd.
+Finished compilation in 1.11 s (elapsed) for bsource_44accd.
+Installed compiled interface for bsource_44accd.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_7c0768.
+Finished compilation in 1.31 s (elapsed) for bsource_7c0768.
+Installed compiled interface for bsource_7c0768.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_ac7ca3.
+Finished compilation in 1.17 s (elapsed) for bsource_ac7ca3.
+Installed compiled interface for bsource_ac7ca3.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_fbd78a.
+Finished compilation in 1.17 s (elapsed) for bsource_fbd78a.
+Installed compiled interface for bsource_fbd78a.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_6aeee2.
+Finished compilation in 1.11 s (elapsed) for bsource_6aeee2.
+Installed compiled interface for bsource_6aeee2.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_6ec396.
+Finished compilation in 1.19 s (elapsed) for bsource_6ec396.
+Installed compiled interface for bsource_6ec396.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_dadeae.
+Finished compilation in 1.15 s (elapsed) for bsource_dadeae.
+Installed compiled interface for bsource_dadeae.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_877579.
+Finished compilation in 1.12 s (elapsed) for bsource_877579.
+Installed compiled interface for bsource_877579.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_5391c0.
+Finished compilation in 1.15 s (elapsed) for bsource_5391c0.
+Installed compiled interface for bsource_5391c0.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_5bffa1.
+Finished compilation in 1.22 s (elapsed) for bsource_5bffa1.
+Installed compiled interface for bsource_5bffa1.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_00cd71.
+Finished compilation in 1.17 s (elapsed) for bsource_00cd71.
+Installed compiled interface for bsource_00cd71.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_a2d8a6.
+Finished compilation in 1.17 s (elapsed) for bsource_a2d8a6.
+Installed compiled interface for bsource_a2d8a6.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_9a1026.
+Finished compilation in 1.17 s (elapsed) for bsource_9a1026.
+Installed compiled interface for bsource_9a1026.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_42c163.
+Finished compilation in 1.21 s (elapsed) for bsource_42c163.
+Installed compiled interface for bsource_42c163.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_8c3711.
+Finished compilation in 1.25 s (elapsed) for bsource_8c3711.
+Installed compiled interface for bsource_8c3711.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_dc79d2.
+Finished compilation in 1.18 s (elapsed) for bsource_dc79d2.
+Installed compiled interface for bsource_dc79d2.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_316cf3.
+Finished compilation in 1.21 s (elapsed) for bsource_316cf3.
+Installed compiled interface for bsource_316cf3.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_53e90d.
+Finished compilation in 1.14 s (elapsed) for bsource_53e90d.
+Installed compiled interface for bsource_53e90d.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_5b47f0.
+Finished compilation in 1.22 s (elapsed) for bsource_5b47f0.
+Installed compiled interface for bsource_5b47f0.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_e44b9a.
+Finished compilation in 1.21 s (elapsed) for bsource_e44b9a.
+Installed compiled interface for bsource_e44b9a.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_171e0e.
+Finished compilation in 1.13 s (elapsed) for bsource_171e0e.
+Installed compiled interface for bsource_171e0e.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+
+Warning from spectre during AHDL read-in.
+    WARNING (VACOMP-2409): "Internal (bsource)", line 483: A variable `val_if_0' in compact module `bsource_795088' has not been assigned a value, and therefore, it has been processed as a hidden state variable. This may slow down the simulation. Assign a value to the variable before using it, or set the 'CDS_AHDL_IGNORE_HIDDEN_STATE' environment variable to YES to process all hidden state variables as non-hidden state variables for all Verilog-A modules. Alternatively, specify the (* ignore_hidden_state="all" *) attribute to process the hidden state variables as non-hidden state variables in the module.
+
+Compiling ahdlcmi module library for bsource_795088.
+Finished compilation in 1.23 s (elapsed) for bsource_795088.
+Installed compiled interface for bsource_795088.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+
+Warning from spectre during AHDL read-in.
+    WARNING (VACOMP-2409): "Internal (bsource)", line 483: A variable `val_if_0' in compact module `bsource_44c6fc' has not been assigned a value, and therefore, it has been processed as a hidden state variable. This may slow down the simulation. Assign a value to the variable before using it, or set the 'CDS_AHDL_IGNORE_HIDDEN_STATE' environment variable to YES to process all hidden state variables as non-hidden state variables for all Verilog-A modules. Alternatively, specify the (* ignore_hidden_state="all" *) attribute to process the hidden state variables as non-hidden state variables in the module.
+
+Compiling ahdlcmi module library for bsource_44c6fc.
+Finished compilation in 1.26 s (elapsed) for bsource_44c6fc.
+Installed compiled interface for bsource_44c6fc.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_c228a7.
+Finished compilation in 1.2 s (elapsed) for bsource_c228a7.
+Installed compiled interface for bsource_c228a7.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+
+Warning from spectre during AHDL read-in.
+    WARNING (VACOMP-2409): "Internal (bsource)", line 483: A variable `val_if_0' in compact module `bsource_ac1afe' has not been assigned a value, and therefore, it has been processed as a hidden state variable. This may slow down the simulation. Assign a value to the variable before using it, or set the 'CDS_AHDL_IGNORE_HIDDEN_STATE' environment variable to YES to process all hidden state variables as non-hidden state variables for all Verilog-A modules. Alternatively, specify the (* ignore_hidden_state="all" *) attribute to process the hidden state variables as non-hidden state variables in the module.
+    WARNING (VACOMP-2409): "Internal (bsource)", line 484: A variable `val_if_1' in compact module `bsource_ac1afe' has not been assigned a value, and therefore, it has been processed as a hidden state variable. This may slow down the simulation. Assign a value to the variable before using it, or set the 'CDS_AHDL_IGNORE_HIDDEN_STATE' environment variable to YES to process all hidden state variables as non-hidden state variables for all Verilog-A modules. Alternatively, specify the (* ignore_hidden_state="all" *) attribute to process the hidden state variables as non-hidden state variables in the module.
+        Further occurrences of this warning will be suppressed.
+
+Compiling ahdlcmi module library for bsource_ac1afe.
+Finished compilation in 1.25 s (elapsed) for bsource_ac1afe.
+Installed compiled interface for bsource_ac1afe.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_19a18d.
+Finished compilation in 1.2 s (elapsed) for bsource_19a18d.
+Installed compiled interface for bsource_19a18d.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_ea5b02.
+Finished compilation in 1.26 s (elapsed) for bsource_ea5b02.
+Installed compiled interface for bsource_ea5b02.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_24ef31.
+Finished compilation in 1.17 s (elapsed) for bsource_24ef31.
+Installed compiled interface for bsource_24ef31.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_fd601a.
+Finished compilation in 1.21 s (elapsed) for bsource_fd601a.
+Installed compiled interface for bsource_fd601a.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_412c9a.
+Finished compilation in 1.19 s (elapsed) for bsource_412c9a.
+Installed compiled interface for bsource_412c9a.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_de7abb.
+Finished compilation in 1.19 s (elapsed) for bsource_de7abb.
+Installed compiled interface for bsource_de7abb.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_5a0527.
+Finished compilation in 1.15 s (elapsed) for bsource_5a0527.
+Installed compiled interface for bsource_5a0527.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_a92d86.
+Finished compilation in 1.35 s (elapsed) for bsource_a92d86.
+Installed compiled interface for bsource_a92d86.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_361a03.
+Finished compilation in 1.19 s (elapsed) for bsource_361a03.
+Installed compiled interface for bsource_361a03.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_8992bd.
+Finished compilation in 1.25 s (elapsed) for bsource_8992bd.
+Installed compiled interface for bsource_8992bd.
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Compiling ahdlcmi module library for bsource_8ad395.
+Finished compilation in 1.22 s (elapsed) for bsource_8ad395.
+Installed compiled interface for bsource_8ad395.
+
+Error found by spectre in `worklib__ANALOG_NETWORK__spice_skeleton__0x10000001':`toplevel.analog_network_inst', in `worklib__toplevel__v':`toplevel', during hierarchy flattening.
+    ERROR (SFE-1997): "./ANALOG_NETWORK.spi" 28: toplevel.analog_network_inst.RLED_WALL: parameter `r': Cannot run the simulation because an unknown parameter `[Rled]' has been specified in expression `\[Rled\]'. Correct the expression and rerun the simulation.
+        
+    ERROR (SFE-1997): "./ANALOG_NETWORK.spi" 31: toplevel.analog_network_inst.RCirc: parameter `r': Cannot run the simulation because an unknown parameter `[Rcirc]' has been specified in expression `\[Rcirc\]'. Correct the expression and rerun the simulation.
+        
+Error found by spectre in `toplevel.analog_network_inst.link_optimized':`toplevel.analog_network_inst.XX7', in `worklib__ANALOG_NETWORK__spice_skeleton__0x10000001':`toplevel.analog_network_inst', in `worklib__toplevel__v':`toplevel', during hierarchy flattening.
+    ERROR (SFE-1997): "./ANALOG_NETWORK.spi" 121: toplevel.analog_network_inst.XX7.C1: parameter `c': Cannot run the simulation because an unknown parameter `[C2]' has been specified in expression `\[C2\]'. Correct the expression and rerun the simulation.
+        
+    ERROR (SFE-1997): "./ANALOG_NETWORK.spi" 122: toplevel.analog_network_inst.XX7.C2: parameter `c': Cannot run the simulation because an unknown parameter `[C3]' has been specified in expression `\[C3\]'. Correct the expression and rerun the simulation.
+        
+    ERROR (SFE-1997): "./ANALOG_NETWORK.spi" 123: toplevel.analog_network_inst.XX7.R1: parameter `r': Cannot run the simulation because an unknown parameter `[R2]' has been specified in expression `\[R2\]'. Correct the expression and rerun the simulation.
+        
+    ERROR (SFE-1997): "./ANALOG_NETWORK.spi" 124: toplevel.analog_network_inst.XX7.R2: parameter `r': Cannot run the simulation because an unknown parameter `[R3]' has been specified in expression `\[R3\]'. Correct the expression and rerun the simulation.
+        
+    ERROR (SFE-1997): "./ANALOG_NETWORK.spi" 125: toplevel.analog_network_inst.XX7.C3: parameter `c': Cannot run the simulation because an unknown parameter `[C4]' has been specified in expression `\[C4\]'. Correct the expression and rerun the simulation.
+        
+    ERROR (SFE-1997): "./ANALOG_NETWORK.spi" 126: toplevel.analog_network_inst.XX7.C4: parameter `c': Cannot run the simulation because an unknown parameter `[C1]' has been specified in expression `\[C1\]'. Correct the expression and rerun the simulation.
+        
+    ERROR (SFE-1997): "./ANALOG_NETWORK.spi" 127: toplevel.analog_network_inst.XX7.R3: parameter `r': Cannot run the simulation because an unknown parameter `[R1]' has been specified in expression `\[R1\]'. Correct the expression and rerun the simulation.
+        
+    ERROR (SFE-1997): "./ANALOG_NETWORK.spi" 128: toplevel.analog_network_inst.XX7.R4: parameter `r': Cannot run the simulation because an unknown parameter `[R4]' has been specified in expression `\[R4\]'. Correct the expression and rerun the simulation.
+        
+    ERROR (SFE-1997): "./ANALOG_NETWORK.spi" 132: toplevel.analog_network_inst.XX7.K12: parameter `coupling': Cannot run the simulation because an unknown parameter `[k12]' has been specified in expression `\[k12\]'. Correct the expression and rerun the simulation.
+        
+    ERROR (SFE-1997): "./ANALOG_NETWORK.spi" 133: toplevel.analog_network_inst.XX7.K23: parameter `coupling': Cannot run the simulation because an unknown parameter `[k23]' has been specified in expression `\[k23\]'. Correct the expression and rerun the simulation.
+        
+    ERROR (SFE-1997): "./ANALOG_NETWORK.spi" 134: toplevel.analog_network_inst.XX7.K34: parameter `coupling': Cannot run the simulation because an unknown parameter `[k34]' has been specified in expression `\[k34\]'. Correct the expression and rerun the simulation.
+        
+    ERROR (SFE-1997): "./ANALOG_NETWORK.spi" 135: toplevel.analog_network_inst.XX7.K14: parameter `coupling': Cannot run the simulation because an unknown parameter `[k14]' has been specified in expression `\[k14\]'. Correct the expression and rerun the simulation.
+        
+    ERROR (SFE-1997): "./ANALOG_NETWORK.spi" 136: toplevel.analog_network_inst.XX7.K13: parameter `coupling': Cannot run the simulation because an unknown parameter `[k13]' has been specified in expression `\[k13\]'. Correct the expression and rerun the simulation.
+        
+    ERROR (SFE-1997): "./ANALOG_NETWORK.spi" 137: toplevel.analog_network_inst.XX7.K24: parameter `coupling': Cannot run the simulation because an unknown parameter `[k24]' has been specified in expression `\[k24\]'. Correct the expression and rerun the simulation.
+        
+Error found by spectre in `toplevel.analog_network_inst.current_sensorv3':`toplevel.analog_network_inst.XX3', in `worklib__ANALOG_NETWORK__spice_skeleton__0x10000001':`toplevel.analog_network_inst', in `worklib__toplevel__v':`toplevel', during hierarchy flattening.
+    ERROR (SFE-1997): "./ANALOG_NETWORK.spi" 150: toplevel.analog_network_inst.XX3.F1: parameter `gain': Cannot run the simulation because an unknown parameter `Rm]' has been specified in expression `\[1/Rm\]'. Correct the expression and rerun the simulation.
+        
+
+Time for Elaboration: CPU = 1.60161 s, elapsed = 80.9278 s (1m  20.9s).
+Time accumulated: CPU = 2.04366 s, elapsed = 81.244 s (1m  21.2s).
+Peak resident memory used = 129 Mbytes.
 
 
-Aggregate audit (4:38:44 PM, Sat Nov 21, 2020):
-Time used: CPU = 1.48 s, elapsed = 53.7 s, util. = 2.75%.
-Time spent in licensing: elapsed = 15.4 ms.
-Peak memory used = 114 Mbytes.
-Simulation started at: 4:37:50 PM, Sat Nov 21, 2020, ended at: 4:38:44 PM, Sat Nov 21, 2020, with elapsed time (wall clock): 53.7 s.
-spectre completes with 5 errors, 0 warnings, and 1 notice.
+Aggregate audit (5:13:42 PM, Sat Nov 21, 2020):
+Time used: CPU = 2.04 s, elapsed = 81.2 s (1m  21.2s), util. = 2.52%.
+Time spent in licensing: elapsed = 14.6 ms.
+Peak memory used = 129 Mbytes.
+Simulation started at: 5:12:20 PM, Sat Nov 21, 2020, ended at: 5:13:42 PM, Sat Nov 21, 2020, with elapsed time (wall clock): 81.2 s (1m  21.2s).
+spectre completes with 20 errors, 17 warnings, and 1 notice.
 spectre terminated prematurely due to fatal error.
 xmsim: *E,RNALER: Simulation terminated due to analog error.
-Memory Usage - Current physical: 113.7M, Current virtual: 796.2M
-CPU Usage - 0.6s system + 0.6s user = 1.2s total (2.1% cpu)
+Memory Usage - Current physical: 129.3M, Current virtual: 935.9M
+CPU Usage - 0.3s system + 1.6s user = 1.9s total (2.3% cpu)
 xcelium> 

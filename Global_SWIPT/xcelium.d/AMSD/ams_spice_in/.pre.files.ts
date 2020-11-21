@@ -1,10 +1,11 @@
 1605965367 /users/students/r0761743/Eagle/Simvision/Global_SWIPT/amsSim.scs
-1605971876 /users/students/r0761743/Eagle/Simvision/Global_SWIPT/ANALOG_NETWORK.spi
+1605975129 /users/students/r0761743/Eagle/Simvision/Global_SWIPT/ANALOG_NETWORK.spi
 1605965367 /users/students/r0761743/Eagle/Simvision/Global_SWIPT/OPA2344.spi
 1605972880 /users/students/r0761743/Eagle/Simvision/Global_SWIPT/LM7812.spi
 1605971589 /users/students/r0761743/Eagle/Simvision/Global_SWIPT/DI_10A01.spi
 1605965366 /users/students/r0761743/Eagle/Simvision/Global_SWIPT/DI_BAV5004LP.spi
 1605965366 /users/students/r0761743/Eagle/Simvision/Global_SWIPT/IR2110.spi
+1605974311 /users/students/r0761743/Eagle/Simvision/Global_SWIPT/irfs_sl7440pbf.spi
 1605971120 /users/students/r0761743/Eagle/Simvision/Global_SWIPT/ST_BAT48.spi
 1605972695 /users/students/r0761743/Eagle/Simvision/Global_SWIPT/ina180a1.spi
 1605972847 /users/students/r0761743/Eagle/Simvision/Global_SWIPT/LM2575_TRANS.spi
