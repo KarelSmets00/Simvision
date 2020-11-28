@@ -1,4 +1,7 @@
 simulator lang = spice
+
+.param Vbat = 11
+
 .SUBCKT ANALOG_NETWORK 
 .option post=1
 
@@ -14,15 +17,28 @@ simulator lang = spice
 .include DI_10A01.spi
 .include LM7812.spi
 
+
 VSS vss 0 0
+
+*monitor parameters
+PVB pVbat vss Vbat
+
 *Transmitter
 
-VBAT vcc vss 11
+VBAT vcc vss Vbat
 VL vl vss 5
 XX1 G1 G2 G3 G4 PWM_source
 XX2 vl vss G1 G2 vss vcc vss ACL ACN G3 G4 h_bridge
 *Link
 XX3 ACL ACN vrxp vrxn link_optimized
+*here sim of analog sup
+VANA 3v3 vss 3.3
+VREF Vref vss 0.9
+*end sim of analog sup
+*XX6 3v3 3v3 vss Vref reference
+XX7 ADCV vcc vss 3v3 Vref dc_voltage
+RADCV ADCV vss 1Meg
+
 *Receiver
 XX4 vrxp vrxn vhalf vss full_bridge_rect
 D1 vhalf vdc DI_10A01
@@ -34,7 +50,15 @@ XX5 vdc vss 12v LM7812
 C2 12v vss 10u
 RLED 12v vss 29
 
+
 *transmitter
+.SUBCKT reference Vdiv Vcc COMM Vref
+R1 Vdiv +IN 2.4k
+R2 +IN COMM 1k
+XU1 +IN OUT Vcc COMM OUT OPA2344
+.include OPA2344.spi
+.ENDS
+
 
 .SUBCKT PWM_source G1 G2 G3 G4
 V1 G1 0 PULSE(0 Von 0 0.1n 0.1n P*D P*2)
@@ -65,7 +89,17 @@ C6 Vlog LGND 10n
 .include irfs_sl7440pbf.spi
 .ENDS
 
-
+.SUBCKT dc_voltage ADC Vin COMM Vdd INmax
+R1 Vin N001 200k
+R2 N001 COMM 15k
+R3 N003 N002 100
+XU1 N001 N002 Vdd COMM N002 OPA2344
+D1 N003 INmax BAT48
+D2 COMM N003 BAT48
+R4 ADC N003 100
+.include OPA2344.spi
+.include ST_BAT48.spi
+.ENDS
 
 *link
 

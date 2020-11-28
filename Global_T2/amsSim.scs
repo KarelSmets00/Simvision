@@ -36,8 +36,17 @@ amsd{
 // DC simulation statement (required to find initial condition at startup of transient)
 DCsim dc
 
+//parameter Vbat varieren om sensor te testen
+paramSet1 paramset {
+	time	Vbat	
+	2000u	9.5
+	3000u	11.5
+	4000u	15
+	5000u	24
+}
+
 // Tran simulation statement. Simulation will end when stop time is reached (so this should be longer than the required time to run the entire digital simulation or not if you only want to simulate a small part)
-Transim tran stop=4000u
+Transim tran stop=6000u paramset=paramSet1
 
 // Save internal voltages and currents
 opt1 options save=allpub

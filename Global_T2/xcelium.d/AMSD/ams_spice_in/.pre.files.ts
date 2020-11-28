@@ -1,2 +1,9 @@
-0 /users/students/r0761743/Eagle/Simvision/Tutorial
-0 /users/students/r0761743/Eagle/Simvision/Tutorial
+1606592649 /users/students/r0761743/Eagle/Simvision/Global_T2/amsSim.scs
+1606599541 /users/students/r0761743/Eagle/Simvision/Global_T2/ANALOG_NETWORK.spi
+1605971589 /users/students/r0761743/Eagle/Simvision/Global_T2/DI_10A01.spi
+1605972880 /users/students/r0761743/Eagle/Simvision/Global_T2/LM7812.spi
+1605965367 /users/students/r0761743/Eagle/Simvision/Global_T2/OPA2344.spi
+1605965366 /users/students/r0761743/Eagle/Simvision/Global_T2/DI_BAV5004LP.spi
+1605965366 /users/students/r0761743/Eagle/Simvision/Global_T2/IR2110.spi
+1605974311 /users/students/r0761743/Eagle/Simvision/Global_T2/irfs_sl7440pbf.spi
+1605971120 /users/students/r0761743/Eagle/Simvision/Global_T2/ST_BAT48.spi
