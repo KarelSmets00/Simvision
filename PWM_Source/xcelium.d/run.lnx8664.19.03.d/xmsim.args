@@ -10,12 +10,11 @@
 -SPECTRE_ARGS
 "+ms ++aps=liberal"
 -gui
--TCL
 -MESSAGES
 +EMGRLOG
 xrun.log
 -XLSTIME
-1605979346
+1606141746
 -XLKEEP
 -XLMODE
 ./xcelium.d/run.lnx8664.19.03.d

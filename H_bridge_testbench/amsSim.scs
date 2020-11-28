@@ -37,7 +37,7 @@ amsd{
 DCsim dc
 
 // Tran simulation statement. Simulation will end when stop time is reached (so this should be longer than the required time to run the entire digital simulation or not if you only want to simulate a small part)
-Transim tran stop=4000u
+Transim tran stop=12000u
 
 // Save internal voltages and currents
 opt1 options save=allpub

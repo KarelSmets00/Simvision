@@ -1,0 +1,92 @@
+xrun(64): 19.03-s013: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	19.03-s013: Started on Nov 18, 2020 at 15:05:43 CET
+xrun
+	./amsSim.scs
+	-spectre_args "+ms ++aps=liberal"
+	-f verilogFiles.f
+		./Testbench.v
+	-access +rwc
+	-64bit
+	-gui
+include ../../../../../../../cds.lib
+|
+xrun: *W,DLCPTH (./xcelium.d/run.lnx8664.19.03.d/cdsrun.lib,2): cds.lib No such file '/users/students/cds.lib' (cds.lib command ignored).
+include ../../../../../../../cds.lib
+|
+xrun: *W,DLCPTH (./xcelium.d/run.lnx8664.19.03.d/cdsrun.lib,2): cds.lib No such file '/users/students/cds.lib' (cds.lib command ignored).
+xrun: *N,SPCNTC: The program encountered one or more notices while processing the input SPICE file(s) in the AMSD flow. For details, see the following messages.
+amsspice: *Notice (amsSim.scs,29): For the 'portmap' statement, assuming
+	  'autobus=yes' as the default type in the AMSD control block flow.
+amsspice: *Notice: Using external port-bind file: 'analog_network.pb'
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		toplevel
+	Discipline resolution Pass...
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 2       2
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.toplevel:v
+	Starting analog simulation engine...
+AMSD: Using spectre solver with arguments: -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal.
+
+Spectre (R) Circuit Simulator
+Version 18.1.0.394.isr8 64bit -- 11 Jun 2019
+Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: r0761743   Host: vierre64-tmp3.esat.kuleuven.be   HostID: 570AAE14   PID: 14819
+Memory  available: 3.5587 GB  physical: 63.1554 GB
+Linux   : CentOS Linux release 7.9.2009 (Core)
+CPU Type: Intel Xeon Processor (Skylake)
+All processors running at 2194.8 MHz
+        Socket: Processors
+        0:       0,  1
+        1:       2,  3
+        2:       4,  5
+        3:       6,  7
+        4:       8,  9
+        5:      10, 11
+        6:      12, 13
+        7:      14, 15
+        8:      16, 17
+        
+System load averages (1min, 5min, 15min) : 16.2 %, 13.9 %, 13.5 %
+HPC is enabled
+
+
+Analog Kernel using -ANALOGCONTROL  ./amsSim.scs.
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+Reading file:  /users/students/r0761743/Eagle/Simvision/Tutorial Files/Analog_example_circuit_blank/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used: `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /users/students/r0761743/Eagle/Simvision/Tutorial Files/Analog_example_circuit_blank/ANALOG_NETWORK.spi
+Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 315.956 ms, elapsed = 2.2012 s.
+Time accumulated: CPU = 807.555 ms, elapsed = 2.20121 s.
+Peak resident memory used = 86.2 Mbytes.
+
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /esat/micas-data/software/Cadence/xcelium_19.03/tools/xcelium/files/xmsimrc
+xcelium> ^C
+xcelium> exit
+TOOL:	xrun(64)	19.03-s013: Exiting on Nov 18, 2020 at 15:06:51 CET  (total: 00:01:08)

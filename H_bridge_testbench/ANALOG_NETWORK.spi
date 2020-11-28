@@ -27,16 +27,12 @@ XX3 ACL ACN vrxp vrxn link_optimized
 XX4 vrxp vrxn vhalf vss full_bridge_rect
 D1 vhalf vdc DI_10A01
 CSTAB vdc vss 100u
+R5V vdc vss 90
 
 C1 vdc vss 10u
 XX5 vdc vss 12v LM7812
 C2 12v vss 10u
 RLED 12v vss 29
-
-XX6 vdc 5vrx vss dc_supply5v0
-RCIRC 5vrx vss 20
-RNANO 5vrx vss 250
-RLCD 5vrx vss 125
 
 .SUBCKT PWM_source G1 G2 G3 G4
 V1 G1 0 PULSE(0 Von 0 0.1n 0.1n P*D P*2)
@@ -98,19 +94,6 @@ D3 V- ACN DI_10A01
 D4 V- ACL DI_10A01
 .include DI_10A01.spi
 .ENDS
-
-.SUBCKT dc_supply5v0 Vin 5V0 COMM
-XU1 Vin N001 COMM N002 COMM COMM COMM COMM COMM COMM COMM COMM COMM COMM COMM COMM LM2575_TRANS
-C1 Vin COMM 100u
-L1 N001 5V0 330u
-C2 5V0 COMM 330u
-R1 5V0 N002 31k
-R2 N002 COMM 10k
-D1 COMM N001 D1n5819
-.include LM2575_TRANS.spi
-.include 1N5819.spi
-.ENDS
-
 
 .ENDS
 

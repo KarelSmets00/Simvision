@@ -1,0 +1,26 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-SPECTRE_ARGS
+"-ahdllibdir xcelium.d/AMSD/ahdlSimDB"
+-AMSINPUT
+./amsSim.scs
+-ANALOGCONTROL
+./amsSim.scs
+-SPECTRE_ARGS
+"+ms ++aps=liberal"
+-ACCESS
++rwc
+-MESSAGES
+-AMSELAB
+-XLMODE
+./xcelium.d/run.lnx8664.19.03.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/run.lnx8664.19.03.d/cds.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.19.03.d/hdl.var
+-WORK
+worklib
+-HASXLMODE

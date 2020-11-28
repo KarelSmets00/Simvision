@@ -1,5 +1,5 @@
 xrun(64): 19.03-s013: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	19.03-s013: Started on Nov 21, 2020 at 18:22:26 CET
+TOOL:	xrun(64)	19.03-s013: Started on Nov 23, 2020 at 15:29:06 CET
 xrun
 	./amsSim.scs
 	-spectre_args "+ms ++aps=liberal"
@@ -8,7 +8,6 @@ xrun
 	-access +rwc
 	-64bit
 	-gui
-	-s
 Recompiling... reason: unable to stat '/.//users/micas/jvanassc/Vakantie Job Bram Veraverbeke 2020/swiptmixedsignalsim/Simvision_mixed_signal/Documentation/Analog_example_circuit_blank/Testbench.v'.
 xrun: *N,SPCNTC: The program encountered one or more notices while processing the input SPICE file(s) in the AMSD flow. For details, see the following messages.
 amsspice: *Notice (amsSim.scs,29): For the 'portmap' statement, assuming
@@ -36,8 +35,8 @@ Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwi
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: r0761743   Host: vierre64-tmp3.esat.kuleuven.be   HostID: 570AAE14   PID: 10845
-Memory  available: 3.9805 GB  physical: 63.1554 GB
+User: r0761743   Host: vierre64-tmp3.esat.kuleuven.be   HostID: 570AAE14   PID: 14650
+Memory  available: 25.8074 GB  physical: 63.1282 GB
 Linux   : CentOS Linux release 7.9.2009 (Core)
 CPU Type: Intel Xeon Processor (Skylake)
 All processors running at 2194.8 MHz
@@ -52,7 +51,7 @@ All processors running at 2194.8 MHz
         7:      14, 15
         8:      16, 17
         
-System load averages (1min, 5min, 15min) : 13.9 %, 14.1 %, 14.8 %
+System load averages (1min, 5min, 15min) : 26.9 %, 20.8 %, 17.6 %
 HPC is enabled
 
 
@@ -75,36 +74,33 @@ Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spect
 
 
 Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
-Time for NDB Parsing: CPU = 201.62 ms, elapsed = 791.455 ms.
-Time accumulated: CPU = 463.938 ms, elapsed = 791.46 ms.
+Time for NDB Parsing: CPU = 248.023 ms, elapsed = 877.81 ms.
+Time accumulated: CPU = 752.266 ms, elapsed = 877.817 ms.
 Peak resident memory used = 86.6 Mbytes.
 
-xcelium> 
-xcelium> source /esat/micas-data/software/Cadence/xcelium_19.03/tools/xcelium/files/xmsimrc
-xcelium> 
+
 -------------------------------------
 Relinquished control to SimVision...
-# Restoring simulation environment...
-xcelium> input -quiet .reinvoke.sim
-xcelium> file delete .reinvoke.sim
+xcelium> 
+xcelium> source /esat/micas-data/software/Cadence/xcelium_19.03/tools/xcelium/files/xmsimrc
 xcelium> run
 
 Warning from spectre during hierarchy flattening.
     WARNING (SFE-30): "./ANALOG_NETWORK.spi" 3: Parameter `post', specified for primitive `options', has been ignored because it is an invalid instance parameter. Specify a valid instance parameter and rerun the simulation. Type `spectre -h options' to get more information on valid instance parameters.
 
-Time for Elaboration: CPU = 129.341 ms, elapsed = 5.1729 s.
-Time accumulated: CPU = 593.422 ms, elapsed = 5.9645 s.
+Time for Elaboration: CPU = 222.363 ms, elapsed = 8.66852 s.
+Time accumulated: CPU = 974.837 ms, elapsed = 9.54655 s.
 Peak resident memory used = 111 Mbytes.
 
 Starting APS DC ...
 
-Time for EDB Visit::table model: CPU = 2.177 ms, elapsed = 2.17414 ms.
-Time accumulated: CPU = 603.757 ms, elapsed = 6.21368 s.
+Time for EDB Visit::table model: CPU = 2.192 ms, elapsed = 2.18964 ms.
+Time accumulated: CPU = 986.51 ms, elapsed = 10.4663 s.
 Peak resident memory used = 114 Mbytes.
 
 
-Time for EDB Visiting: CPU = 10.674 ms, elapsed = 249.528 ms.
-Time accumulated: CPU = 604.247 ms, elapsed = 6.21418 s.
+Time for EDB Visiting: CPU = 12.025 ms, elapsed = 920.14 ms.
+Time accumulated: CPU = 987.039 ms, elapsed = 10.4669 s.
 Peak resident memory used = 114 Mbytes.
 
 
@@ -139,8 +135,8 @@ Notice from spectre.
     Multithreading Enabled: 8 threads in the system with 18 available processors.
     Spectre XPS Mixed-signal Mode Enabled ( ++aps speed=2 ).
 
-Time for parsing: CPU = 7.064 ms, elapsed = 166.804 ms.
-Time accumulated: CPU = 611.409 ms, elapsed = 6.38107 s.
+Time for parsing: CPU = 5.833 ms, elapsed = 8.06618 ms.
+Time accumulated: CPU = 992.951 ms, elapsed = 10.475 s.
 Peak resident memory used = 116 Mbytes.
 
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -164,8 +160,8 @@ Warning from spectre.
     WARNING (SPECTRE-16830): The 'DCsim' analysis of type 'dc' is skipped in XPS flow.
     WARNING (SPECTRE-16518): Arithmetic exception in analysis `DCsim' .
 
-Total time required for dc analysis `DCsim': CPU = 105 us, elapsed = 101.805 us.
-Time accumulated: CPU = 622.174 ms, elapsed = 6.39258 s.
+Total time required for dc analysis `DCsim': CPU = 138 us, elapsed = 136.137 us.
+Time accumulated: CPU = 1.0043 s, elapsed = 10.5006 s.
 Peak resident memory used = 117 Mbytes.
 
 
@@ -191,8 +187,8 @@ Wildcard match summary:
 Output and IC/nodeset summary:
                  probe  6       
 
-Time for dc init: CPU = 1.645 ms, elapsed = 2.39801 ms.
-Time accumulated: CPU = 623.912 ms, elapsed = 6.39507 s.
+Time for dc init: CPU = 1.618 ms, elapsed = 2.36702 ms.
+Time accumulated: CPU = 1.00602 s, elapsed = 10.503 s.
 Peak resident memory used = 118 Mbytes.
 
 
@@ -203,24 +199,24 @@ Warning from spectre at time = 0 s during XPS Transient Analysis `Transim'.
     WARNING (CMI-2299): toplevel.analog_network_inst.V2:  The value for `fall' is smaller than the time tolerance (1 fs). The time steps may not fall exactly on the start or the end of this event and may result in inaccurate waveforms. The accuracy will depend on other time constants in the system. The time tolerance can be reduced by setting the`transres' parameter or reducing the stop time. The default tolerance is set to 1e-9*stop.
 
 Number of accepted tran time slots =             11966
-Time for simulation: CPU = 533.213 ms, elapsed = 750.791 ms.
-Time accumulated: CPU = 1.15725 s, elapsed = 7.14598 s.
+Time for simulation: CPU = 538.557 ms, elapsed = 591.933 ms.
+Time accumulated: CPU = 1.54471 s, elapsed = 11.0951 s.
 Peak resident memory used = 123 Mbytes.
 
-Total time required for tran analysis `Transim': CPU = 535.163 ms, elapsed = 753.494 ms.
-Time accumulated: CPU = 1.15815 s, elapsed = 7.16877 s.
+Total time required for tran analysis `Transim': CPU = 540.361 ms, elapsed = 594.486 ms.
+Time accumulated: CPU = 1.5452 s, elapsed = 11.0959 s.
 Peak resident memory used = 123 Mbytes.
 
 Simulation complete via transient analysis stoptime at time 4 MS
-Memory Usage - Current physical: 123.4M, Current virtual: 808.0M
-CPU Usage - 0.4s system + 0.6s user = 1.0s total (13.5% cpu)
+Memory Usage - Current physical: 123.4M, Current virtual: 807.9M
+CPU Usage - 0.6s system + 0.6s user = 1.3s total (6.8% cpu)
 xcelium> ^C
 xcelium> exit
 
-Aggregate audit (6:38:53 PM, Sat Nov 21, 2020):
-Time used: CPU = 18.3 s, elapsed = 981 s (16m  21.2s), util. = 1.86%.
-Time spent in licensing: elapsed = 13.6 ms.
+Aggregate audit (3:35:56 PM, Mon Nov 23, 2020):
+Time used: CPU = 8.51 s, elapsed = 392 s (6m  32.0s), util. = 2.17%.
+Time spent in licensing: elapsed = 17.3 ms.
 Peak memory used = 126 Mbytes.
-Simulation started at: 6:22:32 PM, Sat Nov 21, 2020, ended at: 6:38:53 PM, Sat Nov 21, 2020, with elapsed time (wall clock): 981 s (16m  21.2s).
+Simulation started at: 3:29:24 PM, Mon Nov 23, 2020, ended at: 3:35:56 PM, Mon Nov 23, 2020, with elapsed time (wall clock): 392 s (6m  32.0s).
 spectre completes with 0 errors, 9 warnings, and 4 notices.
-TOOL:	xrun(64)	19.03-s013: Exiting on Nov 21, 2020 at 18:38:53 CET  (total: 00:16:27)
+TOOL:	xrun(64)	19.03-s013: Exiting on Nov 23, 2020 at 15:35:56 CET  (total: 00:06:50)

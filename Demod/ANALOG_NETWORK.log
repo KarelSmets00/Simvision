@@ -1,0 +1,5 @@
+Questionable use of curly braces in "simulator lang = {spectre}"
+    Error: undefined symbol in: "[spectre]"
+Circuit: simulator lang = spice
+
+Fatal Error: Simulator: Missing node(s).

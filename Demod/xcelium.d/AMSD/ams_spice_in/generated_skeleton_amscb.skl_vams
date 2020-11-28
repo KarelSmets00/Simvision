@@ -1,0 +1,35 @@
+// 
+`define VAMS_ELEC_DIS_ONLY 1
+`include "disciplines.vams"
+`include "constants.vams"
+`include "./xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams.attri"
+
+`SPICE1
+module  ANALOG_NETWORK( );
+`define _vspsk_ANALOG_NETWORK
+`_vspsk_ANALOG_NETWORK
+parameter  real D = 0.5 ;
+parameter  real P = 1.26e-05 ;
+parameter  real Von = 3.3 ;
+parameter  real k12 = 0.605 ;
+parameter  real k23 = 0.082746 ;
+parameter  real k34 = 0.62499 ;
+parameter  real k13 = 0.065501 ;
+parameter  real k14 = 0.051516 ;
+parameter  real k24 = 0.064887 ;
+parameter  real LL1 = 2.6567e-05 ;
+parameter  real LL2 = 0.00044945 ;
+parameter  real LL3 = 0.00063979 ;
+parameter  real LL4 = 3.6751e-05 ;
+parameter  real RR1 = 0.11647 ;
+parameter  real RR2 = 0.56704 ;
+parameter  real RR3 = 0.75095 ;
+parameter  real RR4 = 0.15326 ;
+parameter  real CC1 = 3.8139e-07 ;
+parameter  real CC2 = 2.2543e-08 ;
+parameter  real CC3 = 1.5837e-08 ;
+parameter  real CC4 = 2.757e-07 ;
+parameter  real Rm = 100 ;
+analog begin
+end
+endmodule

@@ -1,0 +1,51 @@
+
+Spectre (R) Circuit Simulator
+Version 18.1.0.394.isr8 64bit -- 11 Jun 2019
+Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: r0761743   Host: vierre64-tmp3.esat.kuleuven.be   HostID: 570AAE14   PID: 14951
+Memory  available: 3.7432 GB  physical: 63.1554 GB
+Linux   : CentOS Linux release 7.9.2009 (Core)
+CPU Type: Intel Xeon Processor (Skylake)
+All processors running at 2194.8 MHz
+        Socket: Processors
+        0:       0,  1
+        1:       2,  3
+        2:       4,  5
+        3:       6,  7
+        4:       8,  9
+        5:      10, 11
+        6:      12, 13
+        7:      14, 15
+        8:      16, 17
+        
+System load averages (1min, 5min, 15min) : 15.6 %, 13.7 %, 13.4 %
+
+
+Simulating `./xcelium.d/AMSD/ams_spice_in/.amsspice_normal.ckt' on vierre64-tmp3.esat.kuleuven.be at 3:05:53 PM, Wed Nov 18, 2020 (process id: 14951).
+Current working directory: /users/students/r0761743/Eagle/Simvision/Tutorial Files/Analog_example_circuit_blank
+Environment variable:
+    SPECTRE_DEFAULTS=
+Command line:
+    amsprimtool ./xcelium.d/AMSD/ams_spice_in/.amsspice_normal.ckt  \
+        -noraw -va,amsspice_normal -ahdllibdir  \
+        xcelium.d/AMSD/ams_spice_in/ahdlSimDB =log  \
+        ./xcelium.d/AMSD/ams_spice_in/.amsspice_normal.ckt.log -token  \
+        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080FE71B870359768D3A13CC50411B6749FEA2FE10B0F887DC39431F37A3ED44FD9B63EAA3E399863C0B43FE90F319762DDE378A16B32CF3081FF78E80560FB7190A83DEEB8537F10B0AE3CAB3F64C82187BF2AAD6166CF62D5FF7CF04860FB2A81A83DED3C50FB10B0A83DED3C50FB10B0F788C7037AC44F0500004259
+
+Loading /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /users/students/r0761743/Eagle/Simvision/Tutorial Files/Analog_example_circuit_blank/xcelium.d/AMSD/ams_spice_in/.amsspice_normal.ckt
+Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /users/students/r0761743/Eagle/Simvision/Tutorial Files/Analog_example_circuit_blank/amsSim.scs
+Reading file:  /users/students/r0761743/Eagle/Simvision/Tutorial Files/Analog_example_circuit_blank/ANALOG_NETWORK.spi
+Time for NDB Parsing: CPU = 71.814 ms, elapsed = 120.653 ms.
+Time accumulated: CPU = 114.319 ms, elapsed = 120.66 ms.
+Peak resident memory used = 48.2 Mbytes.
+
