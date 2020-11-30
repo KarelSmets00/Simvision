@@ -41,8 +41,8 @@ paramSet1 paramset {
 	time	Vbat	
 	2000u	9.5
 	3000u	11.5
-	4000u	15
-	5000u	24
+	4000u	12
+	5000u	12
 }
 
 // Tran simulation statement. Simulation will end when stop time is reached (so this should be longer than the required time to run the entire digital simulation or not if you only want to simulate a small part)

@@ -1,9 +1,16 @@
+* Global_T2 simfile
+
 simulator lang = spice
+* params for paramset
 
 .param Vbat = 11
 
+
+* begin network
 .SUBCKT ANALOG_NETWORK 
 .option post=1
+
+.param Rm=100
 
 .param P=0.0127m
 .param D=0.5
@@ -20,26 +27,35 @@ simulator lang = spice
 
 VSS vss 0 0
 
-*monitor parameters
+* monitor parameters
 PVB pVbat vss Vbat
 
-*Transmitter
+* Transmitter
 
 VBAT vcc vss Vbat
 VL vl vss 5
 XX1 G1 G2 G3 G4 PWM_source
-XX2 vl vss G1 G2 vss vcc vss ACL ACN G3 G4 h_bridge
+XX2 vl vss G1 G2 vss vcc LOAD ACL ACN G3 G4 h_bridge
 *Link
-XX3 ACL ACN vrxp vrxn link_optimized
-*here sim of analog sup
+XX3 ACL Cin vrxp vrxn link_optimized
+* here sim of analog sup
 VANA 3v3 vss 3.3
-VREF Vref vss 0.9
-*end sim of analog sup
+VREF Vref vss 1
+* end sim of analog sup
 *XX6 3v3 3v3 vss Vref reference
+
 XX7 ADCV vcc vss 3v3 Vref dc_voltage
 RADCV ADCV vss 1Meg
 
-*Receiver
+XX8 LOAD vss ADCC 3v3 Vref Agnd dc_current
+RADCC ADCC vss 1Meg
+
+XX9 Cin ACN Vref vss 3v3 ADCp ADCn current_sensorv3
+RADCp ADCp vss 1Meg
+RADCn ADCn vss 1Meg
+
+
+* Receiver
 XX4 vrxp vrxn vhalf vss full_bridge_rect
 D1 vhalf vdc DI_10A01
 CSTAB vdc vss 100u
@@ -51,7 +67,8 @@ C2 12v vss 10u
 RLED 12v vss 29
 
 
-*transmitter
+* SUBCIRCUITS
+* transmitter
 .SUBCKT reference Vdiv Vcc COMM Vref
 R1 Vdiv +IN 2.4k
 R2 +IN COMM 1k
@@ -70,12 +87,12 @@ V4 N002 0 Von
 .ENDS
 
 .SUBCKT h_bridge Vlog SD G1 G2 LGND Vcc COMM ACL ACN G3 G4
-XU1 Vlog G1 SD G3 LGND N001 N003 ACL Vcc COMM N005 IR2110
+XU1 Vlog G1 SD G3 LGND N001 N003 ACL Vcc LGND N005 IR2110
 XU2 Vcc N001 ACL irfs_sl7440pbf
 XU3 ACL N005 COMM irfs_sl7440pbf
 XU4 Vcc N002 ACN irfs_sl7440pbf
 XU5 ACN N006 COMM irfs_sl7440pbf
-XU6 Vlog G2 SD G4 LGND N002 N004 ACN Vcc COMM N006 IR2110
+XU6 Vlog G2 SD G4 LGND N002 N004 ACN Vcc LGND N006 IR2110
 C1 N003 ACL 500n
 D5 Vcc N003 DI_BAV5004LP
 C2 COMM Vcc 10n
@@ -101,7 +118,38 @@ R4 ADC N003 100
 .include ST_BAT48.spi
 .ENDS
 
-*link
+.SUBCKT dc_current LOAD COMM ADC Vdd INmax Agnd
+Rshunt LOAD COMM 10m
+Rf1 INn COMM 3k
+Rf2 OUT INn 27k
+XU1 LOAD INn Vdd COMM OUT OPA2344
+R1 N002 OUT 100
+D1 N002 INmax BAT48
+D2 Agnd N002 BAT48
+R2 ADC N002 100
+.include OPA2344.spi
+.include ST_BAT48.spi
+.ENDS
+
+.SUBCKT current_sensorv3 Cin Cout INmax Agnd Vcc ADC+ ADC-
+V1 Cin Cout 0
+F1 N002 N001 V1 1/Rm
+RSHU N001 N002 10
+R1 N001 Vcm 1Meg
+R2 Vcm N002 1Meg
+R3 Vcm Agnd 10k
+R4 Vcc Vcm 50k
+R6 ADC+ N001 100
+R7 ADC- N002 100
+D1 ADC+ INmax BAT48
+D2 ADC- INmax BAT48
+D3 Agnd ADC+ BAT48
+D4 Agnd ADC- BAT48
+.include ST_BAT48.spi
+.ENDS
+
+
+* link
 
 .SUBCKT link_optimized IN1 IN2 OUT1 OUT2
 L1 N007 IN2 LL1
@@ -127,7 +175,7 @@ K13 L1 L3 k13
 K24 L2 L4 k24
 .ENDS
 
-*receiver
+* receiver
 
 .SUBCKT full_bridge_rect ACL ACN V+ V-
 D1 ACN V+ DI_10A01

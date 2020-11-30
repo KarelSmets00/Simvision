@@ -9,6 +9,7 @@ module  ANALOG_NETWORK( );
 `define _vspsk_ANALOG_NETWORK
 `_vspsk_ANALOG_NETWORK
 parameter  real Vbat = 11 ;
+parameter  real Rm = 100 ;
 parameter  real P = 1.27e-05 ;
 parameter  real D = 0.5 ;
 parameter  real Von = 5 ;

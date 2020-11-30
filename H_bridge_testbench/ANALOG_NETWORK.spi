@@ -18,7 +18,7 @@ VSS vss 0 0
 *Transmitter
 
 VBAT vcc vss 11
-VL vl vss 5
+VL vl vss 3.3
 XX1 G1 G2 G3 G4 PWM_source
 XX2 vl vss G1 G2 vss vcc vss ACL ACN G3 G4 h_bridge
 *Link
