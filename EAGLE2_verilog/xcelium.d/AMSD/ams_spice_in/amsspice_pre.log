@@ -1,0 +1,2 @@
+amsspice: *Notice (././ANALOG_NETWORK.spi,9): Node out_analog and Node in_analog are connected together. 
+amsspice finished successfully in the AMSD control block flow.

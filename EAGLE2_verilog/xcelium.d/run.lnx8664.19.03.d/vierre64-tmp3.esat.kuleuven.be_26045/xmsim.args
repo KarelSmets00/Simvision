@@ -1,0 +1,32 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-SPECTRE_ARGS
+"-ahdllibdir xcelium.d/AMSD/ahdlSimDB"
+-AMSINPUT
+-ANALOGCONTROL
+./amsSim.scs
+-SPECTRE_ARGS
+"+ms ++aps=liberal"
+-gui
+-TCL
+-MESSAGES
++EMGRLOG
+xrun.log
+-XLSTIME
+1606204757
+-XLKEEP
+-XLMODE
+./xcelium.d/run.lnx8664.19.03.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/run.lnx8664.19.03.d/cds.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.19.03.d/hdl.var
+-XLNAME
+xrun
+-XLVERSION
+"TOOL:	xrun(64)	19.03-s013"
+-XLNAME
+./xcelium.d/run.lnx8664.19.03.d/vierre64-tmp3.esat.kuleuven.be_26045

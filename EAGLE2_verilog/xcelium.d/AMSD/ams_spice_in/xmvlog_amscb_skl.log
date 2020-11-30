@@ -1,0 +1,3 @@
+file: ./xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+	module worklib.ANALOG_NETWORK:spice_skeleton
+		errors: 0, warnings: 0
