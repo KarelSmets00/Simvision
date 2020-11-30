@@ -1,0 +1,25 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+./xcelium.d/run.lnx8664.19.03.d
+-RUNMODE
+-AUTO_USE_REFFILE
+-AMSINPUT
+./Heartbeat.v
+./Counter.v
+./Freq.v
+./Testbench.v
+-CDSLIB
+./xcelium.d/run.lnx8664.19.03.d/cdsrun.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.19.03.d/hdlrun.var
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./xcelium.d/run.lnx8664.19.03.d/xllibs
+-ALLOWUNBOUND
+-HASVLOGAMSINPUT
+-amscommfile
+./xcelium.d/AMSD/ams_spice_in/amscomm.list

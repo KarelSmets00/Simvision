@@ -1,0 +1,18 @@
+// 
+`define VAMS_ELEC_DIS_ONLY 1
+`include "disciplines.vams"
+`include "constants.vams"
+`include "./xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams.attri"
+
+`SPICE1
+module  ANALOG_NETWORK (.IN_DIGITAL( in_analog ) , .OUT_DIGITAL( out_analog ) );
+input in_analog;
+output out_analog;
+electrical in_analog;
+electrical out_analog;
+
+`define _vspsk_ANALOG_NETWORK
+`_vspsk_ANALOG_NETWORK
+analog begin
+end
+endmodule

@@ -1,0 +1,436 @@
+xrun(64): 19.03-s013: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	19.03-s013: Started on Nov 29, 2020 at 17:05:43 CET
+xrun
+	./amsSim.scs
+	-spectre_args "+ms ++aps=liberal"
+	-f verilogFiles.f
+		./Heartbeat.v
+		./Counter.v
+		./Freq.v
+		./Testbench.v
+	-access +rwc
+	-64bit
+	-gui
+	-s
+Simulating in AMS-SIE mode...
+	Starting analog simulation engine...
+AMSD: Using spectre solver with arguments: -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal.
+
+Spectre (R) Circuit Simulator
+Version 18.1.0.394.isr8 64bit -- 11 Jun 2019
+Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: r0763954   Host: vierre64-tmp3.esat.kuleuven.be   HostID: 570AAE14   PID: 21941
+Memory  available: 47.4542 GB  physical: 63.1554 GB
+Linux   : CentOS Linux release 7.9.2009 (Core)
+CPU Type: Intel Xeon Processor (Skylake)
+All processors running at 2194.8 MHz
+        Socket: Processors
+        0:       0,  1
+        1:       2,  3
+        2:       4,  5
+        3:       6,  7
+        4:       8,  9
+        5:      10, 11
+        6:      12, 13
+        7:      14, 15
+        8:      16, 17
+        
+System load averages (1min, 5min, 15min) : 1.1 %, 1.0 %, 0.9 %
+HPC is enabled
+
+
+Analog Kernel using -ANALOGCONTROL  ./amsSim.scs.
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+Reading file:  /users/students/r0763954/Documents/EAGLE2/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used: `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file:  /users/students/r0763954/Documents/EAGLE2/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/ (775)
+Opening directory xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/ (775)
+Reading file:  /users/students/r0763954/Documents/EAGLE2/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file:  /users/students/r0763954/Documents/EAGLE2/EAGLE2_verilog/Testbench.v
+Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /users/students/r0763954/Documents/EAGLE2/EAGLE2_verilog/ANALOG_NETWORK.spi
+
+Notice from spectre in `ANALOG_NETWORK', during circuit read-in.
+    "./ANALOG_NETWORK.spi" 9: Node out_analog and Node in_analog are connected together.
+
+Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 243.774 ms, elapsed = 773.105 ms.
+Time accumulated: CPU = 492.438 ms, elapsed = 773.11 ms.
+Peak resident memory used = 111 Mbytes.
+
+xcelium> 
+-------------------------------------
+Relinquished control to SimVision...
+
+xcelium> source /esat/micas-data/software/Cadence/xcelium_19.03/tools/xcelium/files/xmsimrc
+xcelium> # Restoring simulation environment...
+xcelium> input -quiet .reinvoke.sim
+xcelium> file delete .reinvoke.sim
+xcelium> 
+Warning from spectre.
+    WARNING: Analog values unknown until the simulation begins. Either start the simulation or enter the sync command (run -sync).
+probe -create -shm toplevel.inst_freq.new_highest toplevel.SWIPT_OUT3 toplevel.SWIPT_OUT2 toplevel.SWIPT_OUT1 toplevel.SWIPT_OUT0
+Created probe 2
+xcelium> run
+Warning from spectre during hierarchy flattening.
+    WARNING (SFE-30): "./ANALOG_NETWORK.spi" 3: Parameter `post', specified for primitive `options', has been ignored because it is an invalid instance parameter. Specify a valid instance parameter and rerun the simulation. Type `spectre -h options' to get more information on valid instance parameters.
+
+Time for Elaboration: CPU = 224.808 ms, elapsed = 4.86279 s.
+Time accumulated: CPU = 717.413 ms, elapsed = 5.63607 s.
+Peak resident memory used = 152 Mbytes.
+
+Starting APS DC ...
+
+Time for EDB Visit::table model: CPU = 2.113 ms, elapsed = 2.11096 ms.
+Time accumulated: CPU = 727.953 ms, elapsed = 5.91307 s.
+Peak resident memory used = 155 Mbytes.
+
+
+Time for EDB Visiting: CPU = 10.889 ms, elapsed = 277.348 ms.
+Time accumulated: CPU = 728.444 ms, elapsed = 5.91356 s.
+Peak resident memory used = 155 Mbytes.
+
+
+Warning from spectre.
+    WARNING (XPS-1006): No digital partition identified.
+Notice from spectre.
+    Using Spectre APS mode because no digital content has been detected. Spectre mixed-signal mode has been disabled.
+
+
+
+Warning from spectre.
+    WARNING (SPECTRE-8281): `__cds_internal_stub_node__' is not a node nor an instance name.
+    WARNING (SPECTRE-8286): Ignoring invalid item `__cds_internal_stub_node__' in save statement.
+        Node is dangling or part of a dangling chain.
+Notice from spectre during topology check.
+    Only one connection to the following 3 nodes:
+        0
+        toplevel.OUT_DIGITAL
+        toplevel.inst_ANALOG_NETWORK.VDD
+    Multithreading is disabled due to the size of the design being too small.
+
+
+Global user options:
+      addflowsuffix = yes
+        dotprobefmt = hier
+               save = allpub
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 5
+connectLib__L2E_2__module__0x10000001_behavioral 1     
+            vsource 2     
+
+Analysis and control statement inventory:
+                 dc 1     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+
+Notice from spectre.
+    1 vsources are short because their absolute value is less than or equal to 'vabsshort'.
+    Fast APS Enabled ( ++aps ).
+
+Time for parsing: CPU = 5.309 ms, elapsed = 8.29792 ms.
+Time accumulated: CPU = 733.837 ms, elapsed = 5.92194 s.
+Peak resident memory used = 157 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+   -   MS Table model. VDD=0V used for XPS table model creation, to overwrite 
+                 tmopt options vdd=val
+   -   MS Circuit partitions: 0% transistors and 0% nodes are identified as digital partitions.
+             One of the following solutions may improve the digital detection.
+                 Manually define internal digital power supply nodes and voltages.
+                        opt1 options ms_vpn=[VDD_DIG 1.2 VDD_DIG1 3.3]
+                        opt2 options ms_vgnd=[VSS]
+                 For complex device models use the MS macro model option.
+                        opt3 options macro_mos=[pmos_subckt nmos_subckt]
+                 Use the cktpreset=digital option to force subcircuits into digital.
+                        opt4 options cktpreset=digital subckt=[subckt_def_name]
+                        opt5 options cktpreset=digital inst=[subckt_inst_name]
+~~~~~~~~~~~~~~~~~~~~~~
+
+Warning from spectre.
+    WARNING (SPECTRE-16830): The 'DCsim' analysis of type 'dc' is skipped in XPS flow.
+    WARNING (SPECTRE-16518): Arithmetic exception in analysis `DCsim' .
+
+Total time required for dc analysis `DCsim': CPU = 60 us, elapsed = 56.982 us.
+Time accumulated: CPU = 742.885 ms, elapsed = 5.93224 s.
+Peak resident memory used = 158 Mbytes.
+
+
+Warning from spectre.
+    WARNING (CMI-2015): Unable to open ic file `./amsSim.apsdc'.
+        No such file or directory.
+
+
+***************************************************
+Transient Analysis `Transim': time = (0 s -> 20 ms)
+***************************************************
+DC simulation time: CPU = 909 us, elapsed = 977.039 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 20 ms
+    step = 20 us
+    maxstep = 400 us
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 10e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = liberal
+    method = trapgear2
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+    rabsshort = 1 mOhm
+    compression = wildcardonly
+
+
+Wildcard match summary:
+              probe v(*) :               4     
+
+Output and IC/nodeset summary:
+                 save   1       (current)
+                 save   3       (voltage)
+
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+right dir
+
+The analog simulator has reached stop time, please use `analog -stop <new stop time>' to extend the analog stop time.
+Simulation stopped via transient analysis stoptime at time 20 MS
+Memory Usage - Current physical: 161.8M, Current virtual: 827.0M
+CPU Usage - 0.9s system + 1.5s user = 2.5s total (27.5% cpu)
+xcelium> ^C
+xcelium> exit
+Number of accepted tran steps =             1953
+
+Maximum value achieved for any signal of each quantity: 
+V: V(toplevel.OUT_DIGITAL) = 3.3 V
+I: I(toplevel.inst_ANALOG_NETWORK.VVDD:p) = 0 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre 
+        Other   
+Initial condition solution time: CPU = 967 us, elapsed = 1.03903 ms.
+
+**** AMSD: Mixed-Signal Activity Statistics ****
+Number of A-to-D events:                       0
+  Number of A-to-D events in IEs:              0
+Number of D-to-A events:                     490
+  Number of D-to-A events in IEs:            490
+Number of VHDL-AMS Breaks:                     0
+
+Intrinsic tran analysis time:    CPU = 107.246 s, elapsed = 2.97753 ks.
+Total time required for tran analysis `Transim': CPU = 107.25 s (1m  47.3s), elapsed = 2.97854 ks (49m  38.5s).
+Time accumulated: CPU = 108 s (1m  48.0s), elapsed = 2.98448 ks (49m  44.5s).
+Peak resident memory used = 166 Mbytes.
+
+Simulation complete via transient analysis stoptime at time 20 MS
+
+Aggregate audit (5:55:28 PM, Sun Nov 29, 2020):
+Time used: CPU = 108 s (1m  48.0s), elapsed = 2.98 ks (49m  44.5s), util. = 3.62%.
+Time spent in licensing: elapsed = 16 ms.
+Peak memory used = 167 Mbytes.
+Simulation started at: 5:05:43 PM, Sun Nov 29, 2020, ended at: 5:55:28 PM, Sun Nov 29, 2020, with elapsed time (wall clock): 2.98 ks (49m  44.5s).
+spectre completes with 0 errors, 8 warnings, and 8 notices.
+TOOL:	xrun(64)	19.03-s013: Exiting on Nov 29, 2020 at 17:55:28 CET  (total: 00:49:45)
