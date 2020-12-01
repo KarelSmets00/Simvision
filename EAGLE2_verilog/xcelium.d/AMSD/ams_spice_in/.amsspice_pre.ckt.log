@@ -5,8 +5,8 @@ Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwi
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: r0763954   Host: vierre64-tmp3.esat.kuleuven.be   HostID: 570AAE14   PID: 30181
-Memory  available: 44.8172 GB  physical: 63.1554 GB
+User: r0763954   Host: vierre64-tmp3.esat.kuleuven.be   HostID: 570AAE14   PID: 18201
+Memory  available: 16.5359 GB  physical: 63.1554 GB
 Linux   : CentOS Linux release 7.9.2009 (Core)
 CPU Type: Intel Xeon Processor (Skylake)
 All processors running at 2194.8 MHz
@@ -21,10 +21,10 @@ All processors running at 2194.8 MHz
         7:      14, 15
         8:      16, 17
         
-System load averages (1min, 5min, 15min) : 0.8 %, 1.3 %, 1.2 %
+System load averages (1min, 5min, 15min) : 21.7 %, 18.9 %, 16.6 %
 
 
-Simulating `./xcelium.d/AMSD/ams_spice_in/./.amsspice_pre.ckt' on vierre64-tmp3.esat.kuleuven.be at 2:31:23 PM, Mon Nov 30, 2020 (process id: 30181).
+Simulating `./xcelium.d/AMSD/ams_spice_in/./.amsspice_pre.ckt' on vierre64-tmp3.esat.kuleuven.be at 11:50:16 AM, Tue Dec 1, 2020 (process id: 18201).
 Current working directory: /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog
 Environment variable:
     SPECTRE_DEFAULTS=
@@ -33,7 +33,7 @@ Command line:
         -noraw -va,amsspice_pre -ahdllibdir  \
         xcelium.d/AMSD/ams_spice_in/ahdlSimDB =log  \
         ./xcelium.d/AMSD/ams_spice_in/./.amsspice_pre.ckt.log -token  \
-        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080FE71B870359768D3A13CC50411B6749FEA2FE10B0F887DC39431F37A3ED44FD9EB2FB063238B7DC3BD10E17135D560C2BA29B86166CD7684EC6B890C50FB3080A83DEEB8537F10B0AC32AA3865CF2389BF2AAD6166CF62D5FF7CC04850FB2A81A83DED3C50FB10B0A83DED3C50FB10B0F7F91914A4D34F740000423B
+        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080FE71B870359768D3A13CC50411B6749FEA2FE10B0F887DC39431F37A3ED44FD9EB2FB063238B7DC3BD10E17135D560C2B87CB934679874D1B03E8B0B50FB3080A83DEEB8537F10B0AC32AA3865CF2389BF2AAD6166CF62D5FF7CC04850FB2A81A83DED3C50FB10B0A83DED3C50FB10B0F7FBF2DA4F1D4F7600004262
 
 Loading /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
 Loading /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
@@ -44,12 +44,13 @@ Reading file:  /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilo
 Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
 Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
 Reading file:  /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
-Reading file:  /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/ANALOG_NETWORK.spi
-
-Notice from amsprimtool in `ANALOG_NETWORK', during circuit read-in.
-    "./ANALOG_NETWORK.spi" 9: Node out_analog and Node in_analog are connected together.
-
-Time for NDB Parsing: CPU = 67.065 ms, elapsed = 114.044 ms.
-Time accumulated: CPU = 109.636 ms, elapsed = 114.051 ms.
-Peak resident memory used = 54 Mbytes.
+Reading file:  /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file:  /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file:  /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file:  /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file:  /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file:  /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Time for NDB Parsing: CPU = 90.442 ms, elapsed = 147.429 ms.
+Time accumulated: CPU = 149.469 ms, elapsed = 147.439 ms.
+Peak resident memory used = 50.4 Mbytes.
 

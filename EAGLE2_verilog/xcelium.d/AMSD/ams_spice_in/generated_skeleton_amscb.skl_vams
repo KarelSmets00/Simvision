@@ -5,14 +5,39 @@
 `include "./xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams.attri"
 
 `SPICE1
-module  ANALOG_NETWORK (.IN_DIGITAL( in_analog ) , .OUT_DIGITAL( out_analog ) );
-input in_analog;
-output out_analog;
-electrical in_analog;
-electrical out_analog;
+module  ANALOG_NETWORK (.SWIPT_OUT0( g1 ) , .SWIPT_OUT1( g2 ) , .SWIPT_OUT2( g3 ) , .SWIPT_OUT3( g4 ) );
+input g1;
+input g2;
+input g3;
+input g4;
+electrical g1;
+electrical g2;
+electrical g3;
+electrical g4;
 
 `define _vspsk_ANALOG_NETWORK
 `_vspsk_ANALOG_NETWORK
+parameter  real P = 1.27e-05 ;
+parameter  real D = 0.5 ;
+parameter  real Von = 5 ;
+parameter  real k12 = 0.62499 ;
+parameter  real k23 = 0.10311 ;
+parameter  real k34 = 0.62499 ;
+parameter  real k13 = 0.081644 ;
+parameter  real k14 = 0.064839 ;
+parameter  real k24 = 0.081644 ;
+parameter  real LL1 = 3.6751e-05 ;
+parameter  real LL2 = 0.00063979 ;
+parameter  real LL3 = 0.00063979 ;
+parameter  real LL4 = 3.6751e-05 ;
+parameter  real RR1 = 0.15326 ;
+parameter  real RR2 = 0.75095 ;
+parameter  real RR3 = 0.75095 ;
+parameter  real RR4 = 0.15326 ;
+parameter  real CC1 = 2.757e-07 ;
+parameter  real CC2 = 1.5837e-08 ;
+parameter  real CC3 = 1.5837e-08 ;
+parameter  real CC4 = 2.757e-07 ;
 analog begin
 end
 endmodule

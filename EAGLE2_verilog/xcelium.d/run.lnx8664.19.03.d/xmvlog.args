@@ -7,6 +7,7 @@
 -RUNMODE
 -AUTO_USE_REFFILE
 -AMSINPUT
+./SwiptOut.v
 ./Heartbeat.v
 ./Counter.v
 ./Freq.v
