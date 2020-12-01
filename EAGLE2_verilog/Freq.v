@@ -4,14 +4,11 @@ module Freq (
 	input wire clk,
 	input wire nrst,
 	input wire [11:0] ADC_in,
-	output wire freq_rdy,
+	output reg freq_ready,
 	output reg freq_set_up_down,
 	output reg freq_opt
 	);
 
-	reg freq_ready = 1'b0;
-	//reg freq_set_up_down;
-	//reg freq_opt;	
 
 	//For this algorithm, we will calculate the maximum current
     reg [11:0] old_highest = 12'h000;
@@ -40,17 +37,18 @@ module Freq (
             
             //Compare highest value of previous messurement to the new messurement : 
             //duration: 5000 clk_cycles each
-            old_highest <= new_highest - 10;
+            old_highest <= new_highest;
 			new_highest <= 12'h000;
             clk_cycles <= 16'h1388;
 
             if(old_highest < new_highest)begin
+				$display("right");
                 //Right direction
-				$display("right dir");
 
                 //Check optimum
                 if(new_highest - old_highest < threshold)begin
                     //We found an optimum --> end freq optimization algorithm
+					$display("optimum right");
                     freq_opt <= 1;
 					freq_ready <= 0;
                     freq_set_up_down <= freq_set_up_down;
@@ -58,7 +56,8 @@ module Freq (
 
                 //No optimum
                 else begin
-                    freq_set_up_down <= ~freq_set_up_down;
+					$display("right no opt");
+                    freq_set_up_down <= freq_set_up_down;
                     freq_ready <= 1;
 					freq_opt <= 0;
                 end
@@ -72,12 +71,14 @@ module Freq (
                 if(old_highest - new_highest < threshold)begin
                     //We found an optimum --> end freq optimization algorithm
                     freq_opt <= 1;
-                    //assign freq_ready = 1;
+                    freq_ready <= 0;
+					freq_set_up_down <= ~freq_set_up_down;
                 end
                 //No optimum
                 else begin
                     freq_set_up_down <= ~freq_set_up_down;
                     freq_ready <= 1;
+					freq_opt <= 0;
                 end
             end
 
@@ -105,10 +106,11 @@ module Freq (
 			else
             	clk_cycles <= clk_cycles - 1;
         end
-    end
+	end
 
-	assign freq_rdy = freq_ready;
+	//assign freq_rdy = freq_ready;
 	//assign freq_set_up_dwn = freq_set_up_down;
 	//assign freq_optimum = freq_opt;
+	//assign test = test_reg;
 
 endmodule
