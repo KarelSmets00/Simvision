@@ -1,0 +1,12 @@
+output format
+MSB - - - - - - - - - - - - - - - - - > LSB
+out0 -------------------------------> out11
+
+out0 is signbit
+
+analog value recovery:
+convert binary to decimal and devide by 2^11
+
+more details into workings of this SAR-like adc see
+\Simvision\SAR_ADC.m
+( matlab file that shows how the conversion is done )

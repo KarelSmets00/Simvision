@@ -1,5 +1,9 @@
+Questionable use of curly braces in "simulator lang = {spice}"
+    Error: undefined symbol in: "[spice]"
 Questionable use of curly braces in "simulator lang = {spectre}"
     Error: undefined symbol in: "[spectre]"
-Circuit: simulator lang = spice
+Circuit: * Global_T2 simfile
 
-Fatal Error: Simulator: Missing node(s).
+Questionable use of curly braces in "simulator lang = {pspice}"
+    Error: undefined symbol in: "[pspice]"
+Fatal Error: Syntax error in simulator lang = (pspice)

@@ -7,7 +7,7 @@ simulator lang = spice
 
 
 * begin network
-.SUBCKT ANALOG_NETWORK 
+.SUBCKT ANALOG_NETWORK G1 G2 G3 G4 acout0 acout1 acout2 acout3 acout4 acout5 acout6 acout7 acout8 acout9 acout10 acout11
 .option post=1
 
 .param Rm=100
@@ -23,6 +23,7 @@ simulator lang = spice
 
 .include DI_10A01.spi
 .include LM7812.spi
+.include Ideal_adc.spi
 
 
 VSS vss 0 0
@@ -41,18 +42,22 @@ XX3 ACL Cin vrxp vrxn link_optimized
 * here sim of analog sup
 VANA 3v3 vss 3.3
 VREF Vref vss 1
+VCOMP Vcomp vss 2
 * end sim of analog sup
 *XX6 3v3 3v3 vss Vref reference
 
 XX7 ADCV vcc vss 3v3 Vref dc_voltage
 RADCV ADCV vss 1Meg
+XXADCV inp vss 3v3 vss Vcomp vout0 vout1 vout2 vout3 vout4 vout5 vout6 vout7 vout8 vout9 vout10 vout11
 
 XX8 LOAD vss ADCC 3v3 Vref Agnd dc_current
 RADCC ADCC vss 1Meg
+XXADCC inp vss 3v3 vss Vcomp cout0 cout1 cout2 cout3 cout4 cout5 cout6 cout7 cout8 cout9 cout10 cout11
 
 XX9 Cin ACN Vref vss 3v3 ADCp ADCn current_sensorv3
 RADCp ADCp vss 1Meg
 RADCn ADCn vss 1Meg
+XXADCAC inp vss 3v3 vss Vcomp acout0 acout1 acout2 acout3 acout4 acout5 acout6 acout7 acout8 acout9 acout10 acout11
 
 
 * Receiver
@@ -110,11 +115,12 @@ C6 Vlog LGND 10n
 R1 Vin N001 200k
 R2 N001 COMM 15k
 R3 N003 N002 100
-XU1 N001 N002 Vdd COMM N002 OPA2344
+XU1 N001 N002 Vdd COMM N002 TLV2372
 D1 N003 INmax BAT48
 D2 COMM N003 BAT48
 R4 ADC N003 100
-.include OPA2344.spi
+.include TLV2372.spi
+*.include OPA2344.spi
 .include ST_BAT48.spi
 .ENDS
 
