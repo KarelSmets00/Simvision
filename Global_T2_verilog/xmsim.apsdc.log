@@ -1,0 +1,509 @@
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file:  /users/students/r0761743/Eagle/Simvision/Tutorial
+        Files/Analog_example_circuit_blank/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file:  /users/students/r0761743/Eagle/Simvision/Tutorial
+        Files/Analog_example_circuit_blank/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /users/students/r0761743/Eagle/Simvision/Tutorial
+        Files/Analog_example_circuit_blank/ANALOG_NETWORK.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 152.623 ms, elapsed = 224.49 ms.
+Time accumulated: CPU = 159.309 ms, elapsed = 224.495 ms.
+Peak resident memory used = 73.6 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Nov 18, 2020 at 15:06:51 CET  (total: 00:01:08)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/ANALOG_NETWORK.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/DI_10A01.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/LM7812.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/OPA2344.spi
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/DI_BAV5004LP.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/IR2110.spi
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/irfs_sl7440pbf.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/ST_BAT48.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 143.621 ms, elapsed = 199.556 ms.
+Time accumulated: CPU = 149.828 ms, elapsed = 199.56 ms.
+Peak resident memory used = 89.8 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Nov 28, 2020 at 20:46:48 CET  (total: 00:00:23)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/ANALOG_NETWORK.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/DI_10A01.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/LM7812.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/OPA2344.spi
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/DI_BAV5004LP.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/IR2110.spi
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/irfs_sl7440pbf.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/ST_BAT48.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 144.967 ms, elapsed = 204.169 ms.
+Time accumulated: CPU = 150.731 ms, elapsed = 204.173 ms.
+Peak resident memory used = 87.9 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Nov 28, 2020 at 21:03:54 CET  (total: 00:01:40)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/ANALOG_NETWORK.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/DI_10A01.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/LM7812.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/OPA2344.spi
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/DI_BAV5004LP.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/IR2110.spi
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/irfs_sl7440pbf.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/ST_BAT48.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 198.266 ms, elapsed = 664.357 ms.
+Time accumulated: CPU = 205.554 ms, elapsed = 664.361 ms.
+Peak resident memory used = 87.9 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Nov 28, 2020 at 22:18:39 CET  (total: 00:03:52)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/ANALOG_NETWORK.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/DI_10A01.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/LM7812.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/OPA2344.spi
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/DI_BAV5004LP.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/IR2110.spi
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/irfs_sl7440pbf.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/ST_BAT48.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 150.836 ms, elapsed = 210.007 ms.
+Time accumulated: CPU = 158.346 ms, elapsed = 210.012 ms.
+Peak resident memory used = 87.9 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Nov 28, 2020 at 22:19:23 CET  (total: 00:00:44)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/ANALOG_NETWORK.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/DI_10A01.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/LM7812.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/OPA2344.spi
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/DI_BAV5004LP.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/IR2110.spi
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/irfs_sl7440pbf.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/ST_BAT48.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 140.396 ms, elapsed = 194.508 ms.
+Time accumulated: CPU = 147.74 ms, elapsed = 194.512 ms.
+Peak resident memory used = 87.9 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Nov 28, 2020 at 22:30:30 CET  (total: 00:00:13)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/ANALOG_NETWORK.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/DI_10A01.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/LM7812.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/OPA2344.spi
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/DI_BAV5004LP.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/IR2110.spi
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/irfs_sl7440pbf.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/ST_BAT48.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 146.3 ms, elapsed = 201.61 ms.
+Time accumulated: CPU = 151.272 ms, elapsed = 201.614 ms.
+Peak resident memory used = 89.8 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Nov 28, 2020 at 22:35:43 CET  (total: 00:00:15)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/ANALOG_NETWORK.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/DI_10A01.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/LM7812.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/OPA2344.spi
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/DI_BAV5004LP.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/IR2110.spi
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/irfs_sl7440pbf.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/ST_BAT48.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 142.374 ms, elapsed = 199.988 ms.
+Time accumulated: CPU = 149.706 ms, elapsed = 199.992 ms.
+Peak resident memory used = 87.9 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Nov 28, 2020 at 22:39:16 CET  (total: 00:00:09)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/ANALOG_NETWORK.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/DI_10A01.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/LM7812.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/OPA2344.spi
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/DI_BAV5004LP.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/IR2110.spi
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/irfs_sl7440pbf.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/ST_BAT48.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 150.393 ms, elapsed = 210.098 ms.
+Time accumulated: CPU = 156.154 ms, elapsed = 210.101 ms.
+Peak resident memory used = 89.8 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Nov 30, 2020 at 10:55:22 CET  (total: 00:00:17)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/ANALOG_NETWORK.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/DI_10A01.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/LM7812.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/OPA2344.spi
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/DI_BAV5004LP.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/IR2110.spi
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/irfs_sl7440pbf.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/ST_BAT48.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 189.805 ms, elapsed = 559.784 ms.
+Time accumulated: CPU = 195.626 ms, elapsed = 559.788 ms.
+Peak resident memory used = 89.8 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Nov 30, 2020 at 11:25:48 CET  (total: 00:00:09)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/ANALOG_NETWORK.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/DI_10A01.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/LM7812.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/OPA2344.spi
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/DI_BAV5004LP.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/IR2110.spi
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/irfs_sl7440pbf.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/ST_BAT48.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 146.108 ms, elapsed = 204.113 ms.
+Time accumulated: CPU = 152.361 ms, elapsed = 204.118 ms.
+Peak resident memory used = 88.1 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Nov 30, 2020 at 11:54:30 CET  (total: 00:00:09)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/ANALOG_NETWORK.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/DI_10A01.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/LM7812.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/OPA2344.spi
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/DI_BAV5004LP.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/IR2110.spi
+Reading file: 
+        /users/students/r0761743/Eagle/Simvision/Global_T2/irfs_sl7440pbf.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/ST_BAT48.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/TLV2372.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 151.616 ms, elapsed = 210.424 ms.
+Time accumulated: CPU = 160.83 ms, elapsed = 210.428 ms.
+Peak resident memory used = 88.2 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Nov 30, 2020 at 18:18:27 CET  (total: 00:00:10)

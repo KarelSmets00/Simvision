@@ -1,0 +1,46 @@
+** spice-model of an ideal 12-bit differential ADC (unclocked)
+** inputs: inp, inn, vdd, vss, vref
+** outputs: out0, out1, out2, out3, out4, out5, out6, out7, out8, out9, out10, out11 (out0 is MSB, out11 is LSB)
+
+simulator lang = pspice
+.SUBCKT ideal_adc inp inn vdd vss vref out0 out1 out2 out3 out4 out5 out6 out7 out8 out9 out10 out11
+
+Ein in 0 VALUE={V(inp)-V(inn)}
+
+Eout0 out0 vss VALUE={IF((V(in)>0), V(vss), V(vdd))}
+Einternal0 internal0 0 VALUE={IF((V(in)>0), 2*(V(in)-0.25*V(vref)), 2*(V(in)+0.25*V(vref)))}
+
+Eout1 out1 vss VALUE={IF((V(internal0)>0), V(vdd), V(vss))}
+Einternal1 internal1 0 VALUE={IF((V(internal0)>0), 2*(V(internal0)-0.25*V(vref)), 2*(V(internal0)+0.25*V(vref)))}
+
+Eout2 out2 vss VALUE={IF((V(internal1)>0), V(vdd), V(vss))}
+Einternal2 internal2 0 VALUE={IF((V(internal1)>0), 2*(V(internal1)-0.25*V(vref)), 2*(V(internal1)+0.25*V(vref)))}
+
+Eout3 out3 vss VALUE={IF((V(internal2)>0), V(vdd), V(vss))}
+Einternal3 internal3 0 VALUE={IF((V(internal2)>0), 2*(V(internal2)-0.25*V(vref)), 2*(V(internal2)+0.25*V(vref)))}
+
+Eout4 out4 vss VALUE={IF((V(internal3)>0), V(vdd), V(vss))}
+Einternal4 internal4 0 VALUE={IF((V(internal3)>0), 2*(V(internal3)-0.25*V(vref)), 2*(V(internal3)+0.25*V(vref)))}
+
+Eout5 out5 vss VALUE={IF((V(internal4)>0), V(vdd), V(vss))}
+Einternal5 internal5 0 VALUE={IF((V(internal4)>0), 2*(V(internal4)-0.25*V(vref)), 2*(V(internal4)+0.25*V(vref)))}
+
+Eout6 out6 vss VALUE={IF((V(internal5)>0), V(vdd), V(vss))}
+Einternal6 internal6 0 VALUE={IF((V(internal5)>0), 2*(V(internal5)-0.25*V(vref)), 2*(V(internal5)+0.25*V(vref)))}
+
+Eout7 out7 vss VALUE={IF((V(internal6)>0), V(vdd), V(vss))}
+Einternal7 internal7 0 VALUE={IF((V(internal6)>0), 2*(V(internal6)-0.25*V(vref)), 2*(V(internal6)+0.25*V(vref)))}
+
+Eout8 out8 vss VALUE={IF((V(internal7)>0), V(vdd), V(vss))}
+Einternal8 internal8 0 VALUE={IF((V(internal7)>0), 2*(V(internal7)-0.25*V(vref)), 2*(V(internal7)+0.25*V(vref)))}
+
+Eout9 out9 vss VALUE={IF((V(internal8)>0), V(vdd), V(vss))}
+Einternal9 internal9 0 VALUE={IF((V(internal8)>0), 2*(V(internal8)-0.25*V(vref)), 2*(V(internal8)+0.25*V(vref)))}
+
+Eout10 out10 vss VALUE={IF((V(internal9)>0), V(vdd), V(vss))}
+Einternal10 internal10 0 VALUE={IF((V(internal9)>0), 2*(V(internal9)-0.25*V(vref)), 2*(V(internal9)+0.25*V(vref)))}
+
+Eout11 out11 vss VALUE={IF((V(internal10)>0), V(vdd), V(vss))}
+
+
+.ENDS

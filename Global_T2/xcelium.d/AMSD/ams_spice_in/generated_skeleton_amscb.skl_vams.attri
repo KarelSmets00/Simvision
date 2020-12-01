@@ -1,0 +1,1 @@
+`define SPICE1 (* spiceskeleton="./ANALOG_NETWORK.spi", spicename="ANALOG_NETWORK", caseinsensitive, port_reorder, spicesfversion="9.2" *)

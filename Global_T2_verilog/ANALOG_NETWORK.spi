@@ -1,0 +1,197 @@
+* Global_T2 simfile
+
+simulator lang = spice
+* params for paramset
+
+.param Vbat = 11
+
+
+* begin network
+.SUBCKT ANALOG_NETWORK G1 G2 G3 G4 acout0 acout1 acout2 acout3 acout4 acout5 acout6 acout7 acout8 acout9 acout10 acout11
+.option post=1
+
+.param Rm=100
+
+.param P=0.0127m
+.param D=0.5
+.param Von=5
+
+.param k12=0.62499 k23=0.10311 k34=0.62499 k13=0.081644 k14=0.064839 k24=0.081644
+.param LL1=3.6751e-05 LL2=0.00063979 LL3=0.00063979 LL4=3.6751e-05
+.param RR1=0.15326 RR2=0.75095 RR3=0.75095 RR4=0.15326
+.param CC1=2.757e-07 CC2=1.5837e-08 CC3=1.5837e-08 CC4=2.757e-07
+
+.include DI_10A01.spi
+.include LM7812.spi
+.include Ideal_adc.spi
+
+
+VSS vss 0 0
+
+* monitor parameters
+PVB pVbat vss Vbat
+
+* Transmitter
+
+VBAT vcc vss Vbat
+VL vl vss 5
+*XX1 G1 G2 G3 G4 PWM_source
+XX2 vl vss G1 G2 vss vcc LOAD ACL ACN G3 G4 h_bridge
+*Link
+XX3 ACL Cin vrxp vrxn link_optimized
+* here sim of analog sup
+VANA 3v3 vss 3.3
+VREF Vref vss 1
+VCOMP Vcomp vss 2
+* end sim of analog sup
+*XX6 3v3 3v3 vss Vref reference
+
+XX7 ADCV vcc vss 3v3 Vref dc_voltage
+RADCV ADCV vss 1Meg
+XXADCV inp vss 3v3 vss Vcomp vout0 vout1 vout2 vout3 vout4 vout5 vout6 vout7 vout8 vout9 vout10 vout11
+
+XX8 LOAD vss ADCC 3v3 Vref Agnd dc_current
+RADCC ADCC vss 1Meg
+XXADCC inp vss 3v3 vss Vcomp cout0 cout1 cout2 cout3 cout4 cout5 cout6 cout7 cout8 cout9 cout10 cout11
+
+XX9 Cin ACN Vref vss 3v3 ADCp ADCn current_sensorv3
+RADCp ADCp vss 1Meg
+RADCn ADCn vss 1Meg
+XXADCAC inp vss 3v3 vss Vcomp acout0 acout1 acout2 acout3 acout4 acout5 acout6 acout7 acout8 acout9 acout10 acout11
+
+
+* Receiver
+XX4 vrxp vrxn vhalf vss full_bridge_rect
+D1 vhalf vdc DI_10A01
+CSTAB vdc vss 100u
+R5V vdc vss 90
+
+C1 vdc vss 10u
+XX5 vdc vss 12v LM7812
+C2 12v vss 10u
+RLED 12v vss 29
+
+
+* SUBCIRCUITS
+* transmitter
+.SUBCKT reference Vdiv Vcc COMM Vref
+R1 Vdiv +IN 2.4k
+R2 +IN COMM 1k
+XU1 +IN OUT Vcc COMM OUT OPA2344
+.include OPA2344.spi
+.ENDS
+
+
+.SUBCKT PWM_source G1 G2 G3 G4
+V1 G1 0 PULSE(0 Von 0 0.1n 0.1n P*D P*2)
+V2 G2 0 PULSE(0 Von P 0.1n 0.1n P*D P*2)
+E1 G3 N001 G1 0 -1
+E2 G4 N002 G2 0 -1
+V3 N001 0 Von
+V4 N002 0 Von
+.ENDS
+
+.SUBCKT h_bridge Vlog SD G1 G2 LGND Vcc COMM ACL ACN G3 G4
+XU1 Vlog G1 SD G3 LGND N001 N003 ACL Vcc LGND N005 IR2110
+XU2 Vcc N001 ACL irfs_sl7440pbf
+XU3 ACL N005 COMM irfs_sl7440pbf
+XU4 Vcc N002 ACN irfs_sl7440pbf
+XU5 ACN N006 COMM irfs_sl7440pbf
+XU6 Vlog G2 SD G4 LGND N002 N004 ACN Vcc LGND N006 IR2110
+C1 N003 ACL 500n
+D5 Vcc N003 DI_BAV5004LP
+C2 COMM Vcc 10n
+C3 N004 ACN 500n
+D6 Vcc N004 DI_BAV5004LP
+C4 Vcc COMM 10n
+C5 Vlog LGND 10n
+C6 Vlog LGND 10n
+.include DI_BAV5004LP.spi
+.include IR2110.spi
+.include irfs_sl7440pbf.spi
+.ENDS
+
+.SUBCKT dc_voltage ADC Vin COMM Vdd INmax
+R1 Vin N001 200k
+R2 N001 COMM 15k
+R3 N003 N002 100
+XU1 N001 N002 Vdd COMM N002 TLV2372
+D1 N003 INmax BAT48
+D2 COMM N003 BAT48
+R4 ADC N003 100
+.include TLV2372.spi
+*.include OPA2344.spi
+.include ST_BAT48.spi
+.ENDS
+
+.SUBCKT dc_current LOAD COMM ADC Vdd INmax Agnd
+Rshunt LOAD COMM 10m
+Rf1 INn COMM 3k
+Rf2 OUT INn 27k
+XU1 LOAD INn Vdd COMM OUT TLV2372
+R1 N002 OUT 100
+D1 N002 INmax BAT48
+D2 Agnd N002 BAT48
+R2 ADC N002 100
+.include TLV2372.spi
+*.include OPA2344.spi
+.include ST_BAT48.spi
+.ENDS
+
+.SUBCKT current_sensorv3 Cin Cout INmax Agnd Vcc ADC+ ADC-
+V1 Cin Cout 0
+F1 N002 N001 V1 1/Rm
+RSHU N001 N002 10
+R1 N001 Vcm 1Meg
+R2 Vcm N002 1Meg
+R3 Vcm Agnd 10k
+R4 Vcc Vcm 50k
+R6 ADC+ N001 100
+R7 ADC- N002 100
+D1 ADC+ INmax BAT48
+D2 ADC- INmax BAT48
+D3 Agnd ADC+ BAT48
+D4 Agnd ADC- BAT48
+.include ST_BAT48.spi
+.ENDS
+
+
+* link
+
+.SUBCKT link_optimized IN1 IN2 OUT1 OUT2
+L1 N007 IN2 LL1
+L2 N008 N002 LL2
+L3 N006 N009 LL3
+L4 OUT2 N004 LL4
+C1 N005 N008 CC2
+C2 N003 N009 CC3
+R1 N005 N002 RR2
+R2 N006 N003 RR3
+C3 OUT1 OUT2 CC4
+C4 N001 IN1 CC1
+R3 N001 N007 RR1
+R4 OUT1 N004 RR4
+R6 N002 N001 1G
+R7 N003 N005 1G
+R8 N004 N006 1G
+K12 L1 L2 k12
+K23 L2 L3 k23
+K34 L3 L4 k34
+K14 L1 L4 k14
+K13 L1 L3 k13
+K24 L2 L4 k24
+.ENDS
+
+* receiver
+
+.SUBCKT full_bridge_rect ACL ACN V+ V-
+D1 ACN V+ DI_10A01
+D2 ACL V+ DI_10A01
+D3 V- ACN DI_10A01
+D4 V- ACL DI_10A01
+.include DI_10A01.spi
+.ENDS
+
+.ENDS
+
+simulator lang = spectre

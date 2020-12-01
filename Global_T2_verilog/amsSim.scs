@@ -1,0 +1,52 @@
+
+// Top level analog (testbench) file
+// This final should include all the required spice/spectre files.
+// Next, it should define the amsd block. In this block, a portmap can be specified for analog subckts that interface with the digital part
+// This portmap file is not required and is auto generated if not given. However, spice/spectre netlists typically use <> as busdelimiter whilst verilog uses []
+// This often causes busses not to be mapped correctly by the auto portmap generation.
+// To fix this you can copy the content from the "wrong" auto generated portmap (xcelium.d/AMSD/portbind_files) and edit the bus portmapping manually.
+// In the next run you than add the portmap statement to the amsd block below. This tells the tool to use your portmap file, rather than the auto generated one.
+// Besides, the analog language (spice/spectre) is set for the top analog subckt
+// Finally, the desired voltage levels of the digital signals is set. This should match the supply voltage internally used in the analog subckt (unless you really know what you are doing).
+
+// The amsd block allows for many more options to be set besides the ones used in this example.
+// More information can be found at ...
+
+
+include "./ANALOG_NETWORK.spi" // analog subcircuit definitions
+
+// If device models are used in the subcircuit, these have to be included as well of course.
+//include "/users/micas/ruytterh/Documents/Research/Coolflux/Analog/toplevel.scs" section=top_tt
+
+// Some options can also be set through a analog control file.
+// Info here...
+//include "/users/micas/ruytterh/Documents/Research/Coolflux/Implementation/95_CD/acf.scs" // analog control file
+
+//amsd block
+
+amsd{
+
+	portmap subckt=ANALOG_NETWORK file="./analog_network.pb"
+	config cell=ANALOG_NETWORK use=spice
+	ie vsup=3.3
+
+}
+
+
+// DC simulation statement (required to find initial condition at startup of transient)
+DCsim dc
+
+//parameter Vbat varieren om sensor te testen
+paramSet1 paramset {
+	time	Vbat	
+	2000u	9.5
+	3000u	11.5
+	4000u	12
+	5000u	12
+}
+
+// Tran simulation statement. Simulation will end when stop time is reached (so this should be longer than the required time to run the entire digital simulation or not if you only want to simulate a small part)
+Transim tran stop=6000u paramset=paramSet1
+
+// Save internal voltages and currents
+opt1 options save=allpub
