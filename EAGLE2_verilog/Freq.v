@@ -42,13 +42,15 @@ module Freq (
             clk_cycles <= 16'h1388;
 
             if(old_highest < new_highest)begin
-				$display("right");
+				$display("Right direction");
                 //Right direction
 
                 //Check optimum
                 if(new_highest - old_highest < threshold)begin
                     //We found an optimum --> end freq optimization algorithm
-					$display("optimum right");
+					$display("*************************OPTIMUM******************");
+					$display("Optimum right dir: ");
+					$display(freq);
                     freq_opt <= 1;
 					freq_ready <= 0;
                     freq_set_up_down <= freq_set_up_down;
@@ -56,7 +58,7 @@ module Freq (
 
                 //No optimum
                 else begin
-					$display("right no opt");
+					$display("No optimum");
                     freq_set_up_down <= freq_set_up_down;
                     freq_ready <= 1;
 					freq_opt <= 0;
@@ -95,7 +97,7 @@ module Freq (
             //Compare the new current value to the existing highest one
             //new_highest is always a value between 0 and 7FF = 11bit
 			freq_ready <= 0;
-			freq_opt <= 0;
+			//freq_opt <= 0;
 			freq_set_up_down <= freq_set_up_down;
             if(ADC_in < 12'h800 && ADC_in > new_highest)begin
                 new_highest <= ADC_in; //ADC_in is value between 0 and 7FF and is larger than new_highest

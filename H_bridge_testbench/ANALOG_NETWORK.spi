@@ -1,5 +1,5 @@
 simulator lang = spice
-.SUBCKT ANALOG_NETWORK 
+.SUBCKT ANALOG_NETWORK G1 G2 G3 G4
 .option post=1
 
 .param P=0.0127m
@@ -19,7 +19,7 @@ VSS vss 0 0
 
 VBAT vcc vss 11
 VL vl vss 3.3
-XX1 G1 G2 G3 G4 PWM_source
+*XX1 G1 G2 G3 G4 PWM_source
 XX2 vl vss G1 G2 vss vcc vss ACL ACN G3 G4 h_bridge
 *Link
 XX3 ACL ACN vrxp vrxn link_optimized
@@ -34,14 +34,14 @@ XX5 vdc vss 12v LM7812
 C2 12v vss 10u
 RLED 12v vss 29
 
-.SUBCKT PWM_source G1 G2 G3 G4
-V1 G1 0 PULSE(0 Von 0 0.1n 0.1n P*D P*2)
-V2 G2 0 PULSE(0 Von P 0.1n 0.1n P*D P*2)
-E1 G3 N001 G1 0 -1
-E2 G4 N002 G2 0 -1
-V3 N001 0 Von
-V4 N002 0 Von
-.ENDS
+*.SUBCKT PWM_source G1 G2 G3 G4
+*V1 G1 0 PULSE(0 Von 0 0.1n 0.1n P*D P*2)
+*V2 G2 0 PULSE(0 Von P 0.1n 0.1n P*D P*2)
+*E1 G3 N001 G1 0 -1
+*E2 G4 N002 G2 0 -1
+*V3 N001 0 Von
+*V4 N002 0 Von
+*.ENDS
 
 .SUBCKT h_bridge Vlog SD G1 G2 LGND Vcc COMM ACL ACN G3 G4
 XU1 Vlog G1 SD G3 LGND N001 N003 ACL Vcc COMM N005 IR2110

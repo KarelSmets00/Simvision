@@ -15,6 +15,7 @@ module toplevel ();
 	wire SWIPT_OUT2;
 	wire SWIPT_OUT3;
 
+	reg [19:0] freq = 20'h9C40; //Default freq is 40 000 Hz
 	// Clk gen (fclk = 50MHz)
 	//reg [27:0] clk_f = 28'h2FAF080;
 	always #10000 clk = ~clk;
@@ -29,6 +30,7 @@ module toplevel ();
 	// Reset
 	initial begin
 		#100000 nrst = 1'b1;
+		//#50000000000 freq = 20'h7530;
 	end	
 //------END SETUP------//
 
@@ -41,7 +43,6 @@ module toplevel ();
 	reg data_go_reg = 0;
 
     ///Freq Varibles
-    reg [19:0] freq = 20'h9C40; //Default freq is 40 000 Hz
     reg [19:0] delta_freq = 20'h64; //Delta freq is 100 Hz but can be modified (max 255Hz for 8 bits)
     wire freq_optimum; //Default no optimum
 	wire freq_rdy; //Default 0
@@ -147,8 +148,10 @@ module toplevel ();
 
 	//Analog circuit
 	ANALOG_NETWORK inst_ANALOG_NETWORK (
-		.IN_DIGITAL		(IN_DIGITAL),
-		.OUT_DIGITAL	(OUT_DIGITAL)
+		.SWIPT_OUT0	(SWIPT_OUT0),
+		.SWIPT_OUT1	(SWIPT_OUT1),
+		.SWIPT_OUT2 (SWIPT_OUT2),
+		.SWIPT_OUT3 (SWIPT_OUT3)
 		);
 
 //------END ANALOG PART------//

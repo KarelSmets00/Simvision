@@ -1,0 +1,14 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+./amsSim.scs
+-spectre_args
+"+ms ++aps=liberal"
+-f
+verilogFiles.f
+-access
++rwc
+-64bit
+-gui
+-s

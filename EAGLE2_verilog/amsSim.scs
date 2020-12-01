@@ -13,7 +13,7 @@
 // More information can be found at ...
 
 
-include "./ANALOG_NETWORK.spi" // analog subcircuit definitions
+include "../H_bridge_testbench/ANALOG_NETWORK.spi" // analog subcircuit definitions
 
 // If device models are used in the subcircuit, these have to be included as well of course.
 //include "/users/micas/ruytterh/Documents/Research/Coolflux/Analog/toplevel.scs" section=top_tt
@@ -37,7 +37,7 @@ amsd{
 DCsim dc
 
 // Tran simulation statement. Simulation will end when stop time is reached (so this should be longer than the required time to run the entire digital simulation or not if you only want to simulate a small part)
-Transim tran stop=20m
+Transim tran stop=25m
 
 // Save internal voltages and currents
 opt1 options save=allpub

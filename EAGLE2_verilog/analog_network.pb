@@ -8,5 +8,7 @@
 //* SPICE port	:	HDL port	:	HDL Parameters
 
 // Bus definition. Note that bus delimiters in spice are <>, whilst in verilog []. Hence the 'special' statement
-in_analog	:	IN_DIGITAL	:	dir=input
-out_analog	:	OUT_DIGITAL	:	dir=output
+G1	:	SWIPT_OUT0	:	dir=input
+G2	:	SWIPT_OUT1	:	dir=input
+G3	:	SWIPT_OUT2	:	dir=input
+G4	:	SWIPT_OUT3	:	dir=input

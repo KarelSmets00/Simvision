@@ -1,7 +1,7 @@
 HEADER
 "PSFversion" "1.00"
 "Log Generator" "drlLog rev. 1.0"
-"Log Time Stamp" "Mon Nov 30 18:08:31 2020"
+"Log Time Stamp" "Tue Dec  1 11:23:03 2020"
 "simulator" "AMS"
 "signalNameType" "verilog"
 TYPE
@@ -22,4 +22,3 @@ VALUE
 ("time")
 "Transient Analysis"
 )
-END

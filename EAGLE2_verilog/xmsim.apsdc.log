@@ -7446,3 +7446,1933 @@ Time accumulated: CPU = 167.711 ms, elapsed = 233.133 ms.
 Peak resident memory used = 96.2 Mbytes.
 
 xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Nov 30, 2020 at 18:08:30 CET  (total: 00:00:09)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 209.545 ms, elapsed = 653.911 ms.
+Time accumulated: CPU = 214.964 ms, elapsed = 653.914 ms.
+Peak resident memory used = 97.4 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 08:45:00 CET  (total: 00:01:31)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 161.271 ms, elapsed = 234.098 ms.
+Time accumulated: CPU = 167.348 ms, elapsed = 234.102 ms.
+Peak resident memory used = 99.4 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 08:46:49 CET  (total: 00:00:09)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 162.507 ms, elapsed = 235.087 ms.
+Time accumulated: CPU = 168.498 ms, elapsed = 235.091 ms.
+Peak resident memory used = 95.6 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 08:49:30 CET  (total: 00:00:10)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/E2L_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_E2L_2.vams.connectLib__E2L_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_E2L_2.vams.connectLib__E2L_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_E2L_2.vams.connectLib__E2L_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__E2L_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__E2L_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 200.165 ms, elapsed = 299.288 ms.
+Time accumulated: CPU = 205.755 ms, elapsed = 299.293 ms.
+Peak resident memory used = 96.1 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 08:53:54 CET  (total: 00:00:18)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/E2L_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_E2L_2.vams.connectLib__E2L_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_E2L_2.vams.connectLib__E2L_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_E2L_2.vams.connectLib__E2L_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__E2L_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__E2L_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 205.817 ms, elapsed = 307.776 ms.
+Time accumulated: CPU = 212.093 ms, elapsed = 307.781 ms.
+Peak resident memory used = 98 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 08:54:10 CET  (total: 00:00:16)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/E2L_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_E2L_2.vams.connectLib__E2L_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_E2L_2.vams.connectLib__E2L_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_E2L_2.vams.connectLib__E2L_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__E2L_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__E2L_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 194.025 ms, elapsed = 288.797 ms.
+Time accumulated: CPU = 200.522 ms, elapsed = 288.802 ms.
+Peak resident memory used = 96.2 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 08:54:13 CET  (total: 00:00:04)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 164.498 ms, elapsed = 238.995 ms.
+Time accumulated: CPU = 169.748 ms, elapsed = 238.999 ms.
+Peak resident memory used = 97.5 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 08:55:42 CET  (total: 00:00:08)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 168.066 ms, elapsed = 242.179 ms.
+Time accumulated: CPU = 173.142 ms, elapsed = 242.182 ms.
+Peak resident memory used = 97.7 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 08:57:17 CET  (total: 00:00:09)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 165.568 ms, elapsed = 241.262 ms.
+Time accumulated: CPU = 170.97 ms, elapsed = 241.265 ms.
+Peak resident memory used = 95.7 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 08:59:25 CET  (total: 00:00:12)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 163.949 ms, elapsed = 243.706 ms.
+Time accumulated: CPU = 172.733 ms, elapsed = 243.71 ms.
+Peak resident memory used = 97.4 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 09:04:50 CET  (total: 00:00:09)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 165.707 ms, elapsed = 243.76 ms.
+Time accumulated: CPU = 171.731 ms, elapsed = 243.764 ms.
+Peak resident memory used = 95.7 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 09:18:16 CET  (total: 00:00:10)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 179.585 ms, elapsed = 260.97 ms.
+Time accumulated: CPU = 186.569 ms, elapsed = 260.974 ms.
+Peak resident memory used = 95.7 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 09:22:18 CET  (total: 00:00:21)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 180.492 ms, elapsed = 264.696 ms.
+Time accumulated: CPU = 187.381 ms, elapsed = 264.7 ms.
+Peak resident memory used = 97.3 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 09:28:11 CET  (total: 00:00:23)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 169.251 ms, elapsed = 251.834 ms.
+Time accumulated: CPU = 175.259 ms, elapsed = 251.838 ms.
+Peak resident memory used = 95.6 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 09:28:19 CET  (total: 00:00:08)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 181.232 ms, elapsed = 255.976 ms.
+Time accumulated: CPU = 186.612 ms, elapsed = 255.98 ms.
+Peak resident memory used = 97.3 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 09:34:26 CET  (total: 00:00:05)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 172.166 ms, elapsed = 247.78 ms.
+Time accumulated: CPU = 178.317 ms, elapsed = 247.784 ms.
+Peak resident memory used = 95.6 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 09:35:54 CET  (total: 00:00:07)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 244.885 ms, elapsed = 341.361 ms.
+Time accumulated: CPU = 253.467 ms, elapsed = 341.367 ms.
+Peak resident memory used = 97.5 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 09:38:10 CET  (total: 00:00:12)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 171.557 ms, elapsed = 251.314 ms.
+Time accumulated: CPU = 178.508 ms, elapsed = 251.319 ms.
+Peak resident memory used = 95.7 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 10:06:00 CET  (total: 00:00:09)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 180.844 ms, elapsed = 261.902 ms.
+Time accumulated: CPU = 186.97 ms, elapsed = 261.906 ms.
+Peak resident memory used = 97.4 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 10:09:09 CET  (total: 00:00:09)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 174.612 ms, elapsed = 260.626 ms.
+Time accumulated: CPU = 180.668 ms, elapsed = 260.63 ms.
+Peak resident memory used = 95.7 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 10:12:03 CET  (total: 00:00:27)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 184.87 ms, elapsed = 264.234 ms.
+Time accumulated: CPU = 190.948 ms, elapsed = 264.238 ms.
+Peak resident memory used = 93.8 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 10:19:56 CET  (total: 00:00:09)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 249.165 ms, elapsed = 349.69 ms.
+Time accumulated: CPU = 257.031 ms, elapsed = 349.695 ms.
+Peak resident memory used = 89.5 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 10:27:43 CET  (total: 00:00:13)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 219.989 ms, elapsed = 298.593 ms.
+Time accumulated: CPU = 226.465 ms, elapsed = 298.599 ms.
+Peak resident memory used = 85.7 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 10:43:17 CET  (total: 00:00:25)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 208.435 ms, elapsed = 291.409 ms.
+Time accumulated: CPU = 214.845 ms, elapsed = 291.414 ms.
+Peak resident memory used = 83.9 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 10:44:15 CET  (total: 00:00:09)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 222.738 ms, elapsed = 304.834 ms.
+Time accumulated: CPU = 229.671 ms, elapsed = 304.838 ms.
+Peak resident memory used = 88.7 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 11:02:30 CET  (total: 00:00:11)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 195.99 ms, elapsed = 279.012 ms.
+Time accumulated: CPU = 200.844 ms, elapsed = 279.018 ms.
+Peak resident memory used = 85.6 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 11:04:17 CET  (total: 00:00:09)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 188.395 ms, elapsed = 270.237 ms.
+Time accumulated: CPU = 194.067 ms, elapsed = 270.241 ms.
+Peak resident memory used = 83.8 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 11:06:00 CET  (total: 00:00:11)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 201.958 ms, elapsed = 280.048 ms.
+Time accumulated: CPU = 208.146 ms, elapsed = 280.052 ms.
+Peak resident memory used = 85.7 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 11:08:32 CET  (total: 00:00:14)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 195.506 ms, elapsed = 271.454 ms.
+Time accumulated: CPU = 201.603 ms, elapsed = 271.458 ms.
+Peak resident memory used = 85.6 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 11:18:20 CET  (total: 00:00:10)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 192.121 ms, elapsed = 275.563 ms.
+Time accumulated: CPU = 198.358 ms, elapsed = 275.567 ms.
+Peak resident memory used = 85.5 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 11:23:01 CET  (total: 00:00:53)
+Command line:
+    spectre ./amsSim.scs +config  \
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg  \
+        -ahdllibdir xcelium.d/AMSD/ahdlSimDB +ms ++aps=liberal
+After pLogFile
+After install log
+End disable stdout
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
+
+Notice from spectre during circuit read-in.
+    Configuration file used:
+        `/esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg'.
+
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams
+Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/affirma_ams/etc/connect_lib/L2E_2.vams
+Opening directory xcelium.d/AMSD/ahdlSimDB (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/
+        (775)
+Opening directory
+        xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/
+        (775)
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/xcelium.d/AMSD/ahdlSimDB/4682_tools_affirma_ams_etc_connect_lib_L2E_2.vams.connectLib__L2E_2__module__0x10000001_behavioral.ahdlcmi/Linux-64/obj/optimize/5.0/libahdlcmi_connectLib__L2E_2__module__0x10000001_behavioral.so
+Installed compiled interface for
+        connectLib__L2E_2__module__0x10000001_behavioral.
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/Testbench.v
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
+Reading file: 
+        /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
+
+
+Reading file: 
+        /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
+Time for NDB Parsing: CPU = 215.549 ms, elapsed = 304.011 ms.
+Time accumulated: CPU = 222.301 ms, elapsed = 304.016 ms.
+Peak resident memory used = 85.6 Mbytes.
+
+xcelium> TOOL:	xrun(64)	19.03-s013: Exiting on Dec 01, 2020 at 11:51:11 CET  (total: 00:00:57)
