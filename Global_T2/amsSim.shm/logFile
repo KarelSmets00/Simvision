@@ -1,7 +1,7 @@
 HEADER
 "PSFversion" "1.00"
 "Log Generator" "drlLog rev. 1.0"
-"Log Time Stamp" "Mon Nov 30 18:18:30 2020"
+"Log Time Stamp" "Wed Dec  2 21:05:26 2020"
 "simulator" "AMS"
 "signalNameType" "verilog"
 TYPE
@@ -15,14 +15,6 @@ TYPE
 )
 VALUE
 "Transim-tran" "analysisInst" (
-"tran"
-"amsSim.trn"
-"SST2"
-""
-("time")
-"Transient Analysis"
-)
-"Transim-tran-1" "analysisInst" (
 "tran"
 "amsSim.trn"
 "SST2"

@@ -7,7 +7,7 @@ simulator lang = spice
 
 
 * begin network
-.SUBCKT ANALOG_NETWORK G1 G2 G3 G4 acout0 acout1 acout2 acout3 acout4 acout5 acout6 acout7 acout8 acout9 acout10 acout11
+.SUBCKT ANALOG_NETWORK
 .option post=1
 
 .param Rm=100
@@ -24,7 +24,10 @@ simulator lang = spice
 .include DI_10A01.spi
 .include LM7812.spi
 .include Ideal_adc.spi
+.include LM7805.spi
 
+* ---------------------------------------------------------------------------
+* Global net
 
 VSS vss 0 0
 
@@ -48,31 +51,38 @@ VCOMP Vcomp vss 2
 
 XX7 ADCV vcc vss 3v3 Vref dc_voltage
 RADCV ADCV vss 1Meg
-XXADCV inp vss 3v3 vss Vcomp vout0 vout1 vout2 vout3 vout4 vout5 vout6 vout7 vout8 vout9 vout10 vout11
+XXADCV inp vss 3v3 vss Vcomp vout0 vout1 vout2 vout3 vout4 vout5 vout6 vout7 vout8 vout9 vout10 vout11 ideal_adc
 
 XX8 LOAD vss ADCC 3v3 Vref Agnd dc_current
 RADCC ADCC vss 1Meg
-XXADCC inp vss 3v3 vss Vcomp cout0 cout1 cout2 cout3 cout4 cout5 cout6 cout7 cout8 cout9 cout10 cout11
+XXADCC inp vss 3v3 vss Vcomp cout0 cout1 cout2 cout3 cout4 cout5 cout6 cout7 cout8 cout9 cout10 cout11 ideal_adc
 
 XX9 Cin ACN Vref vss 3v3 ADCp ADCn current_sensorv3
 RADCp ADCp vss 1Meg
 RADCn ADCn vss 1Meg
-XXADCAC inp vss 3v3 vss Vcomp acout0 acout1 acout2 acout3 acout4 acout5 acout6 acout7 acout8 acout9 acout10 acout11
+XXADCAC inp vss 3v3 vss Vcomp acout0 acout1 acout2 acout3 acout4 acout5 acout6 acout7 acout8 acout9 acout10 acout11 ideal_adc
 
 
 * Receiver
-XX4 vrxp vrxn vhalf vss full_bridge_rect
-D1 vhalf vdc DI_10A01
-CSTAB vdc vss 100u
-R5V vdc vss 90
+XX4 vrxp vrxn vdcp vdcn full_bridge_rect
+CSTAB vdcp vss 100u
+XX11 vss vdcn 5v vss rxca rx_current
 
-C1 vdc vss 10u
-XX5 vdc vss 12v LM7812
-C2 12v vss 10u
+C1 vdcp vss 10u
+XX5 vdcp vss 12v LM7812
+CSTAB12 12v vss 10u
 RLED 12v vss 29
 
+XX10 12v vss 5v LM7805
+CSTAB5 5v vss 10u
+R5V 5v vss 12
 
+
+
+
+* ---------------------------------------------------------------------------
 * SUBCIRCUITS
+
 * transmitter
 .SUBCKT reference Vdiv Vcc COMM Vref
 R1 Vdiv +IN 2.4k
@@ -190,6 +200,14 @@ D2 ACL V+ DI_10A01
 D3 V- ACN DI_10A01
 D4 V- ACL DI_10A01
 .include DI_10A01.spi
+.ENDS
+
+.SUBCKT rx_current Cin Cout vcc agnd OUT
+RSHUNT Cin Cout 10m
+R1 Cout INn 1k
+R2 INn OUT 10k
+XU1 Cout INn vcc agnd OUT TLV2372
+.include TLV2372.spi
 .ENDS
 
 .ENDS

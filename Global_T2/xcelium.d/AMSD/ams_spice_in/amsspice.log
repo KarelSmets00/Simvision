@@ -1,9 +1,3 @@
 amsspice: *Notice (amsSim.scs,29): For the 'portmap' statement, assuming
 	  'autobus=yes' as the default type in the AMSD control block flow.
 amsspice: *Notice: Using external port-bind file: 'analog_network.pb'
-amsspice: *Error: The port name 'G1' from subckt 'ANALOG_NETWORK' is not found in port-bind file
-	  '/users/students/r0761743/Eagle/Simvision/Global_T2/xcelium.d/AMSD/portbind_files/analog_network.pb'.
-	  Check if all port names are specified in the port-bind file correctly.
-	  Further occurrences of this error will be suppressed.
-amsspice: *Error: One or more port names from subckt 'ANALOG_NETWORK' were not found in '/users/students/r0761743/Eagle/Simvision/Global_T2/xcelium.d/AMSD/portbind_files/analog_network.pb'.
-	  All port names in the subckt must be specified in the port-bind file.
