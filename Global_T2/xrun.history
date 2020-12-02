@@ -19,3 +19,6 @@ s18(01Dec2020:22:12:46):  xrun ./amsSim.scs -spectre_args "+ms ++aps=liberal" -f
 s19(02Dec2020:21:00:10):  xrun ./amsSim.scs -spectre_args "+ms ++aps=liberal" -f verilogFiles.f -access +rwc -64bit -gui 
 s20(02Dec2020:21:03:43):  xrun ./amsSim.scs -spectre_args "+ms ++aps=liberal" -f verilogFiles.f -access +rwc -64bit -gui "-s " 
 s21(02Dec2020:21:05:07):  xrun ./amsSim.scs -spectre_args "+ms ++aps=liberal" -f verilogFiles.f -access +rwc -64bit -gui -s 
+s22(02Dec2020:22:23:22):  xrun ./amsSim.scs -spectre_args "+ms ++aps=liberal" -f verilogFiles.f -access +rwc -64bit -gui 
+s23(02Dec2020:22:24:55):  xrun ./amsSim.scs -spectre_args "+ms ++aps=liberal" -f verilogFiles.f -access +rwc -64bit -gui "-s " 
+s24(02Dec2020:23:42:06):  xrun ./amsSim.scs -spectre_args "+ms ++aps=liberal" -f verilogFiles.f -access +rwc -64bit -gui -s 

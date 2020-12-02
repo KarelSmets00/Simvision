@@ -27,7 +27,7 @@ simulator lang = spice
 .include LM7805.spi
 
 * ---------------------------------------------------------------------------
-* Global net
+* GLOBAL NET
 
 VSS vss 0 0
 
@@ -66,7 +66,7 @@ XXADCAC inp vss 3v3 vss Vcomp acout0 acout1 acout2 acout3 acout4 acout5 acout6 a
 * Receiver
 XX4 vrxp vrxn vdcp vdcn full_bridge_rect
 CSTAB vdcp vss 100u
-XX11 vss vdcn 5v vss rxca rx_current
+XXRXC vss vdcn 5v vss rxca rx_current
 
 C1 vdcp vss 10u
 XX5 vdcp vss 12v LM7812
@@ -76,6 +76,11 @@ RLED 12v vss 29
 XX10 12v vss 5v LM7805
 CSTAB5 5v vss 10u
 R5V 5v vss 12
+* rectified input voltage mesurement
+XXRXV vdcp vss 5v vss rxva rx_voltage
+* 12v mesurement
+XXRX12V 12v vss rx12va rx_12vmoni
+
 
 
 
@@ -203,11 +208,25 @@ D4 V- ACL DI_10A01
 .ENDS
 
 .SUBCKT rx_current Cin Cout vcc agnd OUT
-RSHUNT Cin Cout 10m
-R1 Cout INn 1k
-R2 INn OUT 10k
-XU1 Cout INn vcc agnd OUT TLV2372
+R1 vcc INp 100k
+R2 INp Cout 500
+RSHUNT Cin Cout 50m
+R4 Cout INn 1k
+R3 INn OUT 100k
+XU1 INp INn vcc agnd OUT TLV2372
 .include TLV2372.spi
+.ENDS
+
+.SUBCKT rx_voltage vme v0 vcc agnd OUT
+R1 vme Div 1k
+R2 Div v0 10k
+XU1 Div OUT vcc agnd OUT TLV2372
+.include TLV2372.spi
+.ENDS
+
+.SUBCKT rx_12vmoni vme v0 OUT
+R1 vme OUT 30k
+R2 OUT v0 10k
 .ENDS
 
 .ENDS
