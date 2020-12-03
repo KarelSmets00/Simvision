@@ -54,7 +54,7 @@ module toplevel ();
 //------END PARAM & VAR------//
 
 //------BEGIN OPTIMIZATION ALG.------//
-///Optimization Algorithm
+	///Optimization Algorithm
     always @(posedge clk)begin
 		if(swiptAlive && ~nrst)begin
 			//If Swipt is alive check if freq is ok
@@ -132,15 +132,19 @@ module toplevel ();
 //------END MODULES------//
 
 //------BEGIN ASSIGN OUTPUT------//
+	wire ADC0;
+	wire ADC1;
+	wire ADC2;
+	wire ADC3;
+	wire ADC4;
+	wire ADC5;
+	wire ADC6;
+	wire ADC7;
+	wire ADC8;
+	wire ADC9;
+	wire ADC10;
+	wire ADC11;
 
-	//Input of analog circuit
-	wire IN_DIGITAL;
-	//Output of analog cicuit
-	wire OUT_DIGITAL;
-	
-	//Input of the analog part is the MSB of the counter value
-	assign IN_DIGITAL = SWIPT_OUT0;
-	assign ADC_in = value;
 
 //------END ASSIGN OUTPUT------//
 
@@ -151,8 +155,33 @@ module toplevel ();
 		.SWIPT_OUT0	(SWIPT_OUT0),
 		.SWIPT_OUT1	(SWIPT_OUT1),
 		.SWIPT_OUT2 (SWIPT_OUT2),
-		.SWIPT_OUT3 (SWIPT_OUT3)
+		.SWIPT_OUT3 (SWIPT_OUT3),
+		.ACOUT0 (ADC11),
+		.ACOUT1 (ADC10),
+		.ACOUT2 (ADC9),
+		.ACOUT3 (ADC8),
+		.ACOUT4 (ADC7),
+		.ACOUT5 (ADC6),
+		.ACOUT6 (ADC5),
+		.ACOUT7 (ADC4),
+		.ACOUT8 (ADC3),
+		.ACOUT9 (ADC2),
+		.ACOUT10 (ADC1),
+		.ACOUT11 (ADC0)
 		);
 
+	
+	assign ADC_in[11] = ADC11;
+	assign ADC_in[10] = ADC10;
+	assign ADC_in[9] = ADC9;
+	assign ADC_in[8] = ADC8;
+	assign ADC_in[7] = ADC7;
+	assign ADC_in[6] = ADC6;
+	assign ADC_in[5] = ADC5;
+	assign ADC_in[4] = ADC4;
+	assign ADC_in[3] = ADC3;
+	assign ADC_in[2] = ADC2;
+	assign ADC_in[1] = ADC1;
+	assign ADC_in[0] = ADC0;
 //------END ANALOG PART------//
 endmodule

@@ -5,8 +5,8 @@ Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwi
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: r0763954   Host: vierre64-tmp3.esat.kuleuven.be   HostID: 570AAE14   PID: 18592
-Memory  available: 16.5562 GB  physical: 63.1554 GB
+User: r0763954   Host: vierre64-tmp3.esat.kuleuven.be   HostID: 570AAE14   PID: 32291
+Memory  available: 4.4437 GB  physical: 63.1554 GB
 Linux   : CentOS Linux release 7.9.2009 (Core)
 CPU Type: Intel Xeon Processor (Skylake)
 All processors running at 2194.8 MHz
@@ -21,10 +21,10 @@ All processors running at 2194.8 MHz
         7:      14, 15
         8:      16, 17
         
-System load averages (1min, 5min, 15min) : 21.7 %, 18.9 %, 16.6 %
+System load averages (1min, 5min, 15min) : 27.2 %, 22.5 %, 20.4 %
 
 
-Simulating `./xcelium.d/AMSD/ams_spice_in/.amsspice_normal.ckt' on vierre64-tmp3.esat.kuleuven.be at 11:50:19 AM, Tue Dec 1, 2020 (process id: 18592).
+Simulating `./xcelium.d/AMSD/ams_spice_in/.amsspice_normal.ckt' on vierre64-tmp3.esat.kuleuven.be at 10:20:58 PM, Wed Dec 2, 2020 (process id: 32291).
 Current working directory: /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog
 Environment variable:
     SPECTRE_DEFAULTS=
@@ -33,7 +33,7 @@ Command line:
         -noraw -va,amsspice_normal -ahdllibdir  \
         xcelium.d/AMSD/ams_spice_in/ahdlSimDB =log  \
         ./xcelium.d/AMSD/ams_spice_in/.amsspice_normal.ckt.log -token  \
-        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080FE71B870359768D3A13CC50411B6749FEA2FE10B0F887DC39431F37A3ED44FD9B63EAA3E399863C0B43FE90F319762DDE32FF66865CC30D6F925B80F60FB7390A83DEEB8537F10B0AC32AA3865CF2389BF2AAD6166CF62D5FF7CC04850FB2A81A83DED3C50FB10B0A83DED3C50FB10B0F7FBF2D54F124F7600004280
+        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080FE71B870359768D3A13CC50411B6749FEA2FE10B0F887DC39431F37A3ED44FD9B63EAA3E399863C0B43FE90F319762DDE37EA06733C33087F07FE90960FB7190A83DEEB8537F10B0AC32AA3865CF2389BF2AAD6166CF62D5FF78C04850FB2A85A83DED3C50FB10B0A83DED3C50FB10B0F7F5E80455C34F780000423B
 
 Loading /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
 Loading /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
@@ -44,13 +44,17 @@ Reading file:  /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilo
 Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
 Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/spectre.cfg
 Reading file:  /users/students/r0763954/Documents/EAGLE2/Simvision/EAGLE2_verilog/amsSim.scs
-Reading file:  /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/ANALOG_NETWORK.spi
-Reading file:  /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_10A01.spi
-Reading file:  /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/LM7812.spi
-Reading file:  /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/DI_BAV5004LP.spi
-Reading file:  /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/IR2110.spi
-Reading file:  /users/students/r0763954/Documents/EAGLE2/Simvision/H_bridge_testbench/irfs_sl7440pbf.spi
-Time for NDB Parsing: CPU = 87.158 ms, elapsed = 134.376 ms.
-Time accumulated: CPU = 130.328 ms, elapsed = 134.384 ms.
-Peak resident memory used = 50.5 Mbytes.
+Reading file:  /users/students/r0763954/Documents/EAGLE2/Simvision/Global_T2_verilog/ANALOG_NETWORK.spi
+Reading file:  /users/students/r0763954/Documents/EAGLE2/Simvision/Global_T2_verilog/DI_10A01.spi
+Reading file:  /users/students/r0763954/Documents/EAGLE2/Simvision/Global_T2_verilog/LM7812.spi
+Reading file:  /users/students/r0763954/Documents/EAGLE2/Simvision/Global_T2_verilog/Ideal_adc.spi
+Reading file:  /users/students/r0763954/Documents/EAGLE2/Simvision/Global_T2_verilog/OPA2344.spi
+Reading file:  /users/students/r0763954/Documents/EAGLE2/Simvision/Global_T2_verilog/DI_BAV5004LP.spi
+Reading file:  /users/students/r0763954/Documents/EAGLE2/Simvision/Global_T2_verilog/IR2110.spi
+Reading file:  /users/students/r0763954/Documents/EAGLE2/Simvision/Global_T2_verilog/irfs_sl7440pbf.spi
+Reading file:  /users/students/r0763954/Documents/EAGLE2/Simvision/Global_T2_verilog/TLV2372.spi
+Reading file:  /users/students/r0763954/Documents/EAGLE2/Simvision/Global_T2_verilog/ST_BAT48.spi
+Time for NDB Parsing: CPU = 90.269 ms, elapsed = 136.972 ms.
+Time accumulated: CPU = 139.05 ms, elapsed = 136.98 ms.
+Peak resident memory used = 50.8 Mbytes.
 

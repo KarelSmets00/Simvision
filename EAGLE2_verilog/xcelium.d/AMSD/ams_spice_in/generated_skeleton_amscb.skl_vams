@@ -5,18 +5,44 @@
 `include "./xcelium.d/AMSD/ams_spice_in/generated_skeleton_amscb.skl_vams.attri"
 
 `SPICE1
-module  ANALOG_NETWORK (.SWIPT_OUT0( g1 ) , .SWIPT_OUT1( g2 ) , .SWIPT_OUT2( g3 ) , .SWIPT_OUT3( g4 ) );
+module  ANALOG_NETWORK (.SWIPT_OUT0( g1 ) , .SWIPT_OUT1( g2 ) , .SWIPT_OUT2( g3 ) , .SWIPT_OUT3( g4 ) , .ACOUT0( acout0 ) , .ACOUT1( acout1 ) , .ACOUT2( acout2 ) , .ACOUT3( acout3 ) , .ACOUT4( acout4 ) , .ACOUT5( acout5 ) , .ACOUT6( acout6 ) , .ACOUT7( acout7 ) , .ACOUT8( acout8 ) , .ACOUT9( acout9 ) , .ACOUT10( acout10 ) , .ACOUT11( acout11 ) );
 input g1;
 input g2;
 input g3;
 input g4;
+output acout0;
+output acout1;
+output acout2;
+output acout3;
+output acout4;
+output acout5;
+output acout6;
+output acout7;
+output acout8;
+output acout9;
+output acout10;
+output acout11;
 electrical g1;
 electrical g2;
 electrical g3;
 electrical g4;
+electrical acout0;
+electrical acout1;
+electrical acout2;
+electrical acout3;
+electrical acout4;
+electrical acout5;
+electrical acout6;
+electrical acout7;
+electrical acout8;
+electrical acout9;
+electrical acout10;
+electrical acout11;
 
 `define _vspsk_ANALOG_NETWORK
 `_vspsk_ANALOG_NETWORK
+parameter  real Vbat = 11 ;
+parameter  real Rm = 100 ;
 parameter  real P = 1.27e-05 ;
 parameter  real D = 0.5 ;
 parameter  real Von = 5 ;
