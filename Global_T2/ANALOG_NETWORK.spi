@@ -25,6 +25,7 @@ simulator lang = spice
 .include LM7812.spi
 .include Ideal_adc.spi
 .include LM7805.spi
+.include DI_BAV5004LP.spi
 
 * ---------------------------------------------------------------------------
 * GLOBAL NET
@@ -40,8 +41,6 @@ VBAT vcc vss Vbat
 VL vl vss 5
 XX1 G1 G2 G3 G4 PWM_source
 XX2 vl vss G1 G2 vss vcc LOAD ACL ACN G3 G4 h_bridge
-*Link
-XX3 ACL Cin vrxp vrxn link_optimized
 * here sim of analog sup
 VANA 3v3 vss 3.3
 VREF Vref vss 1
@@ -62,6 +61,8 @@ RADCp ADCp vss 1Meg
 RADCn ADCn vss 1Meg
 XXADCAC inp vss 3v3 vss Vcomp acout0 acout1 acout2 acout3 acout4 acout5 acout6 acout7 acout8 acout9 acout10 acout11 ideal_adc
 
+* Link
+XX3 ACL Cin vrxp vrxn link_optimized
 
 * Receiver
 XX4 vrxp vrxn vdcp vdcn full_bridge_rect
@@ -81,7 +82,12 @@ XXRXV vdcp vss 5v vss rxva rx_voltage
 * 12v mesurement
 XXRX12V 12v vss rx12va rx_12vmoni
 
-
+* demod
+Dp vrxp env DI_BAV5004LP
+Dn vrxn env DI_BAV5004LP
+XXDEM env 5v vss OUT_A OUT_D demodulator
+RADCMD OUT_D vss 1Meg
+RADCMA OUT_A vss 1Meg
 
 
 
@@ -227,6 +233,20 @@ XU1 Div OUT vcc agnd OUT TLV2372
 .SUBCKT rx_12vmoni vme v0 OUT
 R1 vme OUT 30k
 R2 OUT v0 10k
+.ENDS
+
+.SUBCKT demodulator env vcc agnd OUT_A OUT_D
+RENV env agnd 1k
+CENV env agnd 680u
+CLP env INp 1u
+RLP INp agnd 1.5k
+RF1 INn agnd 10k
+RF2 OUT_A INn 10k
+CF OUT_A INn 150n
+XU1 INp INn vcc agnd OUT_A OPA2344
+XU2 OUT_A agnd vcc agnd OUT_D LMV7219
+.include LMV7219.spi
+.include OPA2344.spi
 .ENDS
 
 .ENDS
