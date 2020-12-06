@@ -43,10 +43,10 @@ XX1 G1 G2 G3 G4 PWM_source
 XX2 vl vss G1 G2 vss vcc LOAD ACL ACN G3 G4 h_bridge
 * here sim of analog sup
 XX5V vcc vss tx5v LM7805
-VREF Vref vss 1
+*VREF Vref vss 1
 VCOMP Vcomp vss 2
 * end sim of analog sup
-*XX6 tx5v tx5v vss Vref reference
+XX6 tx5v tx5v vss Vref reference
 
 XX7 ADCV vcc vss tx5v Vref dc_voltage
 RADCV ADCV vss 1Meg

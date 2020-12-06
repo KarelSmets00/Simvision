@@ -10,12 +10,11 @@
 -SPECTRE_ARGS
 "+ms ++aps=liberal"
 -gui
--TCL
 -MESSAGES
 +EMGRLOG
 xrun.log
 -XLSTIME
-1607290063
+1607289970
 -XLKEEP
 -XLMODE
 ./xcelium.d/run.lnx8664.19.03.d
@@ -29,4 +28,4 @@ xrun
 -XLVERSION
 "TOOL:	xrun(64)	19.03-s013"
 -XLNAME
-./xcelium.d/run.lnx8664.19.03.d/vierre64-tmp3.esat.kuleuven.be_12652
+./xcelium.d/run.lnx8664.19.03.d/vierre64-tmp3.esat.kuleuven.be_7259

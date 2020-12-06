@@ -5,8 +5,8 @@ Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwi
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: r0761743   Host: vierre64-tmp3.esat.kuleuven.be   HostID: 570AAE14   PID: 29409
-Memory  available: 2.1049 GB  physical: 59.2906 GB
+User: r0761743   Host: vierre64-tmp3.esat.kuleuven.be   HostID: 570AAE14   PID: 13264
+Memory  available: 1.6354 GB  physical: 59.2906 GB
 Linux   : CentOS Linux release 7.9.2009 (Core)
 CPU Type: Intel Xeon Processor (Skylake)
 All processors running at 2194.8 MHz
@@ -21,10 +21,10 @@ All processors running at 2194.8 MHz
         7:      14, 15
         8:      16, 17
         
-System load averages (1min, 5min, 15min) : 15.2 %, 16.7 %, 17.6 %
+System load averages (1min, 5min, 15min) : 24.2 %, 24.7 %, 22.4 %
 
 
-Simulating `./xcelium.d/AMSD/ams_spice_in/.amsspice_normal.ckt' on vierre64-tmp3.esat.kuleuven.be at 7:33:02 PM, Sun Dec 6, 2020 (process id: 29409).
+Simulating `./xcelium.d/AMSD/ams_spice_in/.amsspice_normal.ckt' on vierre64-tmp3.esat.kuleuven.be at 10:27:48 PM, Sun Dec 6, 2020 (process id: 13264).
 Current working directory: /users/students/r0761743/Eagle/Simvision/Global_T2
 Environment variable:
     SPECTRE_DEFAULTS=
@@ -33,7 +33,7 @@ Command line:
         -noraw -va,amsspice_normal -ahdllibdir  \
         xcelium.d/AMSD/ams_spice_in/ahdlSimDB =log  \
         ./xcelium.d/AMSD/ams_spice_in/.amsspice_normal.ckt.log -token  \
-        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080FE71B870359768D3A13CC50411B6749FEA2FE10B0F887DC39431F37A3ED44FD9B63EAA3E399863C0B43FE90F319762DDE328FB6968CD30D1FE2CBB0C60FB7390A83DEEB8537F10B0AE3CAB3F64C82187BF2AAD6166CF62D5FF7FF14861FB2A82A83DED3C50FB10B0A83DED3C50FB10B0F7F0CEE073274F7D000042B6
+        0001AF26C83A239465DFBB2CC00A229E73C4B63DFD3B60CB2080FE71B870359768D3A13CC50411B6749FEA2FE10B0F887DC39431F37A3ED44FD9B63EAA3E399863C0B43FE90F319762DDE370A66A35CE3089AA2BEA0F60FB7390A83DEEB8537F10B0AE3CAB3F64C82187BF2AAD6166CF62D5FF7FF14861FB2A82A83DED3C50FB10B0A83DED3C50FB10B0F7F0A1EE1C294F7D000042A7
 
 Loading /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
 Loading /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
@@ -57,7 +57,7 @@ Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/irfs_sl7440pbf
 Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/LM6142A.spi
 Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/ST_BAT48.spi
 Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/LMV7219.spi
-Time for NDB Parsing: CPU = 90.796 ms, elapsed = 135.104 ms.
-Time accumulated: CPU = 132.331 ms, elapsed = 135.112 ms.
+Time for NDB Parsing: CPU = 89.71 ms, elapsed = 134.774 ms.
+Time accumulated: CPU = 132.493 ms, elapsed = 134.782 ms.
 Peak resident memory used = 51 Mbytes.
 
