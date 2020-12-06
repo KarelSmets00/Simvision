@@ -26,9 +26,9 @@ include "./ANALOG_NETWORK.spi" // analog subcircuit definitions
 
 amsd{
 
-	portmap subckt=ANALOG_NETWORK file="./analog_network.pb"
+//	portmap subckt=ANALOG_NETWORK file="./analog_network.pb"
 	config cell=ANALOG_NETWORK use=spice
-	ie vsup=3.3
+//	ie vsup=3.3
 
 }
 
@@ -37,16 +37,32 @@ amsd{
 DCsim dc
 
 //parameter Vbat varieren om sensor te testen
-paramSet1 paramset {
-	time	Vbat	
-	2000u	9.5
-	3000u	11.5
-	4000u	12
-	5000u	12
-}
+//paramSet1 paramset {
+//	time	Vbat	D	P
+//	0u	11	1	0.0126m	
+//	2000u	9.5	1	0.0126m	
+//	3000u	11.5	0.4	0.0126m	
+//	4000u	12	0.4	0.0126m	
+//	5000u	11.5	0.4	0.0126m	
+//	20000u	11.5	0.5	0.0126m	//1
+//	22000u	11.5	0.3	0.0126m //0
+//	24000u	11.5	0.5	0.0126m //1
+//	26000u	11.5	0.3	0.0126m //0
+//	28000u	11.5	0.3	0.0126m //0
+//	30000u	11.5	0.8	0.0126m //1
+//	30500u	11.5	0.5	0.0126m
+//	32000u	11.5	0	0.0126m //0
+//	32500u	11.5	0.3	0.0126m
+//	34000u	11.5	0.8	0.0126m //1
+//	34500u	11.5	0.5	0.0126m
+//	36000u	11.5	0	0.0126m //0
+//	36500u	11.5	0.3	0.0126m
+//	38000u	11.5	0.4	0.0126m
+//	
+//}
 
 // Tran simulation statement. Simulation will end when stop time is reached (so this should be longer than the required time to run the entire digital simulation or not if you only want to simulate a small part)
-Transim tran stop=6000u paramset=paramSet1
+Transim tran stop=10000u //paramset=paramSet1
 
 // Save internal voltages and currents
 opt1 options save=allpub

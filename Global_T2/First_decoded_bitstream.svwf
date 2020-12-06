@@ -1,0 +1,65 @@
+
+#
+# Mnemonic Maps
+#
+mmap new  -reuse -name {Boolean as Logic} -radix %b -contents {{%c=FALSE -edgepriority 1 -shape low}
+{%c=TRUE -edgepriority 1 -shape high}}
+mmap new  -reuse -name {Example Map} -radix %x -contents {{%b=11???? -bgcolor orange -label REG:%x -linecolor yellow -shape bus}
+{%x=1F -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=2C -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=* -label %x -linecolor gray -shape bus}}
+
+array unset createdGroup
+array set createdGroup {}
+set id [waveform add -signals [subst  {
+	{[format {toplevel.analog_network_inst.vdcp}]}
+	} ]]
+waveform format $id -height 154 -trace analogLinear
+waveform axis range $id -for V -min 1.6742465026343662e-05 -max 49.454906782655712 -scale linear
+set id [waveform add -signals [subst  {
+	{[format {toplevel.analog_network_inst.\12v }]}
+	} ]]
+waveform format $id -height 140 -trace analogLinear
+waveform axis range $id -for V -min -1.4115613886808083e-11 -max 12.084997583236914 -scale linear
+set id [waveform add -signals [subst  {
+	{[format {toplevel.analog_network_inst.tx5v}]}
+	} ]]
+waveform format $id -height 160 -trace analogLinear
+waveform axis range $id -for V -min 4.9123934415502841 -max 6.9785591338467601 -scale linear
+set id [waveform add -signals [subst  {
+	{[format {toplevel.analog_network_inst.rx5v}]}
+	} ]]
+waveform format $id -height 152 -trace analogLinear
+waveform axis range $id -for V -min -0.069785814212064284 -max 5.0665206851219331 -scale linear
+set id [waveform add -signals [subst  {
+	{[format {toplevel.analog_network_inst.env}]}
+	} ]]
+waveform format $id -height 100 -trace analogLinear
+waveform axis range $id -for V -min 2.3312481664504512e-08 -max 49.255644872179772 -scale linear
+set id [waveform add -signals [subst  {
+	{[format {toplevel.analog_network_inst.OUT_A}]}
+	} ]]
+waveform format $id -height 90 -trace analogLinear
+waveform axis range $id -for V -min -0.034628417390239599 -max 4.989443612245239 -scale linear
+set id [waveform add -signals [subst  {
+	{[format {toplevel.analog_network_inst.OUT_D}]}
+	} ]]
+waveform format $id -height 106 -trace analogLinear
+waveform axis range $id -for V -min -0.00034384056078402007 -max 5.0662692463105472 -scale linear
+set id [waveform add -signals [subst  {
+	{[format {toplevel.analog_network_inst.XXDEM.INp}]}
+	} ]]
+waveform format $id -height 116 -trace analogLinear
+waveform axis range $id -for V -min -0.56188779853051241 -max 5.8460002433643403 -scale linear
+set id [waveform add -signals [subst  {
+	{[format {toplevel.analog_network_inst.XXDEM.th}]}
+	} ]]
+waveform format $id -height 120 -trace analogLinear
+waveform axis range $id -for V -min -0.0033231354690910699 -max 0.24300113343658719 -scale linear
+set id [waveform add -signals [subst  {
+	{[format {toplevel.analog_network_inst.rxca}]}
+	} ]]
+waveform format $id -height 148 -trace analogLinear
+waveform axis range $id -for V -min -0.035812981365161992 -max 5.0574898053940851 -scale linear
+
+waveform xview limits 0 41999679859.7175616ps

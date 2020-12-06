@@ -1,3 +1,2 @@
-amsspice: *Notice (amsSim.scs,29): For the 'portmap' statement, assuming
+amsspice: *Notice (amsSim.scs,30): For the 'portmap' statement, assuming
 	  'autobus=yes' as the default type in the AMSD control block flow.
-amsspice: *Notice: Using external port-bind file: 'analog_network.pb'

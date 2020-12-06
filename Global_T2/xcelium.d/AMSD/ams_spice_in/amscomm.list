@@ -1,5 +1,5 @@
 //AMS_DUMPOPTIONS_BEGIN
-<global>:<stop>:0.006
+<global>:<stop>:0.01
 //AMS_DUMPOPTIONS_END
 
 //AMS_DUMPPRIM_BEGIN
@@ -90,5 +90,4 @@
 //* (c) Copyright 2007-2009 Cadence Design Systems, Inc. 
 //* All rights reserved. 
 skeleton_tag=skel_1 subckt="ANALOG_NETWORK" skel_file="generated_skeleton_amscb.skl_vams" config_tag=skel_1 cell="ANALOG_NETWORK" use=spice config_line_no=30 
-ie_tag=ie_1 discipline="ddiscrete_3_3"
 //AMS_SKEL_END
