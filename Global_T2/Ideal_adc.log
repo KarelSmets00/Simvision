@@ -1,0 +1,5 @@
+Questionable use of curly braces in "simulator lang = {pspice}"
+    Error: undefined symbol in: "[pspice]"
+Circuit: ** spice-model of an ideal 12-bit differential ADC (unclocked)
+
+Fatal Error: Simulator: Missing node(s).
