@@ -6,6 +6,7 @@ simulator lang = spice
 .param Vbat = 11
 .param P=0.0127m
 .param D=0.8
+.param Vdigi = 0
 
 * begin network
 .SUBCKT ANALOG_NETWORK
@@ -28,6 +29,38 @@ simulator lang = spice
 
 
 * ---------------------------------------------------------------------------
+* EAGLE 2 SWIPT SPICE SIMULATION OF TRANSIMTTER(TX) AND RECEIVER(RX) CIRCUIT
+* CONTAINS:
+* -tx inverter
+* -tx dc current and voltage and ac tank current measurement
+* -tx supply and adc protection
+* -rx rectifier 
+* -rx supply
+* -rx dc current and voltage measurement
+* -rx demodulator and demodulator
+*
+* All components are represented by the model files available on the web or from 
+* the manufacturer website (latter is the case for most of them)
+* 
+* The part of the netlist below (= GLOBAL NET) links all functional modules together
+* and provides them with the appropriate power.
+* All module descriptions can be found under the SUBCIRCUITS section. If a model file
+* is used in a subcircuit it is included within that module. The inclusions at the 
+* top of this file only represent the used models in the GLOBAL NET.
+*
+* INPUTS: G[1:4]     Vdigi	OUTPUTS: OUT_D	   vout[0:11]	  cout[0:11]	 acout[0:11]
+*	  |	     |			 |	   |		  |		 |
+*	 Gate drive  |			Output sig |		 TX DC current   |
+*	 inputs for  |			from the   |		 sensor output   |
+*	 inverter    |			demodulator|				 |
+*		    Input voor modulator 	  TX DC voltage			TX AC voltage
+*		    on receiver side		  sensor output			sensor output
+*
+*						  |_________________________________________|
+*						       12 bit 2 complement, xout0 = MSB
+*
+* 14-12-2020
+* ---------------------------------------------------------------------------
 * GLOBAL NET
 
 VSS vss 0 0
@@ -35,36 +68,43 @@ VSS vss 0 0
 * monitor parameters
 PVB pVbat vss Vbat
 
-* Transmitter
+
+* TRANSMITTER
 
 VBAT vcc vss Vbat
+CIN vcc vss 1000u
 VL vl vss 5
 XX1 G1 G2 G3 G4 PWM_source
 XX2 vl vss G1 G2 vss vcc LOAD ACL ACN G3 G4 h_bridge
-* here sim of analog sup
+
+* dc supply for supporting circuits
 XX5V vcc vss tx5v LM7805
+C5V tx5v vss 10u
 *VREF Vref vss 1
 VCOMP Vcomp vss 2
-* end sim of analog sup
-XX6 tx5v tx5v vss Vref reference
+*XX6 tx5v tx5v vss Vref reference
+XX6 tx5v vss Vref reference_mirror
 
+* dc voltage sensing
 XX7 ADCV vcc vss tx5v Vref dc_voltage
 RADCV ADCV vss 1Meg
 XXADCV inp vss tx5v vss Vcomp vout0 vout1 vout2 vout3 vout4 vout5 vout6 vout7 vout8 vout9 vout10 vout11 ideal_adc
-
+* dc current sensing
 XX8 LOAD vss ADCC tx5v Vref Agnd dc_current
 RADCC ADCC vss 1Meg
 XXADCC inp vss tx5v vss Vcomp cout0 cout1 cout2 cout3 cout4 cout5 cout6 cout7 cout8 cout9 cout10 cout11 ideal_adc
-
+* ac current sensing
 XX9 Cin ACN Vref vss tx5v ADCp ADCn current_sensorv3
 RADCp ADCp vss 1Meg
 RADCn ADCn vss 1Meg
 XXADCAC inp vss tx5v vss Vcomp acout0 acout1 acout2 acout3 acout4 acout5 acout6 acout7 acout8 acout9 acout10 acout11 ideal_adc
 
-* Link
+
+* LINK
 XX3 ACL Cin vrxp vrxn link_optimized
 
-* Receiver
+
+* RECEIVER
 XX4 vrxp vrxn vdcp vdcn full_bridge_rect
 CSTAB vdcp vss 1000u
 * rx dc current
@@ -89,8 +129,12 @@ Dn vrxn env DI_BAV5004LP
 XXDEM env rx5v vss OUT_A OUT_D demodulator
 RADCMD OUT_D vss 1Meg
 RADCMA OUT_A vss 1Meg
+* modulator
+VDIG din vss Vdigi
+XXMOD vdcp vss din 12v vss modulator
 * lcd
 RLCD rx5v vss 125
+
 
 
 * ---------------------------------------------------------------------------
@@ -100,13 +144,21 @@ RLCD rx5v vss 125
 .SUBCKT reference Vdiv Vcc COMM Vref
 R1 Vdiv INn 4k
 R2 INn COMM 1k
-XU1 INn Vref Vcc COMM OUT OPA2344
+XU1 Vref INn Vcc COMM OUT LM6142A/NS
 R3 Vdiv Vref 100k
-M1 Vref OUT COMM COMM BS170
-.include BS170.spi
-.include OPA2344.spi
+XU2 Vref OUT COMM COMM BS_MMBF170
+.include BS_MMBF170.spi
+.include LM6142A.spi
 .ENDS
 
+.SUBCKT reference_mirror Vcc COMM Vref
+R1 Vcc E1 100k
+R2 B COMM 10k
+Q1 B B E1 2N2907
+R3 Vcc Vref 10k
+Q2 COMM B Vref 2N2907
+.include 2N2907.spi
+.ENDS
 
 .SUBCKT PWM_source G1 G2 G3 G4
 V1 G1 0 PULSE(0 Von 0 0.1n 0.1n P*D P*2)
@@ -144,7 +196,7 @@ R3 N003 N002 100
 XU1 N001 N002 Vdd COMM N002 LM6142A/NS
 D1 N003 INmax BAT48
 D2 COMM N003 BAT48
-R4 ADC N003 100
+R4 ADC N003 1k
 .include LM6142A.spi
 *.include TLV2372.spi
 *.include OPA2344.spi
@@ -159,7 +211,7 @@ XU1 LOAD INn Vdd COMM OUT LM6142A/NS
 R1 N002 OUT 100
 D1 N002 INmax BAT48
 D2 Agnd N002 BAT48
-R2 ADC N002 100
+R2 ADC N002 1k
 .include LM6142A.spi
 *.include TLV2372.spi
 *.include OPA2344.spi
@@ -174,8 +226,8 @@ R1 N001 Vcm 1Meg
 R2 Vcm N002 1Meg
 R3 Vcm Agnd 10k
 R4 Vcc Vcm 50k
-R6 ADC+ N001 100
-R7 ADC- N002 100
+R6 ADC+ N001 1k
+R7 ADC- N002 1k
 D1 ADC+ INmax BAT48
 D2 ADC- INmax BAT48
 D3 Agnd ADC+ BAT48
@@ -260,6 +312,14 @@ RT2 th agnd 1k
 XU2 OUT_A th vcc agnd OUT_D LMV7219
 .include LMV7219.spi
 .include OPA2344.spi
+.ENDS
+
+.SUBCKT modulator drn src in vcc agnd
+RSHORT drn drain 10m
+XU1 drain gate src irfs_sl7440pbf
+XU2 in gate vcc agnd TC4427_I2D_A
+.include irfs_sl7440pbf.spi
+.include TC4427_I2D_A.spi
 .ENDS
 
 .ENDS

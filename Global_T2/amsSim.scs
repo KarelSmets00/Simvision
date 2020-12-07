@@ -60,9 +60,17 @@ DCsim dc
 //	38000u	11.5	0.4	0.0126m
 //	
 //}
+// parameter Vdigi varieren om modulator te testen
+paramSet1 paramset {
+	time	Vdigi
+	0u	0	
+	5000u	5
+	8000u	0
+	
+}
 
 // Tran simulation statement. Simulation will end when stop time is reached (so this should be longer than the required time to run the entire digital simulation or not if you only want to simulate a small part)
-Transim tran stop=10000u //paramset=paramSet1
+Transim tran stop=10000u paramset=paramSet1
 
 // Save internal voltages and currents
 opt1 options save=allpub

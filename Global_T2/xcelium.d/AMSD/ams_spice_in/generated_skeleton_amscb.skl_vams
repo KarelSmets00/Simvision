@@ -11,6 +11,7 @@ module  ANALOG_NETWORK( );
 parameter  real D = 0.8 ;
 parameter  real P = 1.27e-05 ;
 parameter  real Vbat = 11 ;
+parameter  real Vdigi = 0 ;
 parameter  real Rm = 100 ;
 parameter  real Von = 5 ;
 parameter  real k12 = 0.62499 ;

@@ -1,5 +1,5 @@
 xrun(64): 19.03-s013: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	19.03-s013: Started on Dec 06, 2020 at 22:27:43 CET
+TOOL:	xrun(64)	19.03-s013: Started on Dec 07, 2020 at 12:50:16 CET
 xrun
 	./amsSim.scs
 	-spectre_args "+ms ++aps=liberal"
@@ -35,8 +35,8 @@ Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwi
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: r0761743   Host: vierre64-tmp3.esat.kuleuven.be   HostID: 570AAE14   PID: 12652
-Memory  available: 1.6389 GB  physical: 59.2906 GB
+User: r0761743   Host: vierre64-tmp3.esat.kuleuven.be   HostID: 570AAE14   PID: 11320
+Memory  available: 18.9591 GB  physical: 63.1554 GB
 Linux   : CentOS Linux release 7.9.2009 (Core)
 CPU Type: Intel Xeon Processor (Skylake)
 All processors running at 2194.8 MHz
@@ -51,7 +51,7 @@ All processors running at 2194.8 MHz
         7:      14, 15
         8:      16, 17
         
-System load averages (1min, 5min, 15min) : 24.1 %, 24.7 %, 22.4 %
+System load averages (1min, 5min, 15min) : 15.6 %, 22.8 %, 24.8 %
 HPC is enabled
 
 
@@ -74,21 +74,23 @@ Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/LM7812.spi
 Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/Ideal_adc.spi
 Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/LM7805.spi
 Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/DI_BAV5004LP.spi
-Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/BS170.spi
-Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/OPA2344.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/BS_MMBF170.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/LM6142A.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/2N2907.spi
 Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/IR2110.spi
 Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/irfs_sl7440pbf.spi
-Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/LM6142A.spi
 Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/ST_BAT48.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/OPA2344.spi
 Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/LMV7219.spi
+Reading file:  /users/students/r0761743/Eagle/Simvision/Global_T2/TC4427_I2D_A.spi
 Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms#2.cfg
 Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ms,ms.cfg
 
 
 Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
-Time for NDB Parsing: CPU = 241.929 ms, elapsed = 824.563 ms.
-Time accumulated: CPU = 510.052 ms, elapsed = 824.568 ms.
-Peak resident memory used = 88.7 Mbytes.
+Time for NDB Parsing: CPU = 258.299 ms, elapsed = 762.916 ms.
+Time accumulated: CPU = 530.531 ms, elapsed = 762.92 ms.
+Peak resident memory used = 103 Mbytes.
 
 xcelium> 
 -------------------------------------
@@ -99,18 +101,13 @@ xcelium> # Restoring simulation environment...
 xcelium> input -quiet .reinvoke.sim
 xcelium> file delete .reinvoke.sim
 xcelium> run
-
-Error found by spectre in `reference', in `worklib__ANALOG_NETWORK__spice_skeleton__0x10000001', during circuit read-in.
-    ERROR (SFE-395): "./BS170.spi" 5: The primitive 'VDMOS' could not be found when attempting to create the model 'BS170'.
-    ERROR (SFE-23): "./ANALOG_NETWORK.spi" 105: The instance `M1' is referencing an undefined model or subcircuit, `BS170'. Either include the file containing the definition of `BS170', or define `BS170' before running the simulation.
-
 Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/ahdl/discipline.h
 Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/ahdl/disciplines.vams
 Reading link:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/ahdl/constants.h
 Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/ahdl/constants.vams
 
 Warning from spectre during hierarchy flattening.
-    WARNING (SFE-30): "./ANALOG_NETWORK.spi" 12: Parameter `post', specified for primitive `options', has been ignored because it is an invalid instance parameter. Specify a valid instance parameter and rerun the simulation. Type `spectre -h options' to get more information on valid instance parameters.
+    WARNING (SFE-30): "./ANALOG_NETWORK.spi" 13: Parameter `post', specified for primitive `options', has been ignored because it is an invalid instance parameter. Specify a valid instance parameter and rerun the simulation. Type `spectre -h options' to get more information on valid instance parameters.
 
 Existing shared object for module bsource_33457b is up to date.
 Installed compiled interface for bsource_33457b.
@@ -132,6 +129,16 @@ Existing shared object for module bsource_b55d8c is up to date.
 Installed compiled interface for bsource_b55d8c.
 Existing shared object for module bsource_d8ebd4 is up to date.
 Installed compiled interface for bsource_d8ebd4.
+Existing shared object for module bsource_c228a7 is up to date.
+Installed compiled interface for bsource_c228a7.
+Existing shared object for module bsource_d5ab52 is up to date.
+Installed compiled interface for bsource_d5ab52.
+Existing shared object for module bsource_165d7f is up to date.
+Installed compiled interface for bsource_165d7f.
+Existing shared object for module bsource_72124c is up to date.
+Installed compiled interface for bsource_72124c.
+Existing shared object for module bsource_6fe116 is up to date.
+Installed compiled interface for bsource_6fe116.
 Existing shared object for module bsource_143f41 is up to date.
 Installed compiled interface for bsource_143f41.
 Existing shared object for module bsource_01a494 is up to date.
@@ -139,22 +146,393 @@ Installed compiled interface for bsource_01a494.
 Existing shared object for module bsource_733596 is up to date.
 Installed compiled interface for bsource_733596.
 
+Warning from spectre in `toplevel.analog_network_inst.reference_mirror':`toplevel.analog_network_inst.XX6', in `worklib__ANALOG_NETWORK__spice_skeleton__0x10000001':`toplevel.analog_network_inst', in `worklib__toplevel__v':`toplevel', during hierarchy flattening.
+    WARNING (SFE-101): "./2N2907.spi" 1: toplevel.analog_network_inst.XX6.2N2907: `Vceo' is not a valid parameter for an instance of `bjt'.  Ignored.
+    WARNING (SFE-101): "./2N2907.spi" 1: toplevel.analog_network_inst.XX6.2N2907: `Icrating' is not a valid parameter for an instance of `bjt'.  Ignored.
+    WARNING (SFE-101): "./2N2907.spi" 1: toplevel.analog_network_inst.XX6.2N2907: `mfg' is not a valid parameter for an instance of `bjt'.  Ignored.
+Warning from spectre during hierarchy flattening.
+    WARNING (SFE-3013): The dangling instance toplevel.analog_network_inst.PVB_mm is removed.
+    WARNING (SFE-3013): The dangling instance toplevel.analog_network_inst.PVB is removed.
+    WARNING (SFE-3012): The shorted instance toplevel.analog_network_inst.XX2.XU1.D_MD1_D4 is removed.
+    WARNING (SFE-3012): The shorted instance toplevel.analog_network_inst.XX2.XU1.R_MD1_R2 is removed.
+    WARNING (SFE-3012): The shorted instance toplevel.analog_network_inst.XX2.XU6.D_MD1_D4 is removed.
+    WARNING (SFE-3012): The shorted instance toplevel.analog_network_inst.XX2.XU6.R_MD1_R2 is removed.
+    WARNING (SFE-3013): The dangling instance toplevel.analog_network_inst.XX8.D2 is removed.
+    WARNING (SFE-3016): The floating node __cds_internal_stub_node__ is removed.
+    WARNING (SFE-3015): The dangling node toplevel.analog_network_inst.Vbat is removed.
+    WARNING (SFE-3015): The dangling node toplevel.analog_network_inst.pVbat is removed.
+    WARNING (SFE-3015): The dangling node toplevel.analog_network_inst.Agnd is removed.
 
-Time for Elaboration: CPU = 159.675 ms, elapsed = 2.21483 s.
-Time accumulated: CPU = 669.883 ms, elapsed = 3.03955 s.
-Peak resident memory used = 118 Mbytes.
+Time for Elaboration: CPU = 291.549 ms, elapsed = 1.58088 s.
+Time accumulated: CPU = 822.238 ms, elapsed = 2.34396 s.
+Peak resident memory used = 137 Mbytes.
+
+Starting APS DC ...
 
 
-Aggregate audit (10:27:52 PM, Sun Dec 6, 2020):
-Time used: CPU = 670 ms, elapsed = 3.04 s, util. = 22.1%.
-Time spent in licensing: elapsed = 18.6 ms.
-Peak memory used = 118 Mbytes.
-Simulation started at: 10:27:49 PM, Sun Dec 6, 2020, ended at: 10:27:52 PM, Sun Dec 6, 2020, with elapsed time (wall clock): 3.04 s.
-spectre completes with 2 errors, 1 warning, and 1 notice.
-spectre terminated prematurely due to fatal error.
-xmsim: *E,RNALER: Simulation terminated due to analog error.
-Memory Usage - Current physical: 117.8M, Current virtual: 828.4M
-CPU Usage - 0.2s system + 0.3s user = 0.5s total (16.0% cpu)
-xcelium> ^C
-xcelium> exit
-TOOL:	xrun(64)	19.03-s013: Exiting on Dec 06, 2020 at 22:28:07 CET  (total: 00:00:24)
+Notice from spectre in `irfs_sl7440pbf':`toplevel.analog_network_inst.XX2.XU2', in `h_bridge':`toplevel.analog_network_inst.XX2', in `worklib__ANALOG_NETWORK__spice_skeleton__0x10000001':`toplevel.analog_network_inst', in `worklib__toplevel__v':`toplevel', during hierarchy flattening.
+    toplevel.analog_network_inst.XX2.XU2.MM: The saturation channel conductance is zero in the model.  This could result in enormous gain and cause convergence or overflow problems.  Check the value of lambda or kappa.
+Warning from spectre in `irfs_sl7440pbf':`toplevel.analog_network_inst.XX2.XU2', in `h_bridge':`toplevel.analog_network_inst.XX2', in `worklib__ANALOG_NETWORK__spice_skeleton__0x10000001':`toplevel.analog_network_inst', in `worklib__toplevel__v':`toplevel', during hierarchy flattening.
+    WARNING (CMI-2316): toplevel.analog_network_inst.XX2.XU2.D1: Parasitic resistor `rs' has been deleted because its value of 1.43764 mOhm ( R / (Area * MFactor) ) was smaller than `minr'.
+    WARNING (CMI-2316): toplevel.analog_network_inst.XX2.XU2.D3: Parasitic resistor `rs' has been deleted because its value of 3 uOhm ( R / (Area * MFactor) ) was smaller than `minr'.
+Warning from spectre in `h_bridge':`toplevel.analog_network_inst.XX2', in `worklib__ANALOG_NETWORK__spice_skeleton__0x10000001':`toplevel.analog_network_inst', in `worklib__toplevel__v':`toplevel', during hierarchy flattening.
+    WARNING (CMI-2362): toplevel.analog_network_inst.XX2.DI_BAV5004LP: The value of `vj(pb)' at T = 27 C is 55e-03 V, which is too small. Clamped to 100e-03 V.
+    WARNING (CMI-2362): toplevel.analog_network_inst.XX2.DI_BAV5004LP: The value of `vj(pb)' at T = 27 C is 55e-03 V, which is too small. Clamped to 100e-03 V.
+Notice from spectre in `LM6142A/NS':`toplevel.analog_network_inst.XX7.XU1', in `dc_voltage':`toplevel.analog_network_inst.XX7', in `worklib__ANALOG_NETWORK__spice_skeleton__0x10000001':`toplevel.analog_network_inst', in `worklib__toplevel__v':`toplevel', during hierarchy flattening.
+    toplevel.analog_network_inst.XX7.XU1.MX: The saturation channel conductance is zero in the model.  This could result in enormous gain and cause convergence or overflow problems.  Check the value of lambda or kappa.
+    toplevel.analog_network_inst.XX7.XU1.MX: `cgso' is not specified.  0.1um * Cox is used.
+    toplevel.analog_network_inst.XX7.XU1.MX: `cgdo' is not specified.  0.1um * Cox is used.
+    toplevel.analog_network_inst.XX7.XU1.MX: The saturation channel conductance is zero in the model.  This could result in enormous gain and cause convergence or overflow problems.  Check the value of lambda or kappa.
+Notice from spectre in `LM6142A/NS':`toplevel.analog_network_inst.XX8.XU1', in `dc_current':`toplevel.analog_network_inst.XX8', in `worklib__ANALOG_NETWORK__spice_skeleton__0x10000001':`toplevel.analog_network_inst', in `worklib__toplevel__v':`toplevel', during hierarchy flattening.
+    toplevel.analog_network_inst.XX8.XU1.MX: The saturation channel conductance is zero in the model.  This could result in enormous gain and cause convergence or overflow problems.  Check the value of lambda or kappa.
+    toplevel.analog_network_inst.XX8.XU1.MX: `cgso' is not specified.  0.1um * Cox is used.
+    toplevel.analog_network_inst.XX8.XU1.MX: `cgdo' is not specified.  0.1um * Cox is used.
+    toplevel.analog_network_inst.XX8.XU1.MX: The saturation channel conductance is zero in the model.  This could result in enormous gain and cause convergence or overflow problems.  Check the value of lambda or kappa.
+        Further occurrences of this notice will be suppressed.
+Warning from spectre in `full_bridge_rect':`toplevel.analog_network_inst.XX4', in `worklib__ANALOG_NETWORK__spice_skeleton__0x10000001':`toplevel.analog_network_inst', in `worklib__toplevel__v':`toplevel', during hierarchy flattening.
+    WARNING (CMI-2316): toplevel.analog_network_inst.XX4.D1: Parasitic resistor `rs' has been deleted because its value of 2.06 mOhm ( R / (Area * MFactor) ) was smaller than `minr'.
+    WARNING (CMI-2316): toplevel.analog_network_inst.XX4.D2: Parasitic resistor `rs' has been deleted because its value of 2.06 mOhm ( R / (Area * MFactor) ) was smaller than `minr'.
+    WARNING (CMI-2316): toplevel.analog_network_inst.XX4.D3: Parasitic resistor `rs' has been deleted because its value of 2.06 mOhm ( R / (Area * MFactor) ) was smaller than `minr'.
+        Further occurrences of this warning will be suppressed.
+Notice from spectre in `LM6142A/NS':`toplevel.analog_network_inst.XXRXC.XU1', in `rx_current':`toplevel.analog_network_inst.XXRXC', in `worklib__ANALOG_NETWORK__spice_skeleton__0x10000001':`toplevel.analog_network_inst', in `worklib__toplevel__v':`toplevel', during hierarchy flattening.
+    toplevel.analog_network_inst.XXRXC.XU1.MX: `cgso' is not specified.  0.1um * Cox is used.
+        Further occurrences of this notice will be suppressed.
+Notice from spectre in `LMV7219':`toplevel.analog_network_inst.XXDEM.XU2', in `demodulator':`toplevel.analog_network_inst.XXDEM', in `worklib__ANALOG_NETWORK__spice_skeleton__0x10000001':`toplevel.analog_network_inst', in `worklib__toplevel__v':`toplevel', during hierarchy flattening.
+    toplevel.analog_network_inst.XXDEM.XU2.WPM: Values of `kp' and `uo' are not consistent.
+    toplevel.analog_network_inst.XXDEM.XU2.WNM: Values of `kp' and `uo' are not consistent.
+Warning from spectre in `worklib__ANALOG_NETWORK__spice_skeleton__0x10000001':`toplevel.analog_network_inst', in `worklib__toplevel__v':`toplevel', during hierarchy flattening.
+    WARNING (CMI-2362): toplevel.analog_network_inst.DI_BAV5004LP: The value of `vj(pb)' at T = 27 C is 55e-03 V, which is too small. Clamped to 100e-03 V.
+    WARNING (CMI-2362): toplevel.analog_network_inst.DI_BAV5004LP: The value of `vj(pb)' at T = 27 C is 55e-03 V, which is too small. Clamped to 100e-03 V.
+
+Time for EDB Visit::table model: CPU = 104.072 ms, elapsed = 103.835 ms.
+Time accumulated: CPU = 970.601 ms, elapsed = 3.41117 s.
+Peak resident memory used = 270 Mbytes.
+
+
+Time for EDB Visiting: CPU = 8.84496 s, elapsed = 2.48297 s.
+Time accumulated: CPU = 9.66735 s, elapsed = 4.82708 s.
+Peak resident memory used = 270 Mbytes.
+
+
+Notice from spectre.
+    44 notices suppressed.
+    3 warnings suppressed.
+Warning from spectre.
+    WARNING (XPS-1002): node toplevel.analog_network_inst.inp has no driver
+    WARNING (XPS-1002): node toplevel.analog_network_inst.XX2.XU1.MD1_Trig1_3 has no driver
+    WARNING (XPS-1002): node toplevel.analog_network_inst.XX2.XU1.MD1_Trig2_3 has no driver
+    WARNING (XPS-1002): node toplevel.analog_network_inst.XX2.XU1.MD1_Trig3_3 has no driver
+    WARNING (XPS-1002): node toplevel.analog_network_inst.XX2.XU6.MD1_Trig1_3 has no driver
+        Further occurrences of this warning will be suppressed.
+    WARNING (XPS-1001): 7 nodes have no driver
+    WARNING (XPS-1006): No digital partition identified.
+Notice from spectre.
+    Using Spectre APS mode because no digital content has been detected. Spectre mixed-signal mode has been disabled.
+
+
+
+Warning from spectre.
+    WARNING (CMI-2316): toplevel.analog_network_inst.XXMOD.XU1.D3: Parasitic resistor `rs' has been deleted because its value of 3 uOhm ( R / (Area * MFactor) ) was smaller than `minr'.
+    WARNING (CMI-2316): toplevel.analog_network_inst.XXMOD.XU1.D1: Parasitic resistor `rs' has been deleted because its value of 1.43764 mOhm ( R / (Area * MFactor) ) was smaller than `minr'.
+    WARNING (CMI-2316): toplevel.analog_network_inst.XX4.D4: Parasitic resistor `rs' has been deleted because its value of 2.06 mOhm ( R / (Area * MFactor) ) was smaller than `minr'.
+    WARNING (CMI-2316): toplevel.analog_network_inst.XX4.D3: Parasitic resistor `rs' has been deleted because its value of 2.06 mOhm ( R / (Area * MFactor) ) was smaller than `minr'.
+    WARNING (CMI-2316): toplevel.analog_network_inst.XX4.D2: Parasitic resistor `rs' has been deleted because its value of 2.06 mOhm ( R / (Area * MFactor) ) was smaller than `minr'.
+        Further occurrences of this warning will be suppressed.
+    WARNING (CMI-2362): toplevel.analog_network_inst.XX2.DI_BAV5004LP: The value of `vj(pb)' at T = 27 C is 55e-03 V, which is too small. Clamped to 100e-03 V.
+    WARNING (CMI-2362): toplevel.analog_network_inst.XX2.DI_BAV5004LP: The value of `vj(pb)' at T = 27 C is 55e-03 V, which is too small. Clamped to 100e-03 V.
+    WARNING (CMI-2362): toplevel.analog_network_inst.DI_BAV5004LP: The value of `vj(pb)' at T = 27 C is 55e-03 V, which is too small. Clamped to 100e-03 V.
+    WARNING (CMI-2362): toplevel.analog_network_inst.DI_BAV5004LP: The value of `vj(pb)' at T = 27 C is 55e-03 V, which is too small. Clamped to 100e-03 V.
+Notice from spectre.
+    toplevel.analog_network_inst.XXMOD.XU1.MM: The saturation channel conductance is zero in the model.  This could result in enormous gain and cause convergence or overflow problems.  Check the value of lambda or kappa.
+    toplevel.analog_network_inst.XXDEM.XU2.WPM: The saturation channel conductance is zero in the model.  This could result in enormous gain and cause convergence or overflow problems.  Check the value of lambda or kappa.
+    toplevel.analog_network_inst.XXDEM.XU2.WPM: Values of `kp' and `uo' are not consistent.
+    toplevel.analog_network_inst.XXDEM.XU2.WNM: The saturation channel conductance is zero in the model.  This could result in enormous gain and cause convergence or overflow problems.  Check the value of lambda or kappa.
+    toplevel.analog_network_inst.XXDEM.XU2.WNM: Values of `kp' and `uo' are not consistent.
+    toplevel.analog_network_inst.XXDEM.XU1.NIN: The saturation channel conductance is zero in the model.  This could result in enormous gain and cause convergence or overflow problems.  Check the value of lambda or kappa.
+    toplevel.analog_network_inst.XXDEM.XU1.NIN: `cgso' is not specified.  0.1um * Cox is used.
+    toplevel.analog_network_inst.XXDEM.XU1.NIN: `cgdo' is not specified.  0.1um * Cox is used.
+    toplevel.analog_network_inst.XXDEM.XU1.PIN: The saturation channel conductance is zero in the model.  This could result in enormous gain and cause convergence or overflow problems.  Check the value of lambda or kappa.
+        Further occurrences of this notice will be suppressed.
+    toplevel.analog_network_inst.XXDEM.XU1.PIN: `cgso' is not specified.  0.1um * Cox is used.
+    toplevel.analog_network_inst.XXDEM.XU1.PIN: `cgdo' is not specified.  0.1um * Cox is used.
+    toplevel.analog_network_inst.XXDEM.XU1.NOUT: `cgso' is not specified.  0.1um * Cox is used.
+        Further occurrences of this notice will be suppressed.
+Warning from spectre.
+    WARNING (CMI-2732): toplevel.analog_network_inst.XXDEM.XU2.RD2:  Resistance= 1.000000e+18 has exceeded rcut=1.000000e+12 and will be cut to 1.000000e+12. 
+    WARNING (CMI-2732): toplevel.analog_network_inst.XXDEM.XU2.RD1:  Resistance= 1.000000e+18 has exceeded rcut=1.000000e+12 and will be cut to 1.000000e+12. 
+    WARNING (CMI-2732): toplevel.analog_network_inst.XXDEM.XU2.RD3:  Resistance= 1.000000e+18 has exceeded rcut=1.000000e+12 and will be cut to 1.000000e+12. 
+    WARNING (SPECTRE-8281): `__cds_internal_stub_node__' is not a node nor an instance name.
+    WARNING (SPECTRE-8286): Ignoring invalid item `__cds_internal_stub_node__' in save statement.
+        Node is dangling or part of a dangling chain.
+    WARNING (SPECTRE-8286): Ignoring invalid item `toplevel.analog_network_inst.Agnd' in save statement.
+        Node is dangling or part of a dangling chain.
+Notice from spectre during topology check.
+    Only one connection to the following 13 nodes:
+        toplevel.analog_network_inst.inp
+        toplevel.analog_network_inst.vout0
+        toplevel.analog_network_inst.vout1
+        toplevel.analog_network_inst.vout2
+        toplevel.analog_network_inst.vout3
+        Further occurrences of this notice will be suppressed.
+    No DC path from node `toplevel.analog_network_inst.inp' to ground, Gmin installed to provide path.
+
+
+Global user options:
+      addflowsuffix = yes
+        dotprobefmt = hier
+               save = allpub
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 833
+                bjt 64    
+     bsource_01a494 33    
+     bsource_6fe116 2     
+     bsource_7a0313 4     
+     bsource_143f41 3     
+     bsource_165d7f 5     
+     bsource_757ee0 5     
+     bsource_1477d0 2     
+     bsource_33457b 18    
+     bsource_72124c 1     
+     bsource_79758d 2     
+     bsource_733596 33    
+     bsource_a478ed 8     
+     bsource_b55d8c 4     
+     bsource_c2f010 2     
+     bsource_c228a7 14    
+     bsource_cf8dca 2     
+     bsource_d5ab52 3     
+     bsource_d8ebd4 4     
+          capacitor 226   
+               cccs 23    
+               ccvs 2     
+              diode 176   
+           inductor 16    
+            isource 31    
+               jfet 8     
+               mos1 41    
+    mutual_inductor 6     
+              pvccs 6     
+              pvcvs 4     
+              relay 192   
+           resistor 588   
+               vccs 56    
+               vcvs 75    
+            vsource 131   
+               port 2     
+
+Analysis and control statement inventory:
+                 dc 1     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+
+Notice from spectre.
+    11 resistors are shorted because their absolute value is less than or equal to 'rabsshort'.
+    2 vsources are short because their absolute value is less than or equal to 'vabsshort'.
+    Multithreading Enabled: 8 threads in the system with 18 available processors.
+    Fast APS Enabled ( ++aps ).
+
+Time for parsing: CPU = 244.918 ms, elapsed = 248.874 ms.
+Time accumulated: CPU = 9.9124 s, elapsed = 5.07609 s.
+Peak resident memory used = 281 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+   -   MS Table model. VDD=5V used for XPS table model creation, to overwrite 
+                 tmopt options vdd=val
+   -   MS Circuit partitions: 0% transistors and 0% nodes are identified as digital partitions.
+             One of the following solutions may improve the digital detection.
+                 Manually define internal digital power supply nodes and voltages.
+                        opt1 options ms_vpn=[VDD_DIG 1.2 VDD_DIG1 3.3]
+                        opt2 options ms_vgnd=[VSS]
+                 For complex device models use the MS macro model option.
+                        opt3 options macro_mos=[pmos_subckt nmos_subckt]
+                 Use the cktpreset=digital option to force subcircuits into digital.
+                        opt4 options cktpreset=digital subckt=[subckt_def_name]
+                        opt5 options cktpreset=digital inst=[subckt_inst_name]
+~~~~~~~~~~~~~~~~~~~~~~
+
+Notice from spectre.
+    27 notices suppressed.
+    11 warnings suppressed.
+Warning from spectre.
+    WARNING (SPECTRE-16830): The 'DCsim' analysis of type 'dc' is skipped in XPS flow.
+    WARNING (SPECTRE-16518): Arithmetic exception in analysis `DCsim' .
+
+Total time required for dc analysis `DCsim': CPU = 230 us, elapsed = 134.945 us.
+Time accumulated: CPU = 9.93089 s, elapsed = 5.09463 s.
+Peak resident memory used = 282 Mbytes.
+
+
+Warning from spectre.
+    WARNING (CMI-2015): Unable to open ic file `./amsSim.apsdc'.
+        No such file or directory.
+
+
+***************************************************
+Transient Analysis `Transim': time = (0 s -> 10 ms)
+***************************************************
+
+Notice from spectre during transient analysis `Transim'.
+    The value of parameter 'Vdigi' was set to 0 at time 0 s.
+Warning from spectre during transient analysis `Transim'.
+    WARNING (CMI-2362): toplevel.analog_network_inst.DI_BAV5004LP: The value of `vj(pb)' at T = 27 C is 55e-03 V, which is too small. Clamped to 100e-03 V.
+    WARNING (CMI-2362): toplevel.analog_network_inst.XX2.DI_BAV5004LP: The value of `vj(pb)' at T = 27 C is 55e-03 V, which is too small. Clamped to 100e-03 V.
+    WARNING (CMI-2316): toplevel.analog_network_inst.XX2.XU2.D1: Parasitic resistor `rs' has been deleted because its value of 1.43764 mOhm ( R / (Area * MFactor) ) was smaller than `minr'.
+    WARNING (CMI-2316): toplevel.analog_network_inst.XX2.XU2.D3: Parasitic resistor `rs' has been deleted because its value of 3 uOhm ( R / (Area * MFactor) ) was smaller than `minr'.
+    WARNING (CMI-2316): toplevel.analog_network_inst.XX4.D1: Parasitic resistor `rs' has been deleted because its value of 2.06 mOhm ( R / (Area * MFactor) ) was smaller than `minr'.
+    WARNING (CMI-2316): toplevel.analog_network_inst.XXMOD.XU1.D1: Parasitic resistor `rs' has been deleted because its value of 1.43764 mOhm ( R / (Area * MFactor) ) was smaller than `minr'.
+    WARNING (CMI-2316): toplevel.analog_network_inst.XXMOD.XU1.D3: Parasitic resistor `rs' has been deleted because its value of 3 uOhm ( R / (Area * MFactor) ) was smaller than `minr'.
+        Further occurrences of this warning will be suppressed.
+Notice from spectre during transient analysis `Transim'.
+    toplevel.analog_network_inst.XX2.XU2.MM: The saturation channel conductance is zero in the model.  This could result in enormous gain and cause convergence or overflow problems.  Check the value of lambda or kappa.
+    toplevel.analog_network_inst.XX7.XU1.MX: The saturation channel conductance is zero in the model.  This could result in enormous gain and cause convergence or overflow problems.  Check the value of lambda or kappa.
+    toplevel.analog_network_inst.XX8.XU1.MX: The saturation channel conductance is zero in the model.  This could result in enormous gain and cause convergence or overflow problems.  Check the value of lambda or kappa.
+    toplevel.analog_network_inst.XXRXC.XU1.MX: The saturation channel conductance is zero in the model.  This could result in enormous gain and cause convergence or overflow problems.  Check the value of lambda or kappa.
+    toplevel.analog_network_inst.XXRXV.XU1.MX: The saturation channel conductance is zero in the model.  This could result in enormous gain and cause convergence or overflow problems.  Check the value of lambda or kappa.
+        Further occurrences of this notice will be suppressed.
+    toplevel.analog_network_inst.XXDEM.XU2.WNM: Values of `kp' and `uo' are not consistent.
+    toplevel.analog_network_inst.XXDEM.XU2.WPM: Values of `kp' and `uo' are not consistent.
+
+Trying `homotopy = gmin' for initial conditions.
+
+Trying `homotopy = source' for initial conditions.
+
+Trying `homotopy = dptran' for initial conditions..
+
+Notice from spectre during IC analysis, during transient analysis `Transim'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+Warning from spectre during IC analysis, during transient analysis `Transim'.
+    WARNING (CMI-2139): toplevel.analog_network_inst.XXDEM.XU2.M1: The bulk-source junction current exceeds `imelt'.  The results computed by Spectre are now incorrect because the junction current model has been linearized.
+    WARNING (CMI-2139): toplevel.analog_network_inst.XXDEM.XU2.M1: The bulk-drain junction current exceeds `imelt'.  The results computed by Spectre are now incorrect because the junction current model has been linearized.
+    WARNING (CMI-2139): toplevel.analog_network_inst.XXDEM.XU2.M2: The bulk-source junction current exceeds `imelt'.  The results computed by Spectre are now incorrect because the junction current model has been linearized.
+    WARNING (CMI-2139): toplevel.analog_network_inst.XXDEM.XU2.M2: The bulk-drain junction current exceeds `imelt'.  The results computed by Spectre are now incorrect because the junction current model has been linearized.
+Notice from spectre during IC analysis, during transient analysis `Transim'.
+    toplevel.analog_network_inst.XX2.XU1.C_MD2_C1: Initial condition computed between nodes toplevel.analog_network_inst.vss and toplevel.analog_network_inst.XX2.XU1.MD3_DlyHS_2 is in error by 4.98009 mV.
+    toplevel.analog_network_inst.XX2.XU1.C_MD2_C2: Initial condition computed between nodes toplevel.analog_network_inst.vss and toplevel.analog_network_inst.XX2.XU1.MD3_DlyLS_2 is in error by 1.25 V.
+    toplevel.analog_network_inst.XX2.XU1.C_MD2_RS1_C2: Initial condition computed between nodes toplevel.analog_network_inst.vss and toplevel.analog_network_inst.XX2.XU1.MD2_Nor3a_3 is in error by 2.5 V.
+    toplevel.analog_network_inst.XX2.XU1.C_MD2_RS2_C2: Initial condition computed between nodes toplevel.analog_network_inst.vss and toplevel.analog_network_inst.XX2.XU1.MD2_Nor3b_1 is in error by 2.5 uV.
+    toplevel.analog_network_inst.XX2.XU1.C_MD4_RS_C2: Initial condition computed between nodes toplevel.analog_network_inst.vss and toplevel.analog_network_inst.XX2.XU1.MD4_Inv2_3 is in error by 2.5 V.
+        Further occurrences of this notice will be suppressed.
+
+Maximum value of each quantity, excluding Verilog-A modules and dangling current sources:
+V: V(toplevel.analog_network_inst.XXMOD.XU2.64) = 22.9 V
+I: I(toplevel.analog_network_inst.XX2.XU1.V_MD2_Inv1_V:p) = 2.5 A
+
+Warning from spectre during IC analysis, during transient analysis `Transim'.
+    WARNING (SPECTRE-17191): 
+        Tolerance relaxation is used to obtain final DC solution which may affects the result accuracy. This is mainly caused by the high impedance nodes in the circuit. Use dyn_highz check to find out the high impedance nodes and then set appropriate initial values to these nodes will help both performance and accuracy in DC simulation.
+
+DC simulation time: CPU = 10.4282 s, elapsed = 3.72151 s.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 10 ms
+    step = 10 us
+    maxstep = 200 us
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 10e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = liberal
+    method = trapgear2
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+    rabsshort = 1 mOhm
+    compression = wildcardonly
+
+
+Notice from spectre during transient analysis `Transim'.
+    toplevel.analog_network_inst.XXDEM.XU2.WPM: There is no overlap or junction capacitance in the model.  These capacitances should be specified to prevent convergence problems and anomalous behavior.
+    toplevel.analog_network_inst.XXDEM.XU2.WNM: There is no overlap or junction capacitance in the model.  These capacitances should be specified to prevent convergence problems and anomalous behavior.
+
+
+Wildcard match summary:
+              probe v(*) :               832   
+
+Output and IC/nodeset summary:
+                 save   145     (current)
+                 save   853     (voltage)
+
+
+Warning from spectre at time = 100 ps during transient analysis `Transim'.
+    WARNING (CMI-2139): toplevel.analog_network_inst.XXDEM.XU2.M1: The bulk-source junction current exceeds `imelt'.  The results computed by Spectre are now incorrect because the junction current model has been linearized.
+        Further occurrences of this warning will be suppressed.
+Warning from spectre at time = 204.432 ns during transient analysis `Transim'.
+    WARNING (CMI-2744): toplevel.analog_network_inst.XX2.D6: Junction current density(I/Area) exceeds `imelt'.  The results computed by Spectre(R) are now incorrect because the junction current model has been linearized.
+    WARNING (CMI-2745): toplevel.analog_network_inst.XX2.D6: Junction current density(I/Area) exceeds `imax'.
+    WARNING (CMI-2744): toplevel.analog_network_inst.XX2.XU5.D4: Junction current density(I/Area) exceeds `imelt'.  The results computed by Spectre(R) are now incorrect because the junction current model has been linearized.
+    WARNING (CMI-2745): toplevel.analog_network_inst.XX2.XU5.D4: Junction current density(I/Area) exceeds `imax'.
+Warning from spectre at time = 207.028 ns during transient analysis `Transim'.
+    WARNING (CMI-2744): toplevel.analog_network_inst.XX2.XU5.D3: Junction current density(I/Area) exceeds `imelt'.  The results computed by Spectre(R) are now incorrect because the junction current model has been linearized.
+    WARNING (CMI-2745): toplevel.analog_network_inst.XX2.XU5.D3: Junction current density(I/Area) exceeds `imax'.
+Notice from spectre at time = 1.32038 us during transient analysis `Transim'.
+    toplevel.analog_network_inst.XX2.D6: Junction leaves the linearized region.
+    toplevel.analog_network_inst.XX2.D6: Junction current no longer exceeds `imax'.
+Warning from spectre at time = 10.3552 us during transient analysis `Transim'.
+    WARNING (CMI-2744): toplevel.analog_network_inst.XX2.XU3.D4: Junction current density(I/Area) exceeds `imelt'.  The results computed by Spectre(R) are now incorrect because the junction current model has been linearized.
+    WARNING (CMI-2745): toplevel.analog_network_inst.XX2.XU3.D4: Junction current density(I/Area) exceeds `imax'.
+Warning from spectre at time = 10.3598 us during transient analysis `Transim'.
+    WARNING (CMI-2744): toplevel.analog_network_inst.XX2.XU3.D3: Junction current density(I/Area) exceeds `imelt'.  The results computed by Spectre(R) are now incorrect because the junction current model has been linearized.
+        Further occurrences of this warning will be suppressed.
+    WARNING (CMI-2745): toplevel.analog_network_inst.XX2.XU3.D3: Junction current density(I/Area) exceeds `imax'.
+        Further occurrences of this warning will be suppressed.
+Notice from spectre at time = 11.1622 us during transient analysis `Transim'.
+    toplevel.analog_network_inst.XX2.D5: Junction leaves the linearized region.
+    toplevel.analog_network_inst.XX2.D5: Junction current no longer exceeds `imax'.
+Notice from spectre at time = 12.9385 us during transient analysis `Transim'.
+    toplevel.analog_network_inst.XX2.XU5.D4: Junction leaves the linearized region.
+    toplevel.analog_network_inst.XX2.XU5.D4: Junction current no longer exceeds `imax'.
+    toplevel.analog_network_inst.XX2.XU5.D3: Junction leaves the linearized region.
+    toplevel.analog_network_inst.XX2.XU5.D3: Junction current no longer exceeds `imax'.
+Notice from spectre at time = 23.0938 us during transient analysis `Transim'.
+    toplevel.analog_network_inst.XX2.XU4.D4: Junction leaves the linearized region.
+        Further occurrences of this notice will be suppressed.
+    toplevel.analog_network_inst.XX2.XU4.D4: Junction current no longer exceeds `imax'.
+        Further occurrences of this notice will be suppressed.
+Notice from spectre at time = 2.03776 ms during transient analysis `Transim'.
+    toplevel.analog_network_inst.XXDEM.XU2.M2: The bulk-source junction leaves the linearized region.
+    toplevel.analog_network_inst.XXDEM.XU2.M2: The bulk-drain junction leaves the linearized region.
+Notice from spectre at time = 2.03868 ms during transient analysis `Transim'.
+    toplevel.analog_network_inst.XXDEM.XU2.M1: The bulk-source junction leaves the linearized region.
+    toplevel.analog_network_inst.XXDEM.XU2.M1: The bulk-drain junction leaves the linearized region.
+Notice from spectre at time = 5 ms during transient analysis `Transim'.
+    The value of parameter 'Vdigi' was set to 5 at time 0.005 s.
+Warning from spectre at time = 5 ms during transient analysis `Transim'.
+    WARNING (CMI-2362): toplevel.analog_network_inst.DI_BAV5004LP: The value of `vj(pb)' at T = 27 C is 55e-03 V, which is too small. Clamped to 100e-03 V.
+    WARNING (CMI-2362): toplevel.analog_network_inst.XX2.DI_BAV5004LP: The value of `vj(pb)' at T = 27 C is 55e-03 V, which is too small. Clamped to 100e-03 V.
+Notice from spectre at time = 5 ms during transient analysis `Transim'.
+    toplevel.analog_network_inst.XXDEM.XU2.WNM: Values of `kp' and `uo' are not consistent.
+    toplevel.analog_network_inst.XXDEM.XU2.WPM: Values of `kp' and `uo' are not consistent.
+Notice from spectre at time = 8 ms during transient analysis `Transim'.
+    The value of parameter 'Vdigi' was set to 0 at time 0.008 s.
+Warning from spectre at time = 8 ms during transient analysis `Transim'.
+    WARNING (CMI-2362): toplevel.analog_network_inst.DI_BAV5004LP: The value of `vj(pb)' at T = 27 C is 55e-03 V, which is too small. Clamped to 100e-03 V.
+        Further occurrences of this warning will be suppressed.
+Notice from spectre at time = 8 ms during transient analysis `Transim'.
+    toplevel.analog_network_inst.XXDEM.XU2.WNM: Values of `kp' and `uo' are not consistent.
+        Further occurrences of this notice will be suppressed.
+Notice from spectre at time = 8.99865 ms during transient analysis `Transim'.
+    toplevel.analog_network_inst.XXDEM.XU2.M1: The bulk-source junction leaves the linearized region.
+        Further occurrences of this notice will be suppressed.
+
+The analog simulator has reached stop time, please use `analog -stop <new stop time>' to extend the analog stop time.
+Simulation stopped via transient analysis stoptime at time 10 MS
+Memory Usage - Current physical: 295.3M, Current virtual: 1600.1M
+CPU Usage - 148.7s system + 682.4s user = 831.0s total (100.0% cpu)
+xcelium> 
