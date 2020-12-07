@@ -1,5 +1,5 @@
 xrun(64): 19.03-s013: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	19.03-s013: Started on Dec 07, 2020 at 12:50:16 CET
+TOOL:	xrun(64)	19.03-s013: Started on Dec 07, 2020 at 23:02:56 CET
 xrun
 	./amsSim.scs
 	-spectre_args "+ms ++aps=liberal"
@@ -35,8 +35,8 @@ Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwi
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: r0761743   Host: vierre64-tmp3.esat.kuleuven.be   HostID: 570AAE14   PID: 11320
-Memory  available: 18.9591 GB  physical: 63.1554 GB
+User: r0761743   Host: vierre64-tmp3.esat.kuleuven.be   HostID: 570AAE14   PID: 12291
+Memory  available: 9.4213 GB  physical: 58.6856 GB
 Linux   : CentOS Linux release 7.9.2009 (Core)
 CPU Type: Intel Xeon Processor (Skylake)
 All processors running at 2194.8 MHz
@@ -51,7 +51,7 @@ All processors running at 2194.8 MHz
         7:      14, 15
         8:      16, 17
         
-System load averages (1min, 5min, 15min) : 15.6 %, 22.8 %, 24.8 %
+System load averages (1min, 5min, 15min) : 232.3 %, 221.3 %, 220.1 %
 HPC is enabled
 
 
@@ -88,15 +88,15 @@ Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spect
 
 
 Reading file:  /esat/micas-data/software/Cadence/xcelium_19.03/tools.lnx86/spectre/etc/configs/ams.cfg
-Time for NDB Parsing: CPU = 258.299 ms, elapsed = 762.916 ms.
-Time accumulated: CPU = 530.531 ms, elapsed = 762.92 ms.
-Peak resident memory used = 103 Mbytes.
+Time for NDB Parsing: CPU = 434.364 ms, elapsed = 2.37246 s.
+Time accumulated: CPU = 865.991 ms, elapsed = 2.37247 s.
+Peak resident memory used = 88.9 Mbytes.
 
+xcelium> 
 xcelium> 
 -------------------------------------
 Relinquished control to SimVision...
-
-xcelium> source /esat/micas-data/software/Cadence/xcelium_19.03/tools/xcelium/files/xmsimrc
+source /esat/micas-data/software/Cadence/xcelium_19.03/tools/xcelium/files/xmsimrc
 xcelium> # Restoring simulation environment...
 xcelium> input -quiet .reinvoke.sim
 xcelium> file delete .reinvoke.sim
@@ -146,7 +146,7 @@ Installed compiled interface for bsource_01a494.
 Existing shared object for module bsource_733596 is up to date.
 Installed compiled interface for bsource_733596.
 
-Warning from spectre in `toplevel.analog_network_inst.reference_mirror':`toplevel.analog_network_inst.XX6', in `worklib__ANALOG_NETWORK__spice_skeleton__0x10000001':`toplevel.analog_network_inst', in `worklib__toplevel__v':`toplevel', during hierarchy flattening.
+Warning from spectre in `toplevel.analog_network_inst.reference_darlington':`toplevel.analog_network_inst.XX6', in `worklib__ANALOG_NETWORK__spice_skeleton__0x10000001':`toplevel.analog_network_inst', in `worklib__toplevel__v':`toplevel', during hierarchy flattening.
     WARNING (SFE-101): "./2N2907.spi" 1: toplevel.analog_network_inst.XX6.2N2907: `Vceo' is not a valid parameter for an instance of `bjt'.  Ignored.
     WARNING (SFE-101): "./2N2907.spi" 1: toplevel.analog_network_inst.XX6.2N2907: `Icrating' is not a valid parameter for an instance of `bjt'.  Ignored.
     WARNING (SFE-101): "./2N2907.spi" 1: toplevel.analog_network_inst.XX6.2N2907: `mfg' is not a valid parameter for an instance of `bjt'.  Ignored.
@@ -163,9 +163,9 @@ Warning from spectre during hierarchy flattening.
     WARNING (SFE-3015): The dangling node toplevel.analog_network_inst.pVbat is removed.
     WARNING (SFE-3015): The dangling node toplevel.analog_network_inst.Agnd is removed.
 
-Time for Elaboration: CPU = 291.549 ms, elapsed = 1.58088 s.
-Time accumulated: CPU = 822.238 ms, elapsed = 2.34396 s.
-Peak resident memory used = 137 Mbytes.
+Time for Elaboration: CPU = 495.417 ms, elapsed = 16.689 s.
+Time accumulated: CPU = 1.36162 s, elapsed = 19.0617 s.
+Peak resident memory used = 121 Mbytes.
 
 Starting APS DC ...
 
@@ -204,14 +204,14 @@ Warning from spectre in `worklib__ANALOG_NETWORK__spice_skeleton__0x10000001':`t
     WARNING (CMI-2362): toplevel.analog_network_inst.DI_BAV5004LP: The value of `vj(pb)' at T = 27 C is 55e-03 V, which is too small. Clamped to 100e-03 V.
     WARNING (CMI-2362): toplevel.analog_network_inst.DI_BAV5004LP: The value of `vj(pb)' at T = 27 C is 55e-03 V, which is too small. Clamped to 100e-03 V.
 
-Time for EDB Visit::table model: CPU = 104.072 ms, elapsed = 103.835 ms.
-Time accumulated: CPU = 970.601 ms, elapsed = 3.41117 s.
-Peak resident memory used = 270 Mbytes.
+Time for EDB Visit::table model: CPU = 218.095 ms, elapsed = 219.971 ms.
+Time accumulated: CPU = 1.63711 s, elapsed = 20.0017 s.
+Peak resident memory used = 254 Mbytes.
 
 
-Time for EDB Visiting: CPU = 8.84496 s, elapsed = 2.48297 s.
-Time accumulated: CPU = 9.66735 s, elapsed = 4.82708 s.
-Peak resident memory used = 270 Mbytes.
+Time for EDB Visiting: CPU = 13.6568 s, elapsed = 3.35113 s.
+Time accumulated: CPU = 15.0186 s, elapsed = 22.4131 s.
+Peak resident memory used = 255 Mbytes.
 
 
 Notice from spectre.
@@ -285,8 +285,8 @@ Global user options:
 Scoped user options:
 
 Circuit inventory:
-              nodes 833
-                bjt 64    
+              nodes 834
+                bjt 66    
      bsource_01a494 33    
      bsource_6fe116 2     
      bsource_7a0313 4     
@@ -317,7 +317,7 @@ Circuit inventory:
               pvccs 6     
               pvcvs 4     
               relay 192   
-           resistor 588   
+           resistor 587   
                vccs 56    
                vcvs 75    
             vsource 131   
@@ -339,9 +339,9 @@ Notice from spectre.
     Multithreading Enabled: 8 threads in the system with 18 available processors.
     Fast APS Enabled ( ++aps ).
 
-Time for parsing: CPU = 244.918 ms, elapsed = 248.874 ms.
-Time accumulated: CPU = 9.9124 s, elapsed = 5.07609 s.
-Peak resident memory used = 281 Mbytes.
+Time for parsing: CPU = 365.829 ms, elapsed = 385.707 ms.
+Time accumulated: CPU = 15.3847 s, elapsed = 22.799 s.
+Peak resident memory used = 266 Mbytes.
 
 ~~~~~~~~~~~~~~~~~~~~~~
 Pre-Simulation Summary
@@ -367,9 +367,9 @@ Warning from spectre.
     WARNING (SPECTRE-16830): The 'DCsim' analysis of type 'dc' is skipped in XPS flow.
     WARNING (SPECTRE-16518): Arithmetic exception in analysis `DCsim' .
 
-Total time required for dc analysis `DCsim': CPU = 230 us, elapsed = 134.945 us.
-Time accumulated: CPU = 9.93089 s, elapsed = 5.09463 s.
-Peak resident memory used = 282 Mbytes.
+Total time required for dc analysis `DCsim': CPU = 283 us, elapsed = 144.958 us.
+Time accumulated: CPU = 15.4049 s, elapsed = 22.836 s.
+Peak resident memory used = 267 Mbytes.
 
 
 Warning from spectre.
@@ -426,12 +426,7 @@ Notice from spectre during IC analysis, during transient analysis `Transim'.
 Maximum value of each quantity, excluding Verilog-A modules and dangling current sources:
 V: V(toplevel.analog_network_inst.XXMOD.XU2.64) = 22.9 V
 I: I(toplevel.analog_network_inst.XX2.XU1.V_MD2_Inv1_V:p) = 2.5 A
-
-Warning from spectre during IC analysis, during transient analysis `Transim'.
-    WARNING (SPECTRE-17191): 
-        Tolerance relaxation is used to obtain final DC solution which may affects the result accuracy. This is mainly caused by the high impedance nodes in the circuit. Use dyn_highz check to find out the high impedance nodes and then set appropriate initial values to these nodes will help both performance and accuracy in DC simulation.
-
-DC simulation time: CPU = 10.4282 s, elapsed = 3.72151 s.
+DC simulation time: CPU = 5.79063 s, elapsed = 3.65395 s.
 Important parameter values:
     start = 0 s
     outputstart = 0 s
@@ -463,76 +458,103 @@ Notice from spectre during transient analysis `Transim'.
 
 
 Wildcard match summary:
-              probe v(*) :               832   
+              probe v(*) :               833   
 
 Output and IC/nodeset summary:
                  save   145     (current)
-                 save   853     (voltage)
+                 save   854     (voltage)
 
 
 Warning from spectre at time = 100 ps during transient analysis `Transim'.
     WARNING (CMI-2139): toplevel.analog_network_inst.XXDEM.XU2.M1: The bulk-source junction current exceeds `imelt'.  The results computed by Spectre are now incorrect because the junction current model has been linearized.
         Further occurrences of this warning will be suppressed.
-Warning from spectre at time = 204.432 ns during transient analysis `Transim'.
+Warning from spectre at time = 202.863 ns during transient analysis `Transim'.
     WARNING (CMI-2744): toplevel.analog_network_inst.XX2.D6: Junction current density(I/Area) exceeds `imelt'.  The results computed by Spectre(R) are now incorrect because the junction current model has been linearized.
     WARNING (CMI-2745): toplevel.analog_network_inst.XX2.D6: Junction current density(I/Area) exceeds `imax'.
+Warning from spectre at time = 205.545 ns during transient analysis `Transim'.
     WARNING (CMI-2744): toplevel.analog_network_inst.XX2.XU5.D4: Junction current density(I/Area) exceeds `imelt'.  The results computed by Spectre(R) are now incorrect because the junction current model has been linearized.
     WARNING (CMI-2745): toplevel.analog_network_inst.XX2.XU5.D4: Junction current density(I/Area) exceeds `imax'.
-Warning from spectre at time = 207.028 ns during transient analysis `Transim'.
+Warning from spectre at time = 209.917 ns during transient analysis `Transim'.
     WARNING (CMI-2744): toplevel.analog_network_inst.XX2.XU5.D3: Junction current density(I/Area) exceeds `imelt'.  The results computed by Spectre(R) are now incorrect because the junction current model has been linearized.
     WARNING (CMI-2745): toplevel.analog_network_inst.XX2.XU5.D3: Junction current density(I/Area) exceeds `imax'.
-Notice from spectre at time = 1.32038 us during transient analysis `Transim'.
+Notice from spectre at time = 1.20911 us during transient analysis `Transim'.
     toplevel.analog_network_inst.XX2.D6: Junction leaves the linearized region.
     toplevel.analog_network_inst.XX2.D6: Junction current no longer exceeds `imax'.
-Warning from spectre at time = 10.3552 us during transient analysis `Transim'.
+Warning from spectre at time = 10.356 us during transient analysis `Transim'.
     WARNING (CMI-2744): toplevel.analog_network_inst.XX2.XU3.D4: Junction current density(I/Area) exceeds `imelt'.  The results computed by Spectre(R) are now incorrect because the junction current model has been linearized.
     WARNING (CMI-2745): toplevel.analog_network_inst.XX2.XU3.D4: Junction current density(I/Area) exceeds `imax'.
-Warning from spectre at time = 10.3598 us during transient analysis `Transim'.
-    WARNING (CMI-2744): toplevel.analog_network_inst.XX2.XU3.D3: Junction current density(I/Area) exceeds `imelt'.  The results computed by Spectre(R) are now incorrect because the junction current model has been linearized.
+Notice from spectre at time = 10.3575 us during transient analysis `Transim'.
+    toplevel.analog_network_inst.XX2.XU3.D4: Junction leaves the linearized region.
+    toplevel.analog_network_inst.XX2.XU3.D4: Junction current no longer exceeds `imax'.
+Warning from spectre at time = 10.359 us during transient analysis `Transim'.
+    WARNING (CMI-2744): toplevel.analog_network_inst.XX2.XU3.D4: Junction current density(I/Area) exceeds `imelt'.  The results computed by Spectre(R) are now incorrect because the junction current model has been linearized.
         Further occurrences of this warning will be suppressed.
-    WARNING (CMI-2745): toplevel.analog_network_inst.XX2.XU3.D3: Junction current density(I/Area) exceeds `imax'.
+    WARNING (CMI-2745): toplevel.analog_network_inst.XX2.XU3.D4: Junction current density(I/Area) exceeds `imax'.
         Further occurrences of this warning will be suppressed.
-Notice from spectre at time = 11.1622 us during transient analysis `Transim'.
+Notice from spectre at time = 11.082 us during transient analysis `Transim'.
     toplevel.analog_network_inst.XX2.D5: Junction leaves the linearized region.
     toplevel.analog_network_inst.XX2.D5: Junction current no longer exceeds `imax'.
-Notice from spectre at time = 12.9385 us during transient analysis `Transim'.
+Notice from spectre at time = 12.9292 us during transient analysis `Transim'.
     toplevel.analog_network_inst.XX2.XU5.D4: Junction leaves the linearized region.
     toplevel.analog_network_inst.XX2.XU5.D4: Junction current no longer exceeds `imax'.
+Notice from spectre at time = 12.9372 us during transient analysis `Transim'.
     toplevel.analog_network_inst.XX2.XU5.D3: Junction leaves the linearized region.
+        Further occurrences of this notice will be suppressed.
     toplevel.analog_network_inst.XX2.XU5.D3: Junction current no longer exceeds `imax'.
-Notice from spectre at time = 23.0938 us during transient analysis `Transim'.
-    toplevel.analog_network_inst.XX2.XU4.D4: Junction leaves the linearized region.
         Further occurrences of this notice will be suppressed.
-    toplevel.analog_network_inst.XX2.XU4.D4: Junction current no longer exceeds `imax'.
-        Further occurrences of this notice will be suppressed.
-Notice from spectre at time = 2.03776 ms during transient analysis `Transim'.
-    toplevel.analog_network_inst.XXDEM.XU2.M2: The bulk-source junction leaves the linearized region.
-    toplevel.analog_network_inst.XXDEM.XU2.M2: The bulk-drain junction leaves the linearized region.
-Notice from spectre at time = 2.03868 ms during transient analysis `Transim'.
-    toplevel.analog_network_inst.XXDEM.XU2.M1: The bulk-source junction leaves the linearized region.
-    toplevel.analog_network_inst.XXDEM.XU2.M1: The bulk-drain junction leaves the linearized region.
-Notice from spectre at time = 5 ms during transient analysis `Transim'.
-    The value of parameter 'Vdigi' was set to 5 at time 0.005 s.
-Warning from spectre at time = 5 ms during transient analysis `Transim'.
-    WARNING (CMI-2362): toplevel.analog_network_inst.DI_BAV5004LP: The value of `vj(pb)' at T = 27 C is 55e-03 V, which is too small. Clamped to 100e-03 V.
-    WARNING (CMI-2362): toplevel.analog_network_inst.XX2.DI_BAV5004LP: The value of `vj(pb)' at T = 27 C is 55e-03 V, which is too small. Clamped to 100e-03 V.
-Notice from spectre at time = 5 ms during transient analysis `Transim'.
-    toplevel.analog_network_inst.XXDEM.XU2.WNM: Values of `kp' and `uo' are not consistent.
-    toplevel.analog_network_inst.XXDEM.XU2.WPM: Values of `kp' and `uo' are not consistent.
-Notice from spectre at time = 8 ms during transient analysis `Transim'.
-    The value of parameter 'Vdigi' was set to 0 at time 0.008 s.
-Warning from spectre at time = 8 ms during transient analysis `Transim'.
-    WARNING (CMI-2362): toplevel.analog_network_inst.DI_BAV5004LP: The value of `vj(pb)' at T = 27 C is 55e-03 V, which is too small. Clamped to 100e-03 V.
-        Further occurrences of this warning will be suppressed.
-Notice from spectre at time = 8 ms during transient analysis `Transim'.
-    toplevel.analog_network_inst.XXDEM.XU2.WNM: Values of `kp' and `uo' are not consistent.
-        Further occurrences of this notice will be suppressed.
-Notice from spectre at time = 8.99865 ms during transient analysis `Transim'.
-    toplevel.analog_network_inst.XXDEM.XU2.M1: The bulk-source junction leaves the linearized region.
-        Further occurrences of this notice will be suppressed.
+Simulation interrupted in the analog solver at 1813792642696 FS
+xcelium> ^C
+xcelium> exit
 
-The analog simulator has reached stop time, please use `analog -stop <new stop time>' to extend the analog stop time.
-Simulation stopped via transient analysis stoptime at time 10 MS
-Memory Usage - Current physical: 295.3M, Current virtual: 1600.1M
-CPU Usage - 148.7s system + 682.4s user = 831.0s total (100.0% cpu)
-xcelium> 
+Number of accepted tran steps =             21442
+
+Maximum value achieved for any signal of each quantity: 
+V: V(toplevel.analog_network_inst.XX3.N008) = 2.52 kV
+I: I(toplevel.analog_network_inst.VBAT:p) = 203.5 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   The circuit contains signals of the voltage > 10V, consider to set highvoltage=yes to get better accuracy and convergence ability.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre 12 (95.3 %)     13 (97.3 %)     
+        Other    0 (94.1 %)      1 (89.9 %)      2 (94.6 %)      3 (94.2 %)
+                 4 (90.7 %)      5 (94.6 %)      6 (91.6 %)      7 (96.3 %)
+                 8 (97.5 %)      9 (98.3 %)     10 (97.0 %)     11 (94.9 %)
+                14 (94.7 %)     15 (94.6 %)     16 (95.1 %)     17 (96.8 %)
+Initial condition solution time: CPU = 5.79101 s, elapsed = 3.65423 s.
+
+**** AMSD: Mixed-Signal Activity Statistics ****
+Number of A-to-D events:                       0
+  Number of A-to-D events in IEs:              0
+Number of D-to-A events:                       0
+  Number of D-to-A events in IEs:              0
+Number of VHDL-AMS Breaks:                     0
+
+
+Notice from spectre during transient analysis `Transim'.
+    The value of parameter 'Vdigi' has been reset to the original value 0.
+
+The value of the paramerter, Vdigi, is not changed.
+Intrinsic tran analysis time:    CPU = 199.304 s, elapsed = 312.919 s.
+Total time required for tran analysis `Transim': CPU = 205.192 s (3m  25.2s), elapsed = 317.691 s (5m  17.7s).
+Time accumulated: CPU = 220.609 s (3m  40.6s), elapsed = 340.54 s (5m  40.5s).
+Peak resident memory used = 281 Mbytes.
+
+
+Notice from spectre.
+    1668 notices suppressed.
+    1671 warnings suppressed.
+
+
+Aggregate audit (11:08:45 PM, Mon Dec 7, 2020):
+Time used: CPU = 221 s (3m  40.6s), elapsed = 341 s (5m  40.6s), util. = 64.8%.
+Time spent in licensing: elapsed = 32.4 ms.
+Peak memory used = 281 Mbytes.
+Simulation started at: 11:03:05 PM, Mon Dec 7, 2020, ended at: 11:08:45 PM, Mon Dec 7, 2020, with elapsed time (wall clock): 341 s (5m  40.6s).
+spectre completes with 0 errors, 71 warnings, and 65 notices.
+TOOL:	xrun(64)	19.03-s013: Exiting on Dec 07, 2020 at 23:08:46 CET  (total: 00:05:50)

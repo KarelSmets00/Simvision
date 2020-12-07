@@ -1,5 +1,5 @@
 1607341107 /users/students/r0761743/Eagle/Simvision/Global_T2/amsSim.scs
-1607341798 /users/students/r0761743/Eagle/Simvision/Global_T2/ANALOG_NETWORK.spi
+1607378564 /users/students/r0761743/Eagle/Simvision/Global_T2/ANALOG_NETWORK.spi
 1605971589 /users/students/r0761743/Eagle/Simvision/Global_T2/DI_10A01.spi
 1605972880 /users/students/r0761743/Eagle/Simvision/Global_T2/LM7812.spi
 1606856989 /users/students/r0761743/Eagle/Simvision/Global_T2/Ideal_adc.spi

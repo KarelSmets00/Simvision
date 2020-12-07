@@ -83,7 +83,8 @@ C5V tx5v vss 10u
 *VREF Vref vss 1
 VCOMP Vcomp vss 2
 *XX6 tx5v tx5v vss Vref reference
-XX6 tx5v vss Vref reference_mirror
+XX6 tx5v vss Vref reference_darlington
+XX16 tx5v vss Vrefac reference_darlington
 
 * dc voltage sensing
 XX7 ADCV vcc vss tx5v Vref dc_voltage
@@ -94,7 +95,7 @@ XX8 LOAD vss ADCC tx5v Vref Agnd dc_current
 RADCC ADCC vss 1Meg
 XXADCC inp vss tx5v vss Vcomp cout0 cout1 cout2 cout3 cout4 cout5 cout6 cout7 cout8 cout9 cout10 cout11 ideal_adc
 * ac current sensing
-XX9 Cin ACN Vref vss tx5v ADCp ADCn current_sensorv3
+XX9 Cin ACN Vrefac vss tx5v ADCp ADCn current_sensorv3
 RADCp ADCp vss 1Meg
 RADCn ADCn vss 1Meg
 XXADCAC inp vss tx5v vss Vcomp acout0 acout1 acout2 acout3 acout4 acout5 acout6 acout7 acout8 acout9 acout10 acout11 ideal_adc
@@ -156,6 +157,13 @@ R1 Vcc E1 100k
 R2 B COMM 10k
 Q1 B B E1 2N2907
 R3 Vcc Vref 10k
+Q2 COMM B Vref 2N2907
+.include 2N2907.spi
+.ENDS
+
+.SUBCKT reference_darlington Vcc COMM Vref
+Q1 COMM COMM B 2N2907
+R1 Vcc Vref 10k
 Q2 COMM B Vref 2N2907
 .include 2N2907.spi
 .ENDS
