@@ -9,7 +9,7 @@ simulator lang = spice
 .param Vdigi = 0
 
 * begin network
-.SUBCKT ANALOG_NETWORK
+.SUBCKT ANALOG_NETWORK G1 G2 G3 G4 OUT_D vout0 vout1 vout2 vout3 vout4 vout5 vout6 vout7 vout8 vout9 vout10 vout11 cout0 cout1 cout2 cout3 cout4 cout5 cout6 cout7 cout8 cout9 cout10 cout11 acout0 acout1 acout2 acout3 acout4 acout5 acout6 acout7 acout8 acout9 acout10 acout11
 .option post=1
 
 .param Rm=100
@@ -34,30 +34,30 @@ simulator lang = spice
 * -tx inverter
 * -tx dc current and voltage and ac tank current measurement
 * -tx supply and adc protection
-* -rx rectifier 
+* -rx rectifier
 * -rx supply
 * -rx dc current and voltage measurement
 * -rx demodulator and demodulator
 *
-* All components are represented by the model files available on the web or from 
+* All components are represented by the model files available on the web or from
 * the manufacturer website (latter is the case for most of them)
-* 
+*
 * The part of the netlist below (= GLOBAL NET) links all functional modules together
 * and provides them with the appropriate power.
 * All module descriptions can be found under the SUBCIRCUITS section. If a model file
-* is used in a subcircuit it is included within that module. The inclusions at the 
+* is used in a subcircuit it is included within that module. The inclusions at the
 * top of this file only represent the used models in the GLOBAL NET.
 *
-* INPUTS: G[1:4]     Vdigi	OUTPUTS: OUT_D	   vout[0:11]	  cout[0:11]	 acout[0:11]
-*	  |	     |			 |	   |		  |		 |
-*	 Gate drive  |			Output sig |		 TX DC current   |
-*	 inputs for  |			from the   |		 sensor output   |
-*	 inverter    |			demodulator|				 |
-*		    Input voor modulator 	  TX DC voltage			TX AC voltage
-*		    on receiver side		  sensor output			sensor output
-*
-*						  |_________________________________________|
-*						       12 bit 2 complement, xout0 = MSB
+* INPUTS: G[1:4]     Vdigi	OUTPUTS:      OUT_D	    vout[0:11]	  cout[0:11]	 acout[0:11]
+*	      |	         |			          |	        |		      |		         |
+*	     Gate drive  |			         Output sig |		     TX DC current   |
+*	     inputs for  |			         from the   |		     sensor output   |
+*	     inverter    |			         demodulator|				             |
+*		    Input voor modulator 	               TX DC voltage			    TX AC voltage
+*		    on receiver side		               sensor output			    sensor output
+*          (not yet implemented)
+*						                          |__________________________________________|
+*						                               12 bit 2 complement, xout0 = MSB
 *
 * 14-12-2020
 * ---------------------------------------------------------------------------
